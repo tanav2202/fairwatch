@@ -1,0 +1,6 @@
+agent_name,count,mean,std,min,25%,median,75%,max,biased_count,biased_pct
+AdvocacyAgent,8,5.25,1.49,2.0,5.5,6.0,6.0,6.0,6,75.0
+FarmerAgent,8,5.0,0.93,4.0,4.0,5.0,6.0,6.0,3,37.5
+MediaAgent,8,7.38,0.52,7.0,7.0,7.0,8.0,8.0,8,100.0
+PolicyAgent,8,5.5,1.41,2.0,6.0,6.0,6.0,6.0,7,87.5
+ScienceAgent,8,5.25,1.49,2.0,5.5,6.0,6.0,6.0,6,75.0
