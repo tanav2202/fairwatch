@@ -494,6 +494,8 @@ def main():
         writer = csv.writer(f)
         writer.writerow(["prompt"])
         writer.writerow(["Should we regulate antibiotic use in farming?"])
+        writer.writerow(["What are the economic impacts of antibiotic restrictions?"])
+        writer.writerow(["How do antibiotics affect animal welfare?"])
     print(f"✓ Created {test_csv}")
 
     # Import agents

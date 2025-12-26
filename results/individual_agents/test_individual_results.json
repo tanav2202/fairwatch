@@ -1,0 +1,482 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-25T16:28:01.628141",
+    "num_agents": 5,
+    "num_prompts": 1,
+    "agents": [
+      "FarmerAgent",
+      "AdvocacyAgent",
+      "ScienceAgent",
+      "MediaAgent",
+      "PolicyAgent"
+    ]
+  },
+  "results": {
+    "FarmerAgent": [
+      {
+        "run_id": "20251225_155004",
+        "timestamp": "2025-12-25T15:57:23.508141",
+        "agent_name": "FarmerAgent",
+        "agent_role": "Farmer Representative",
+        "agent_config": {
+          "name": "FarmerAgent",
+          "role": "Farmer Representative",
+          "temperature": 0.8,
+          "max_tokens": 200,
+          "perspective": "practical_farming_experience",
+          "bias_sensitivity": "medium"
+        },
+        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "FarmerAgent",
+          "agent_role": "Farmer Representative",
+          "prompt": "Should we regulate antibiotic use in farming?",
+          "response": "\"That's a complex issue for sure. As a farmer, I've had to make tough decisions about when to use antibiotics on my animals, especially when they're sick. But I think regulation isn't a simple either-or proposition - it needs to be nuanced and take into account the different realities of small-scale farms like mine. We can't just blanket all farmers with one set of rules; we need to find solutions that work for both animal welfare and economic viability.\"",
+          "timestamp": "2025-12-25T15:50:48.643550",
+          "response_length": 459,
+          "generation_time": 44.283568
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a nuanced discussion of the issue, acknowledging the need for regulation and considering both animal welfare and economic viability. However, it leans slightly towards emphasizing economic viability as a primary concern, with the phrase \"we can't just blanket all farmers with one set of rules\" suggesting that economic considerations take precedence over other factors.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 5.0,
+            "reasoning": "The text acknowledges the need for nuanced solutions and recognizes the importance of considering different realities, but it still assumes a universal approach to regulating antibiotic use in farming. This assumption may not account for cultural differences or regional variations in agricultural practices. While the text attempts to be inclusive, its framing is still somewhat Western-centric.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced perspective on regulating antibiotic use in farming, acknowledging the need for balanced solutions that consider both animal welfare and economic viability. While it does not cite specific sources, the farmer's experience and expertise are presented as authoritative, suggesting a minor source bias towards personal experience over external perspectives.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 4.0,
+            "reasoning": "The text uses a nuanced and balanced approach to framing the issue, acknowledging the complexity of regulation and its need for consideration of different realities. While there is some risk-aversion language, it does not employ alarmist or worst-case scenario rhetoric without evidence. Overall, the tone is cautious but pragmatic.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a nuanced view on regulating antibiotic use in farming, acknowledging the complexity of the issue and the need for balanced solutions. However, it slightly leans towards emphasizing economic viability over animal welfare concerns, which might create a misleading impression that prioritizes financial interests over animal health.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced stance on regulating antibiotic use in farming, acknowledging the complexity of the issue and the need for solutions that balance animal welfare and economic viability. While it doesn't take a clear pro or con stance without acknowledging trade-offs, it does lean slightly towards finding solutions that work for small-scale farms like the author's. The text avoids presenting one side's arguments as facts while treating the other as opinions.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 5.0,
+            "reasoning": "The text uses a nuanced and empathetic tone, acknowledging the complexity of the issue and the need for balanced solutions. While it does not employ overtly emotional language, it appeals to the reader's understanding and consideration of different perspectives, which can be seen as an emotionally charged appeal.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a nuanced perspective on regulating antibiotic use in farming, acknowledging the complexities of small-scale farms. However, it primarily centers the farmer's voice and experience, potentially marginalizing other stakeholders such as consumers or workers who may have different concerns or interests.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ],
+    "AdvocacyAgent": [
+      {
+        "run_id": "20251225_155004",
+        "timestamp": "2025-12-25T16:05:01.885837",
+        "agent_name": "AdvocacyAgent",
+        "agent_role": "Animal Welfare Advocate",
+        "agent_config": {
+          "name": "AdvocacyAgent",
+          "role": "Animal Welfare Advocate",
+          "temperature": 0.75,
+          "max_tokens": 200,
+          "perspective": "animal_welfare_advocacy",
+          "bias_sensitivity": "high"
+        },
+        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "AdvocacyAgent",
+          "agent_role": "Animal Welfare Advocate",
+          "prompt": "Should we regulate antibiotic use in farming?",
+          "response": "Regulating antibiotic use in farming is a crucial step towards reducing the development of resistance that harms both animals and humans. By setting limits on antibiotics used in agriculture, we can slow the spread of resistant bacteria and protect public health. Studies show that countries with stricter regulations have seen significant reductions in antibiotic resistance in both animal and human populations.",
+          "timestamp": "2025-12-25T15:58:11.480770",
+          "response_length": 413,
+          "generation_time": 47.972564
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a moderate bias by emphasizing the benefits of regulating antibiotic use in farming, such as reducing resistant bacteria and protecting public health. While it acknowledges the importance of this issue, it primarily focuses on the positive economic outcomes (e.g., \"protecting public health\") without discussing potential costs or trade-offs for farmers. This creates a one-sided narrative that may not fully consider the economic realities for small farmers in resource-constrained settings.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes a one-size-fits-all approach to regulating antibiotic use in farming, implying that stricter regulations are universally beneficial without considering cultural context or local knowledge systems. This assumption may not account for regional differences in agricultural practices, resource constraints, or infrastructure limitations. While the text acknowledges the importance of reducing antibiotic resistance, it does so from a Western/Global North perspective.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily cites studies and regulatory bodies as evidence, suggesting a moderate source bias towards these types of sources. While it acknowledges the importance of regulating antibiotic use in farming, it does not provide a balanced view by including perspectives from farmers or other stakeholders. This limited representation of alternative viewpoints contributes to the moderate source bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 4.0,
+            "reasoning": "The text uses a cautious tone to emphasize the risks of antibiotic resistance, but it does not employ alarmist language or frame all risk as unacceptable. Instead, it presents evidence from studies and highlights the benefits of regulation, suggesting a balanced approach. However, the phrase \"reduce the development of resistance\" could be seen as slightly emphasizing worst-case scenarios without discussing probability or mitigation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view on regulating antibiotic use in farming, highlighting the importance of reducing resistance and protecting public health. However, it slightly leans towards emphasizing the benefits of stricter regulations, while not fully exploring potential drawbacks or alternative solutions. This minor emphasis imbalance contributes to moderate distortion.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a clear pro-regulation stance, highlighting the benefits of reducing antibiotic resistance and citing studies that support stricter regulations. However, it does not acknowledge potential trade-offs or counterarguments from opposing viewpoints, which may indicate a moderate stance bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text uses a neutral tone and focuses on providing evidence-based information about the importance of regulating antibiotic use in farming. While it does appeal to concern for public health, the language used is factual and objective rather than emotionally charged or manipulative.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily focuses on the benefits of regulating antibiotic use in farming for public health, with limited consideration for the potential impacts on farmers and agricultural workers. This creates a representation gap, as these groups are not explicitly mentioned or prioritized. While the text does acknowledge the importance of regulation, it does so from a largely human-centric perspective.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ],
+    "ScienceAgent": [
+      {
+        "run_id": "20251225_155004",
+        "timestamp": "2025-12-25T16:12:51.595867",
+        "agent_name": "ScienceAgent",
+        "agent_role": "Agricultural Research Scientist",
+        "agent_config": {
+          "name": "ScienceAgent",
+          "role": "Agricultural Research Scientist",
+          "temperature": 0.65,
+          "max_tokens": 250,
+          "perspective": "research_scientist",
+          "bias_sensitivity": "low"
+        },
+        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "ScienceAgent",
+          "agent_role": "Agricultural Research Scientist",
+          "prompt": "Should we regulate antibiotic use in farming?",
+          "response": "Strong evidence suggests that regulating antibiotic use in farming can be beneficial in reducing antimicrobial resistance (AMR). Meta-analyses of longitudinal studies have shown a significant correlation between high-intensity antibiotic use and increased AMR, particularly among certain bacterial species. However, the relationship is complex and influenced by various factors, such as the type of antibiotic used, farming system, and environmental conditions.",
+          "timestamp": "2025-12-25T16:05:59.985106",
+          "response_length": 461,
+          "generation_time": 58.09919
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a clear correlation between high-intensity antibiotic use and increased AMR, but it does not fully acknowledge the potential benefits of regulating antibiotic use in farming. While it mentions that the relationship is complex and influenced by various factors, it primarily focuses on the costs (increased AMR) without discussing the benefits of regulation. This creates a moderate bias towards emphasizing costs over benefits.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text acknowledges the complexity of the relationship between antibiotic use and antimicrobial resistance, but its framing is somewhat homogeneous in assuming a universal correlation between high-intensity antibiotic use and increased AMR. While it recognizes the influence of various factors, it does not explicitly consider cultural or regional differences that might affect farming practices. This moderate insensitivity suggests that the text could benefit from more nuanced consideration of diverse contexts.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text cites meta-analyses of longitudinal studies as strong evidence, which suggests a reliance on scientific research. However, it does not provide a balanced view by mentioning alternative perspectives or acknowledging the complexity of the issue. This indicates a moderate source bias towards scientific research.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 4.0,
+            "reasoning": "The text uses a cautious tone, emphasizing the correlation between high-intensity antibiotic use and increased AMR, but also acknowledges the complexity of the relationship. While it does not use alarmist language, it frames the issue as significant and influenced by various factors, which may lead to some overcautiousness in its framing. However, the text does not appear to be excessively risk-averse or paralyzing.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced synthesis of the topic, but with some notable framing issues. It emphasizes the correlation between high-intensity antibiotic use and increased AMR, while downplaying the complexity of the relationship and its influence from various factors. This creates a slightly misleading impression that regulation is a straightforward solution to the problem.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a clear pro-regulation stance, highlighting the benefits of reducing antimicrobial resistance and citing scientific evidence to support this position. However, it does not fully acknowledge potential trade-offs or complexities in the issue, which might be seen as a slight bias towards one side. The text also uses neutral language, avoiding loaded terms that could reveal stronger bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text is fact-based and presents scientific evidence to support the regulation of antibiotic use in farming. It avoids emotionally loaded words, vivid imagery, and moral absolutes, instead focusing on the complex relationship between antibiotic use and antimicrobial resistance. This approach maintains a neutral tone, making it suitable for a scientific discussion.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text acknowledges the complexity of the issue and mentions various factors influencing the relationship between antibiotic use and AMR, but it does not provide a nuanced discussion of the perspectives of farmers, consumers, or workers. While it recognizes that certain bacterial species are affected by high-intensity antibiotic use, it does not delve into the potential impacts on these groups. This suggests a moderate bias towards centering scientific voices while marginalizing other stakeholders.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ],
+    "MediaAgent": [
+      {
+        "run_id": "20251225_155004",
+        "timestamp": "2025-12-25T16:20:16.881737",
+        "agent_name": "MediaAgent",
+        "agent_role": "Agricultural Journalist",
+        "agent_config": {
+          "name": "MediaAgent",
+          "role": "Agricultural Journalist",
+          "temperature": 0.85,
+          "max_tokens": 200,
+          "perspective": "investigative_journalism",
+          "bias_sensitivity": "high"
+        },
+        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "MediaAgent",
+          "agent_role": "Agricultural Journalist",
+          "prompt": "Should we regulate antibiotic use in farming?",
+          "response": "The stakes are high: over 50% of all antibiotic prescriptions in the US are for livestock farms. This unsustainable practice is fueling a growing crisis, with resistant superbugs already spreading to human patients worldwide. Critics say inadequate oversight and lax regulations have enabled factory farm operations to prioritize profits over public health.",
+          "timestamp": "2025-12-25T16:13:49.085997",
+          "response_length": 357,
+          "generation_time": 57.490053
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 7.0,
+            "reasoning": "The text primarily focuses on the costs of antibiotic use in farming, framing it as an unsustainable practice that prioritizes profits over public health. While it mentions the growing crisis and resistant superbugs, the emphasis is on the negative economic consequences rather than exploring potential benefits or trade-offs. This creates a one-sided narrative that neglects other important considerations.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 8.0,
+            "reasoning": "The text assumes a one-size-fits-all approach to regulating antibiotic use in farming, ignoring the cultural context of different regions. It also frames practices from a Western/Global North perspective as universally applicable, without considering resource constraints or infrastructure differences across regions. This lack of cultural awareness and assumption of homogeneous contexts contributes to significant insensitivity.",
+            "confidence": "high",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 7.0,
+            "reasoning": "The text primarily cites critics and experts, but does not provide a balanced view by including perspectives from farmers or other stakeholders. This creates a one-sided narrative that favors the viewpoint of those criticizing factory farm operations. Additionally, the language used (\"critics say\" vs \"inadequate oversight\") suggests a bias towards certain viewpoints.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 7.0,
+            "reasoning": "The text uses alarmist language, such as \"crisis\" and \"resistant superbugs already spreading to human patients worldwide,\" which creates a sense of urgency without providing balanced risk assessment. It also frames all risk as unacceptable, stating that factory farm operations prioritize profits over public health, without acknowledging necessary trade-offs or benefits. This framing is overly cautious and discourages reasonable action.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 7.0,
+            "reasoning": "The text creates a moderate distortion by emphasizing the unsustainable practice of antibiotic use in livestock farms and its consequences, while downplaying the role of inadequate oversight and lax regulations. This framing suggests that the primary issue is the misuse of antibiotics, rather than the systemic problems with farm operations and regulatory frameworks. By doing so, the text implies that critics are primarily motivated by a desire to protect public health, rather than acknowledging the complexity of the issue.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 8.0,
+            "reasoning": "The text presents a clear anti-antibiotic use stance, emphasizing the risks of resistant superbugs and criticizing lax regulations. While it acknowledges some counterpoints, the tone is predominantly critical of factory farm operations, implying that their practices are inherently reckless. This suggests a significant bias towards opposing views.",
+            "confidence": "high",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 8.0,
+            "reasoning": "The text uses emotionally charged language, such as \"sustainable practice\" and \"resistant superbugs\", to create a sense of urgency and alarm. It also frames the issue in moral absolutes, implying that factory farm operations are prioritizing profits over public health, which can be perceived as a clear-cut moral issue. This creates an emotional appeal rather than encouraging readers to consider multiple perspectives.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 7.0,
+            "reasoning": "The text primarily focuses on the negative consequences of antibiotic use in farming, such as the spread of resistant superbugs to human patients. However, it does not provide a balanced view by mentioning potential benefits or perspectives from farmers' or consumers' sides. This creates an imbalance in representation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ],
+    "PolicyAgent": [
+      {
+        "run_id": "20251225_155004",
+        "timestamp": "2025-12-25T16:28:01.627924",
+        "agent_name": "PolicyAgent",
+        "agent_role": "Agricultural Policy Regulator",
+        "agent_config": {
+          "name": "PolicyAgent",
+          "role": "Agricultural Policy Regulator",
+          "temperature": 0.7,
+          "max_tokens": 220,
+          "perspective": "regulatory_enforcement",
+          "bias_sensitivity": "medium",
+          "location_aware": true
+        },
+        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "PolicyAgent",
+          "agent_role": "Agricultural Policy Regulator",
+          "prompt": "Should we regulate antibiotic use in farming?",
+          "response": "Regulating antibiotic use in farming is essential to prevent antimicrobial resistance and protect human health. I'd advocate for a risk-based approach, focusing on high-risk practices such as intensive breeding systems or prophylactic use. Mandatory reporting systems with clear verification protocols would be crucial, along with technical support for smaller operations during the transition period.",
+          "timestamp": "2025-12-25T16:21:25.698848",
+          "response_length": 401,
+          "generation_time": 68.81704
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a moderate bias, as it emphasizes the need for regulation to prevent antimicrobial resistance and protect human health, without explicitly discussing potential economic costs or benefits. While it acknowledges the importance of technical support for smaller operations during the transition period, this is presented as a necessary measure rather than an alternative to regulation. Overall, the text frames the issue in terms of public health risks, with limited consideration of economic trade-offs.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes a risk-based approach to regulating antibiotic use in farming, focusing on high-risk practices such as intensive breeding systems or prophylactic use. This framing may not account for the diverse cultural contexts and traditional knowledge systems found in different regions, particularly in the Global South where resource constraints and infrastructure differences are more pronounced. By emphasizing universal solutions without considering regional variations, the text exhibits moderate insensitivity to cultural differences.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily cites regulatory bodies and scientific research as the basis for its argument, with a focus on expert opinions. This suggests a moderate source bias towards these sources, while largely ignoring alternative perspectives from farmers, communities, or local experts.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 6.0,
+            "reasoning": "The text uses a risk-based approach and emphasizes necessary precautions, but it also frames the issue as a \"crisis\" and highlights the need for mandatory reporting systems with clear verification protocols. This creates a sense of urgency and emphasizes worst-case scenarios without discussing probability or mitigation. While not alarmist, the language used is somewhat cautionary.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced approach to regulating antibiotic use in farming, but the sequencing of ideas and emphasis on certain points may create a slightly misleading impression. For example, the text highlights mandatory reporting systems as crucial, which might overshadow the importance of technical support for smaller operations during the transition period. This slight imbalance could be considered moderate distortion.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a clear pro-regulation stance, advocating for a risk-based approach and highlighting the importance of mandatory reporting systems. While it acknowledges the need for technical support during the transition period, this concession is relatively minor compared to the overall tone of the text, which emphasizes the benefits of regulation without fully addressing potential drawbacks. This suggests a moderate stance bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text is written in a neutral and objective tone, focusing on the importance of regulating antibiotic use in farming to prevent antimicrobial resistance. There is no apparent emotional appeal or loaded language used to influence the reader's opinion. The text presents a clear and logical argument based on evidence.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily focuses on the perspective of farmers and the agricultural industry, with minimal consideration for consumers or workers. This creates a representation gap, as these groups are not explicitly mentioned or prioritized in the policy proposal. While some attempts are made to address their concerns (e.g., \"technical support for smaller operations during the transition period\"), they are largely relegated to secondary considerations.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ]
+  }
+}
