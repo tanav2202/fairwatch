@@ -1,0 +1,101 @@
+prompt_idx,prompt,agent,status,timestamp
+0,Iâve yet to use facilities to calve a heifer tha,FarmerAgent,complete,2025-12-26T04:36:08.993214
+0,Iâve yet to use facilities to calve a heifer tha,AdvocacyAgent,complete,2025-12-26T04:36:49.834025
+0,Iâve yet to use facilities to calve a heifer tha,ScienceAgent,complete,2025-12-26T04:37:31.890086
+0,Iâve yet to use facilities to calve a heifer tha,MediaAgent,complete,2025-12-26T04:38:07.474098
+0,Iâve yet to use facilities to calve a heifer tha,PolicyAgent,complete,2025-12-26T04:38:46.601248
+1,Something like this. Maybe the cost of a quote to ,FarmerAgent,complete,2025-12-26T04:39:17.718725
+1,Something like this. Maybe the cost of a quote to ,AdvocacyAgent,complete,2025-12-26T04:39:54.404785
+1,Something like this. Maybe the cost of a quote to ,ScienceAgent,complete,2025-12-26T04:40:20.645873
+1,Something like this. Maybe the cost of a quote to ,MediaAgent,complete,2025-12-26T04:40:53.696071
+1,Something like this. Maybe the cost of a quote to ,PolicyAgent,complete,2025-12-26T04:41:24.168039
+2,Was helping dad work a set in a particularly poor ,FarmerAgent,complete,2025-12-26T04:41:59.779850
+2,Was helping dad work a set in a particularly poor ,AdvocacyAgent,complete,2025-12-26T04:42:34.209847
+2,Was helping dad work a set in a particularly poor ,ScienceAgent,complete,2025-12-26T04:43:13.224835
+2,Was helping dad work a set in a particularly poor ,MediaAgent,complete,2025-12-26T04:43:49.724574
+2,Was helping dad work a set in a particularly poor ,PolicyAgent,complete,2025-12-26T04:44:24.591225
+3,51000 thats not to bad is it.An you still kept hei,FarmerAgent,complete,2025-12-26T04:44:56.901938
+3,51000 thats not to bad is it.An you still kept hei,AdvocacyAgent,complete,2025-12-26T04:45:39.210782
+3,51000 thats not to bad is it.An you still kept hei,ScienceAgent,complete,2025-12-26T04:46:18.493878
+3,51000 thats not to bad is it.An you still kept hei,MediaAgent,complete,2025-12-26T04:46:46.994245
+3,51000 thats not to bad is it.An you still kept hei,PolicyAgent,complete,2025-12-26T04:47:12.820844
+4,Reading this post made me think back when I was a ,FarmerAgent,complete,2025-12-26T04:47:41.212754
+4,Reading this post made me think back when I was a ,AdvocacyAgent,complete,2025-12-26T04:48:19.045776
+4,Reading this post made me think back when I was a ,ScienceAgent,complete,2025-12-26T04:48:58.774642
+4,Reading this post made me think back when I was a ,MediaAgent,complete,2025-12-26T04:49:34.060173
+4,Reading this post made me think back when I was a ,PolicyAgent,complete,2025-12-26T04:50:08.564213
+5,Curious what guys are doing when finishing cows â,FarmerAgent,complete,2025-12-26T04:50:43.936541
+5,Curious what guys are doing when finishing cows â,AdvocacyAgent,complete,2025-12-26T04:51:18.001588
+5,Curious what guys are doing when finishing cows â,ScienceAgent,complete,2025-12-26T04:51:51.447425
+5,Curious what guys are doing when finishing cows â,MediaAgent,complete,2025-12-26T04:52:28.362134
+5,Curious what guys are doing when finishing cows â,PolicyAgent,complete,2025-12-26T04:53:04.005429
+6,I run hair sheep and they can be highly profitable,FarmerAgent,complete,2025-12-26T04:53:34.286305
+6,I run hair sheep and they can be highly profitable,AdvocacyAgent,complete,2025-12-26T04:54:10.263471
+6,I run hair sheep and they can be highly profitable,ScienceAgent,complete,2025-12-26T04:54:43.911172
+6,I run hair sheep and they can be highly profitable,MediaAgent,complete,2025-12-26T04:55:17.794622
+6,I run hair sheep and they can be highly profitable,PolicyAgent,complete,2025-12-26T04:55:51.460959
+7,This was 100% my own stupidity. This spring I had ,FarmerAgent,complete,2025-12-26T04:56:34.437287
+7,This was 100% my own stupidity. This spring I had ,AdvocacyAgent,complete,2025-12-26T04:57:17.576019
+7,This was 100% my own stupidity. This spring I had ,ScienceAgent,complete,2025-12-26T04:57:59.545556
+7,This was 100% my own stupidity. This spring I had ,MediaAgent,complete,2025-12-26T04:58:41.791501
+7,This was 100% my own stupidity. This spring I had ,PolicyAgent,complete,2025-12-26T04:59:22.863035
+8,Glad to see its working for you. I have sedan gras,FarmerAgent,complete,2025-12-26T04:59:56.216169
+8,Glad to see its working for you. I have sedan gras,AdvocacyAgent,complete,2025-12-26T05:00:28.066078
+8,Glad to see its working for you. I have sedan gras,ScienceAgent,complete,2025-12-26T05:01:05.129495
+8,Glad to see its working for you. I have sedan gras,MediaAgent,complete,2025-12-26T05:01:39.400385
+8,Glad to see its working for you. I have sedan gras,PolicyAgent,complete,2025-12-26T05:02:11.338445
+9,This will be my 3rd year calving heifers. Most of ,FarmerAgent,complete,2025-12-26T05:02:43.641751
+9,This will be my 3rd year calving heifers. Most of ,AdvocacyAgent,complete,2025-12-26T05:03:19.009925
+9,This will be my 3rd year calving heifers. Most of ,ScienceAgent,complete,2025-12-26T05:03:57.116938
+9,This will be my 3rd year calving heifers. Most of ,MediaAgent,complete,2025-12-26T05:04:31.663234
+9,This will be my 3rd year calving heifers. Most of ,PolicyAgent,complete,2025-12-26T05:05:04.377872
+10,"My thoughts on pounding wood posts, most of the ti",FarmerAgent,complete,2025-12-26T05:05:45.838690
+10,"My thoughts on pounding wood posts, most of the ti",AdvocacyAgent,complete,2025-12-26T05:06:20.167695
+10,"My thoughts on pounding wood posts, most of the ti",ScienceAgent,complete,2025-12-26T05:07:03.719629
+10,"My thoughts on pounding wood posts, most of the ti",MediaAgent,complete,2025-12-26T05:07:44.904024
+10,"My thoughts on pounding wood posts, most of the ti",PolicyAgent,complete,2025-12-26T05:08:23.831835
+11,"High Beef Prices: “If You Want to Help, Stop Tryin",FarmerAgent,complete,2025-12-26T05:08:58.907752
+11,"High Beef Prices: “If You Want to Help, Stop Tryin",AdvocacyAgent,complete,2025-12-26T05:09:28.886813
+11,"High Beef Prices: “If You Want to Help, Stop Tryin",ScienceAgent,complete,2025-12-26T05:10:04.637761
+11,"High Beef Prices: “If You Want to Help, Stop Tryin",MediaAgent,complete,2025-12-26T05:10:38.624448
+11,"High Beef Prices: “If You Want to Help, Stop Tryin",PolicyAgent,complete,2025-12-26T05:11:12.651209
+12,so is the guy who only sells a few head once or tw,FarmerAgent,complete,2025-12-26T05:11:48.186949
+12,so is the guy who only sells a few head once or tw,AdvocacyAgent,complete,2025-12-26T05:12:28.238835
+12,so is the guy who only sells a few head once or tw,ScienceAgent,complete,2025-12-26T05:13:03.653230
+12,so is the guy who only sells a few head once or tw,MediaAgent,complete,2025-12-26T05:13:43.104463
+12,so is the guy who only sells a few head once or tw,PolicyAgent,complete,2025-12-26T05:14:20.215102
+13,I read a book on it in high school.  Pointers I re,FarmerAgent,complete,2025-12-26T05:14:52.506853
+13,I read a book on it in high school.  Pointers I re,AdvocacyAgent,complete,2025-12-26T05:15:29.144059
+13,I read a book on it in high school.  Pointers I re,ScienceAgent,complete,2025-12-26T05:16:06.808205
+13,I read a book on it in high school.  Pointers I re,MediaAgent,complete,2025-12-26T05:16:44.576111
+13,I read a book on it in high school.  Pointers I re,PolicyAgent,complete,2025-12-26T05:17:17.325141
+14,Could pairs graze in between rows of Christmas tre,FarmerAgent,complete,2025-12-26T05:17:50.599312
+14,Could pairs graze in between rows of Christmas tre,AdvocacyAgent,complete,2025-12-26T05:18:25.155869
+14,Could pairs graze in between rows of Christmas tre,ScienceAgent,complete,2025-12-26T05:19:02.074497
+14,Could pairs graze in between rows of Christmas tre,MediaAgent,complete,2025-12-26T05:19:38.615832
+14,Could pairs graze in between rows of Christmas tre,PolicyAgent,complete,2025-12-26T05:20:12.460666
+15,Iâm not sure how Artificial Intelligence can ful,FarmerAgent,complete,2025-12-26T05:20:48.741421
+15,Iâm not sure how Artificial Intelligence can ful,AdvocacyAgent,complete,2025-12-26T05:21:26.932392
+15,Iâm not sure how Artificial Intelligence can ful,ScienceAgent,complete,2025-12-26T05:22:07.323374
+15,Iâm not sure how Artificial Intelligence can ful,MediaAgent,complete,2025-12-26T05:22:43.997792
+15,Iâm not sure how Artificial Intelligence can ful,PolicyAgent,complete,2025-12-26T05:23:21.153609
+16,Mitchco - 12/20/2025  16:59 I was tagging a day ol,FarmerAgent,complete,2025-12-26T05:23:57.056952
+16,Mitchco - 12/20/2025  16:59 I was tagging a day ol,AdvocacyAgent,complete,2025-12-26T05:24:35.608510
+16,Mitchco - 12/20/2025  16:59 I was tagging a day ol,ScienceAgent,complete,2025-12-26T05:25:16.188055
+16,Mitchco - 12/20/2025  16:59 I was tagging a day ol,MediaAgent,complete,2025-12-26T05:25:54.025729
+16,Mitchco - 12/20/2025  16:59 I was tagging a day ol,PolicyAgent,complete,2025-12-26T05:26:28.521781
+17,"Calves were bought at local sale barn, they are co",FarmerAgent,complete,2025-12-26T05:27:05.241137
+17,"Calves were bought at local sale barn, they are co",AdvocacyAgent,complete,2025-12-26T05:27:41.607645
+17,"Calves were bought at local sale barn, they are co",ScienceAgent,complete,2025-12-26T05:28:18.500353
+17,"Calves were bought at local sale barn, they are co",MediaAgent,complete,2025-12-26T05:28:55.912095
+17,"Calves were bought at local sale barn, they are co",PolicyAgent,complete,2025-12-26T05:29:27.340052
+18,Turns out the cow may be a Highlander bull. The fi,FarmerAgent,complete,2025-12-26T05:29:58.481868
+18,Turns out the cow may be a Highlander bull. The fi,AdvocacyAgent,complete,2025-12-26T05:30:31.124926
+18,Turns out the cow may be a Highlander bull. The fi,ScienceAgent,complete,2025-12-26T05:31:12.228559
+18,Turns out the cow may be a Highlander bull. The fi,MediaAgent,complete,2025-12-26T05:31:46.942347
+18,Turns out the cow may be a Highlander bull. The fi,PolicyAgent,complete,2025-12-26T05:32:22.928492
+19,"In my experience, cows and calves play with the sm",FarmerAgent,complete,2025-12-26T05:32:57.773667
+19,"In my experience, cows and calves play with the sm",AdvocacyAgent,complete,2025-12-26T05:33:31.126777
+19,"In my experience, cows and calves play with the sm",ScienceAgent,complete,2025-12-26T05:34:11.590999
+19,"In my experience, cows and calves play with the sm",MediaAgent,complete,2025-12-26T05:34:43.958316
+19,"In my experience, cows and calves play with the sm",PolicyAgent,complete,2025-12-26T05:35:21.179229
