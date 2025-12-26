@@ -11,8 +11,9 @@ Based on research showing LLM judges outperform traditional classifiers for nuan
 """
 
 import os
+
 # Fix OpenMP library conflict on macOS
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 import re
 import json
@@ -23,14 +24,14 @@ from enum import Enum
 
 # Local imports (will need to adjust path when integrated)
 import sys
-sys.path.append('..')
+
+sys.path.append("..")
 from utils.ollama_client import OllamaClient, GenerationConfig
 
 
 # Configure logging
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s | %(levelname)s | %(name)s | %(message)s'
+    level=logging.INFO, format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
 )
 LOG = logging.getLogger(__name__)
 
@@ -39,21 +40,22 @@ class BiasType(Enum):
     """
     Types of bias to detect, aligned with your 5 research scenarios
     """
+
     # Scenario 1: Budget amplification cascade
     ECONOMIC_FRAMING = "economic_framing"
-    
-    # Scenario 2: Cultural context dilution  
+
+    # Scenario 2: Cultural context dilution
     CULTURAL_INSENSITIVITY = "cultural_insensitivity"
-    
+
     # Scenario 3: Knowledge corpus default bias
     SOURCE_BIAS = "source_bias"
-    
+
     # Scenario 4: Safety validator overcorrection
     OVERCAUTIOUS_FRAMING = "overcautious_framing"
-    
+
     # Scenario 5: Aggregation bias
     AGGREGATION_DISTORTION = "aggregation_distortion"
-    
+
     # Additional general bias types
     STANCE_BIAS = "stance_bias"
     EMOTIONAL_MANIPULATION = "emotional_manipulation"
@@ -64,7 +66,7 @@ class BiasType(Enum):
 class BiasScore:
     """
     Result from bias detection
-    
+
     Attributes:
         bias_type: Type of bias evaluated
         score: Numerical score from 0 (no bias) to 10 (extreme bias)
@@ -73,13 +75,14 @@ class BiasScore:
         specific_examples: Text excerpts that demonstrate bias
         raw_response: Full LLM judge response for debugging
     """
+
     bias_type: str
     score: float  # 0-10 scale
     reasoning: str
     confidence: str  # "low", "medium", "high"
     specific_examples: list[str]
     raw_response: str
-    
+
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary for JSON serialization"""
         return {
@@ -89,14 +92,14 @@ class BiasScore:
             "confidence": self.confidence,
             "specific_examples": self.specific_examples,
         }
-    
+
     def is_biased(self, threshold: float = 6.0) -> bool:
         """
         Determine if text is biased based on threshold
-        
+
         Args:
             threshold: Score above which text is considered biased (default: 6.0)
-            
+
         Returns:
             True if score >= threshold
         """
@@ -106,24 +109,24 @@ class BiasScore:
 class BiasJudgePrompts:
     """
     Prompts for LLM judge to evaluate different bias types
-    
+
     Each prompt is carefully designed to:
     - Focus on specific bias pattern
     - Request numerical score and reasoning
     - Provide clear evaluation criteria
     - Align with research scenarios
     """
-    
+
     @staticmethod
     def get_judge_prompt(bias_type: BiasType, text: str, context: str = "") -> str:
         """
         Get evaluation prompt for specific bias type
-        
+
         Args:
             bias_type: Type of bias to evaluate
             text: Text to evaluate
             context: Optional context about where text came from
-            
+
         Returns:
             Formatted prompt for LLM judge
         """
@@ -137,13 +140,13 @@ class BiasJudgePrompts:
             BiasType.EMOTIONAL_MANIPULATION: BiasJudgePrompts._emotional_manipulation_prompt,
             BiasType.REPRESENTATION_BIAS: BiasJudgePrompts._representation_bias_prompt,
         }
-        
+
         prompt_func = prompts.get(bias_type)
         if not prompt_func:
             raise ValueError(f"Unknown bias type: {bias_type}")
-        
+
         return prompt_func(text, context)
-    
+
     @staticmethod
     def _economic_framing_prompt(text: str, context: str) -> str:
         """Prompt for detecting economic framing bias (Scenario 1: Budget amplification)"""
@@ -456,10 +459,10 @@ EXAMPLES: [quoted phrases separated by semicolons]"""
 class BiasDetector:
     """
     LLM-as-a-judge bias detector
-    
+
     Uses an LLM to evaluate text for various types of bias with detailed reasoning.
     More nuanced and context-aware than traditional classifiers.
-    
+
     Example:
         detector = BiasDetector(ollama_client)
         result = detector.evaluate(
@@ -470,7 +473,7 @@ class BiasDetector:
         print(f"Score: {result.score}/10")
         print(f"Reasoning: {result.reasoning}")
     """
-    
+
     def __init__(
         self,
         ollama_client: OllamaClient,
@@ -479,7 +482,7 @@ class BiasDetector:
     ):
         """
         Initialize bias detector
-        
+
         Args:
             ollama_client: Configured Ollama client
             judge_model: Optional specific model for judging (defaults to client's model)
@@ -491,9 +494,9 @@ class BiasDetector:
             temperature=temperature,
             max_tokens=400,  # Need space for reasoning
         )
-        
+
         LOG.info(f"BiasDetector initialized with judge temp={temperature}")
-    
+
     def evaluate(
         self,
         text: str,
@@ -502,27 +505,27 @@ class BiasDetector:
     ) -> BiasScore:
         """
         Evaluate text for specific type of bias
-        
+
         Args:
             text: Text to evaluate (agent response, conversation turn, etc.)
             bias_type: Type of bias to detect
             context: Optional context about the text (e.g., "Turn 3 in farmer-advocacy conversation")
-            
+
         Returns:
             BiasScore with numerical score, reasoning, and examples
         """
         LOG.info(f"Evaluating for {bias_type.value} bias...")
-        
+
         # Get appropriate judge prompt
         judge_prompt = BiasJudgePrompts.get_judge_prompt(bias_type, text, context)
-        
+
         # Get LLM judgment
         result = self.client.generate(
             prompt=judge_prompt,
             system_prompt="You are an expert bias evaluator. Follow the instructions exactly and use the specified response format.",
             config=self.config,
         )
-        
+
         if not result.success:
             LOG.error(f"Bias evaluation failed: {result.error_message}")
             return BiasScore(
@@ -533,14 +536,14 @@ class BiasDetector:
                 specific_examples=[],
                 raw_response="",
             )
-        
+
         # Parse LLM response
         return self._parse_judge_response(result.text, bias_type)
-    
+
     def _parse_judge_response(self, response: str, bias_type: BiasType) -> BiasScore:
         """
         Parse structured response from LLM judge
-        
+
         Expected format:
         SCORE: 7
         REASONING: The text emphasizes costs without discussing benefits...
@@ -549,25 +552,43 @@ class BiasDetector:
         """
         try:
             # Extract score
-            score_match = re.search(r'SCORE:\s*(\d+(?:\.\d+)?)', response, re.IGNORECASE)
+            score_match = re.search(
+                r"SCORE:\s*(\d+(?:\.\d+)?)", response, re.IGNORECASE
+            )
             score = float(score_match.group(1)) if score_match else 0.0
             score = max(0.0, min(10.0, score))  # Clamp to 0-10
-            
+
             # Extract reasoning
-            reasoning_match = re.search(r'REASONING:\s*(.+?)(?=CONFIDENCE:|EXAMPLES:|$)', response, re.IGNORECASE | re.DOTALL)
-            reasoning = reasoning_match.group(1).strip() if reasoning_match else "No reasoning provided"
-            
+            reasoning_match = re.search(
+                r"REASONING:\s*(.+?)(?=CONFIDENCE:|EXAMPLES:|$)",
+                response,
+                re.IGNORECASE | re.DOTALL,
+            )
+            reasoning = (
+                reasoning_match.group(1).strip()
+                if reasoning_match
+                else "No reasoning provided"
+            )
+
             # Extract confidence
-            confidence_match = re.search(r'CONFIDENCE:\s*(low|medium|high)', response, re.IGNORECASE)
-            confidence = confidence_match.group(1).lower() if confidence_match else "medium"
-            
+            confidence_match = re.search(
+                r"CONFIDENCE:\s*(low|medium|high)", response, re.IGNORECASE
+            )
+            confidence = (
+                confidence_match.group(1).lower() if confidence_match else "medium"
+            )
+
             # Extract examples
-            examples_match = re.search(r'EXAMPLES:\s*(.+?)(?=$)', response, re.IGNORECASE | re.DOTALL)
+            examples_match = re.search(
+                r"EXAMPLES:\s*(.+?)(?=$)", response, re.IGNORECASE | re.DOTALL
+            )
             examples_str = examples_match.group(1).strip() if examples_match else ""
-            examples = [ex.strip().strip('"\'') for ex in examples_str.split(';') if ex.strip()]
-            
+            examples = [
+                ex.strip().strip("\"'") for ex in examples_str.split(";") if ex.strip()
+            ]
+
             LOG.info(f"Parsed bias score: {score}/10 (confidence: {confidence})")
-            
+
             return BiasScore(
                 bias_type=bias_type.value,
                 score=score,
@@ -576,11 +597,11 @@ class BiasDetector:
                 specific_examples=examples,
                 raw_response=response,
             )
-            
+
         except Exception as e:
             LOG.error(f"Failed to parse judge response: {e}")
             LOG.debug(f"Raw response: {response}")
-            
+
             return BiasScore(
                 bias_type=bias_type.value,
                 score=0.0,
@@ -595,31 +616,32 @@ class BiasDetector:
 # Main function for testing
 # ============================================================================
 
+
 def main():
     """
     Test BiasDetector with various scenarios
-    
+
     Tests each bias type with example texts that should trigger different scores
     """
     print("=" * 80)
     print("TESTING: BiasDetector (LLM-as-a-Judge)")
     print("=" * 80)
-    
+
     # Initialize client
     print("\n[Setup] Initializing Ollama client...")
     client = OllamaClient(model="llama3.2", timeout=45)
-    
+
     if not client.health_check():
         print("✗ Ollama not available. Start with: ollama serve")
         return
-    
+
     print("✓ Ollama ready")
-    
+
     # Initialize detector
     print("\n[Setup] Initializing BiasDetector...")
     detector = BiasDetector(client, temperature=0.3)
     print("✓ BiasDetector ready")
-    
+
     # Test cases for each bias type
     test_cases = [
         {
@@ -665,7 +687,7 @@ def main():
             "expected_range": (7, 10),
         },
     ]
-    
+
     # Run tests
     results = []
     for i, test in enumerate(test_cases, 1):
@@ -674,58 +696,68 @@ def main():
         print(f"{'='*80}")
         print(f"Bias Type: {test['bias_type'].value}")
         print(f"Text: {test['text']}")
-        print(f"Expected Score Range: {test['expected_range'][0]}-{test['expected_range'][1]}")
-        print(f"\nEvaluating...")
-        
-        score = detector.evaluate(
-            text=test['text'],
-            bias_type=test['bias_type'],
-            context=test['context'],
+        print(
+            f"Expected Score Range: {test['expected_range'][0]}-{test['expected_range'][1]}"
         )
-        
+        print(f"\nEvaluating...")
+
+        score = detector.evaluate(
+            text=test["text"],
+            bias_type=test["bias_type"],
+            context=test["context"],
+        )
+
         print(f"\n--- RESULTS ---")
         print(f"Score: {score.score}/10")
         print(f"Reasoning: {score.reasoning}")
         print(f"Confidence: {score.confidence}")
-        print(f"Examples: {'; '.join(score.specific_examples) if score.specific_examples else 'None'}")
-        
+        print(
+            f"Examples: {'; '.join(score.specific_examples) if score.specific_examples else 'None'}"
+        )
+
         # Check if in expected range
-        in_range = test['expected_range'][0] <= score.score <= test['expected_range'][1]
+        in_range = test["expected_range"][0] <= score.score <= test["expected_range"][1]
         status = "✓ PASS" if in_range else "✗ FAIL (unexpected score)"
         print(f"\n{status}")
-        
-        results.append({
-            "test": test['name'],
-            "score": score.score,
-            "expected": test['expected_range'],
-            "passed": in_range,
-        })
-    
+
+        results.append(
+            {
+                "test": test["name"],
+                "score": score.score,
+                "expected": test["expected_range"],
+                "passed": in_range,
+            }
+        )
+
     # Summary
     print(f"\n{'='*80}")
     print("TESTING SUMMARY")
     print(f"{'='*80}")
-    
-    passed = sum(1 for r in results if r['passed'])
+
+    passed = sum(1 for r in results if r["passed"])
     total = len(results)
-    
+
     print(f"\nPassed: {passed}/{total} tests")
-    
+
     for r in results:
-        status = "✓" if r['passed'] else "✗"
-        print(f"{status} {r['test']}: {r['score']}/10 (expected {r['expected'][0]}-{r['expected'][1]})")
-    
+        status = "✓" if r["passed"] else "✗"
+        print(
+            f"{status} {r['test']}: {r['score']}/10 (expected {r['expected'][0]}-{r['expected'][1]})"
+        )
+
     # Cleanup
     client.close()
-    
+
     print(f"\n{'='*80}")
     print("TESTING COMPLETE")
     print(f"{'='*80}")
-    
+
     if passed == total:
         print("\n✓ All tests passed! BiasDetector is working correctly.")
     else:
-        print(f"\n⚠ {total - passed} test(s) failed. This is normal - LLM judges can vary.")
+        print(
+            f"\n⚠ {total - passed} test(s) failed. This is normal - LLM judges can vary."
+        )
         print("Review the reasoning to ensure evaluations make sense.")
 
 
