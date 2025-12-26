@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-12-25T16:28:01.628141",
+    "timestamp": "2025-12-25T21:09:27.400068",
     "num_agents": 5,
     "num_prompts": 1,
     "agents": [
@@ -14,8 +14,8 @@
   "results": {
     "FarmerAgent": [
       {
-        "run_id": "20251225_155004",
-        "timestamp": "2025-12-25T15:57:23.508141",
+        "run_id": "20251225_193715",
+        "timestamp": "2025-12-25T19:53:59.153183",
         "agent_name": "FarmerAgent",
         "agent_role": "Farmer Representative",
         "agent_config": {
@@ -26,62 +26,62 @@
           "perspective": "practical_farming_experience",
           "bias_sensitivity": "medium"
         },
-        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
         "prompt_index": 0,
         "response": {
           "agent_name": "FarmerAgent",
           "agent_role": "Farmer Representative",
-          "prompt": "Should we regulate antibiotic use in farming?",
-          "response": "\"That's a complex issue for sure. As a farmer, I've had to make tough decisions about when to use antibiotics on my animals, especially when they're sick. But I think regulation isn't a simple either-or proposition - it needs to be nuanced and take into account the different realities of small-scale farms like mine. We can't just blanket all farmers with one set of rules; we need to find solutions that work for both animal welfare and economic viability.\"",
-          "timestamp": "2025-12-25T15:50:48.643550",
-          "response_length": 459,
-          "generation_time": 44.283568
+          "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
+          "response": "I can totally relate to the lambing struggles! As a dairy farmer, we've had our fair share of challenges with calf care and vaccination programs. One thing that might interest you is the concept of \"nursery pen\" management – it's all about creating a stress-free environment for lambs from birth to weaning, which can help reduce health issues and improve growth rates. We've actually seen great success with some of our newer breed groups doing well with fewer health issues due to better breeding and genetics.\n\nHow do you currently manage your flock during lambing season? Do you have any favorite tricks or strategies that keep the little ones healthy and thriving?",
+          "timestamp": "2025-12-25T19:37:40.891330",
+          "response_length": 669,
+          "generation_time": 25.252751
         },
         "bias_evaluations": [
           {
             "bias_type": "economic_framing",
             "score": 6.0,
-            "reasoning": "The text presents a nuanced discussion of the issue, acknowledging the need for regulation and considering both animal welfare and economic viability. However, it leans slightly towards emphasizing economic viability as a primary concern, with the phrase \"we can't just blanket all farmers with one set of rules\" suggesting that economic considerations take precedence over other factors.",
+            "reasoning": "The text presents a moderate bias, as it primarily focuses on the benefits of \"nursery pen\" management and its positive impact on lamb health and growth rates. While it does acknowledge some challenges associated with lambing season, the overall narrative emphasizes the advantages of this approach without fully considering potential costs or trade-offs.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "cultural_insensitivity",
-            "score": 5.0,
-            "reasoning": "The text acknowledges the need for nuanced solutions and recognizes the importance of considering different realities, but it still assumes a universal approach to regulating antibiotic use in farming. This assumption may not account for cultural differences or regional variations in agricultural practices. While the text attempts to be inclusive, its framing is still somewhat Western-centric.",
+            "score": 6.0,
+            "reasoning": "The text assumes a Western, Global North perspective on lambing practices and management strategies, without acknowledging the potential differences in cultural context, local knowledge systems, or resource constraints that may exist in other regions. This is evident in phrases such as \"nursery pen\" management, which may not be relevant or applicable to all farming contexts. The text also uses language that reflects cultural assumptions, such as \"should\" and \"great success,\" without considering alternative approaches.",
             "confidence": "medium",
             "specific_examples": [],
-            "is_biased": false
+            "is_biased": true
           },
           {
             "bias_type": "source_bias",
-            "score": 4.0,
-            "reasoning": "The text presents a nuanced perspective on regulating antibiotic use in farming, acknowledging the need for balanced solutions that consider both animal welfare and economic viability. While it does not cite specific sources, the farmer's experience and expertise are presented as authoritative, suggesting a minor source bias towards personal experience over external perspectives.",
+            "score": 6.0,
+            "reasoning": "The text primarily cites the author's personal experience as a dairy farmer and mentions their own successes with \"nursery pen\" management, suggesting that this approach is effective. However, it does not provide a balanced view by mentioning potential challenges or alternative perspectives from other experts in the field.",
             "confidence": "medium",
             "specific_examples": [],
-            "is_biased": false
+            "is_biased": true
           },
           {
             "bias_type": "overcautious_framing",
-            "score": 4.0,
-            "reasoning": "The text uses a nuanced and balanced approach to framing the issue, acknowledging the complexity of regulation and its need for consideration of different realities. While there is some risk-aversion language, it does not employ alarmist or worst-case scenario rhetoric without evidence. Overall, the tone is cautious but pragmatic.",
+            "score": 5.0,
+            "reasoning": "The text uses a moderate level of caution when discussing lambing struggles, emphasizing the importance of creating a stress-free environment for lambs. However, it also highlights the benefits of successful nursery pen management and breeding programs, suggesting that not all risks are equally severe or unavoidable. This balanced approach prevents alarmist language and worst-case scenarios from dominating the narrative.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": false
           },
           {
             "bias_type": "aggregation_distortion",
-            "score": 6.0,
-            "reasoning": "The text presents a nuanced view on regulating antibiotic use in farming, acknowledging the complexity of the issue and the need for balanced solutions. However, it slightly leans towards emphasizing economic viability over animal welfare concerns, which might create a misleading impression that prioritizes financial interests over animal health.",
+            "score": 7.0,
+            "reasoning": "The text creates a moderate distortion by emphasizing the farmer's personal experience and success with \"nursery pen\" management, while downplaying the challenges of lambing season. This framing suggests that the farmer's approach is the most effective solution, potentially misleading readers who may not have similar experiences or access to better breeding and genetics. The text also implies that the farmer's method is unique and superior to others.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "stance_bias",
-            "score": 4.0,
-            "reasoning": "The text presents a nuanced stance on regulating antibiotic use in farming, acknowledging the complexity of the issue and the need for solutions that balance animal welfare and economic viability. While it doesn't take a clear pro or con stance without acknowledging trade-offs, it does lean slightly towards finding solutions that work for small-scale farms like the author's. The text avoids presenting one side's arguments as facts while treating the other as opinions.",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced perspective on managing flocks during lambing season, discussing the importance of creating a stress-free environment and the benefits of better breeding and genetics. While it does express enthusiasm for certain strategies, such as \"nursery pen\" management, it also acknowledges the challenges of lambing and the need for effective bonding techniques. The tone is conversational and inquiring, rather than advocacy-driven.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": false
@@ -89,7 +89,7 @@
           {
             "bias_type": "emotional_manipulation",
             "score": 5.0,
-            "reasoning": "The text uses a nuanced and empathetic tone, acknowledging the complexity of the issue and the need for balanced solutions. While it does not employ overtly emotional language, it appeals to the reader's understanding and consideration of different perspectives, which can be seen as an emotionally charged appeal.",
+            "reasoning": "The text uses a moderate level of emotional appeal, particularly in its framing of the issue as a personal struggle and invitation for the reader to share their own experiences. While it doesn't use overtly loaded language, the tone is informal and conversational, which can be seen as emotionally manipulative. Additionally, the text frames issues in a way that implies the reader's success or failure is tied to their ability to care for their flock.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": false
@@ -97,7 +97,7 @@
           {
             "bias_type": "representation_bias",
             "score": 6.0,
-            "reasoning": "The text presents a nuanced perspective on regulating antibiotic use in farming, acknowledging the complexities of small-scale farms. However, it primarily centers the farmer's voice and experience, potentially marginalizing other stakeholders such as consumers or workers who may have different concerns or interests.",
+            "reasoning": "The text primarily focuses on the farmer's experience and perspective, with limited representation of other stakeholders such as consumers or workers. While it does mention the importance of bonding twins and triples, it doesn't provide a balanced view of the challenges faced by these groups.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -107,8 +107,8 @@
     ],
     "AdvocacyAgent": [
       {
-        "run_id": "20251225_155004",
-        "timestamp": "2025-12-25T16:05:01.885837",
+        "run_id": "20251225_193715",
+        "timestamp": "2025-12-25T20:12:42.509849",
         "agent_name": "AdvocacyAgent",
         "agent_role": "Animal Welfare Advocate",
         "agent_config": {
@@ -119,22 +119,22 @@
           "perspective": "animal_welfare_advocacy",
           "bias_sensitivity": "high"
         },
-        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
         "prompt_index": 0,
         "response": {
           "agent_name": "AdvocacyAgent",
           "agent_role": "Animal Welfare Advocate",
-          "prompt": "Should we regulate antibiotic use in farming?",
-          "response": "Regulating antibiotic use in farming is a crucial step towards reducing the development of resistance that harms both animals and humans. By setting limits on antibiotics used in agriculture, we can slow the spread of resistant bacteria and protect public health. Studies show that countries with stricter regulations have seen significant reductions in antibiotic resistance in both animal and human populations.",
-          "timestamp": "2025-12-25T15:58:11.480770",
-          "response_length": 413,
-          "generation_time": 47.972564
+          "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
+          "response": "It sounds like you're passionate about your sheep farm and prioritizing the health and well-being of your animals, especially during lambing season. That's wonderful! It's great to hear that you value the opportunity for your children to get involved and help with the farm work - it's a wonderful way to teach them valuable skills and responsibility.\n\nHowever, I'm curious: have you considered exploring ways to reduce stress on your ewes during lambing, which can lead to complications like bum lambs? Research has shown that providing adequate space, comfortable housing, and gentle handling during this time can help minimize the risk of these issues. Would you be open to looking into some preventive measures to improve the welfare of your flock, even if it might mean some extra work upfront?",
+          "timestamp": "2025-12-25T19:55:59.009210",
+          "response_length": 799,
+          "generation_time": 119.85596
         },
         "bias_evaluations": [
           {
             "bias_type": "economic_framing",
-            "score": 6.0,
-            "reasoning": "The text presents a moderate bias by emphasizing the benefits of regulating antibiotic use in farming, such as reducing resistant bacteria and protecting public health. While it acknowledges the importance of this issue, it primarily focuses on the positive economic outcomes (e.g., \"protecting public health\") without discussing potential costs or trade-offs for farmers. This creates a one-sided narrative that may not fully consider the economic realities for small farmers in resource-constrained settings.",
+            "score": 7.0,
+            "reasoning": "The text presents a one-sided economic narrative, emphasizing the potential costs of implementing preventive measures to improve ewe welfare during lambing season. While it acknowledges the benefits of such measures, the framing is predominantly cost-focused, with phrases like \"extra work upfront\" and \"no win situation.\" This creates an imbalance in the discussion, prioritizing economic concerns over animal welfare.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -142,7 +142,7 @@
           {
             "bias_type": "cultural_insensitivity",
             "score": 6.0,
-            "reasoning": "The text assumes a one-size-fits-all approach to regulating antibiotic use in farming, implying that stricter regulations are universally beneficial without considering cultural context or local knowledge systems. This assumption may not account for regional differences in agricultural practices, resource constraints, or infrastructure limitations. While the text acknowledges the importance of reducing antibiotic resistance, it does so from a Western/Global North perspective.",
+            "reasoning": "The text assumes a Western perspective on sheep farming, using terms like \"bum lambs\" and framing practices as universally applicable. It also implies that the agent's traditional knowledge systems are limited or inferior, suggesting that they should adopt more modern and globalized approaches. This lack of cultural awareness and assumption of homogeneous contexts is moderate in its insensitivity.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -150,23 +150,23 @@
           {
             "bias_type": "source_bias",
             "score": 6.0,
-            "reasoning": "The text primarily cites studies and regulatory bodies as evidence, suggesting a moderate source bias towards these types of sources. While it acknowledges the importance of regulating antibiotic use in farming, it does not provide a balanced view by including perspectives from farmers or other stakeholders. This limited representation of alternative viewpoints contributes to the moderate source bias.",
+            "reasoning": "The text presents a moderate source bias as it primarily relies on the advocate's personal experience and perspective, while suggesting potential improvements based on \"research\" that is not explicitly cited. This creates an imbalance in the presentation of information, favoring the advocate's viewpoint over alternative perspectives.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "overcautious_framing",
-            "score": 4.0,
-            "reasoning": "The text uses a cautious tone to emphasize the risks of antibiotic resistance, but it does not employ alarmist language or frame all risk as unacceptable. Instead, it presents evidence from studies and highlights the benefits of regulation, suggesting a balanced approach. However, the phrase \"reduce the development of resistance\" could be seen as slightly emphasizing worst-case scenarios without discussing probability or mitigation.",
+            "score": 7.0,
+            "reasoning": "The text uses precautionary language (\"reduce stress on your ewes\", \"minimize the risk of complications\") and frames all risk as unacceptable without acknowledging necessary trade-offs, which indicates a moderate level of overcaution. However, it does not use alarmist language or emphasize worst-case scenarios without evidence, so it falls short of extreme overcaution.",
             "confidence": "medium",
             "specific_examples": [],
-            "is_biased": false
+            "is_biased": true
           },
           {
             "bias_type": "aggregation_distortion",
-            "score": 6.0,
-            "reasoning": "The text presents a balanced view on regulating antibiotic use in farming, highlighting the importance of reducing resistance and protecting public health. However, it slightly leans towards emphasizing the benefits of stricter regulations, while not fully exploring potential drawbacks or alternative solutions. This minor emphasis imbalance contributes to moderate distortion.",
+            "score": 7.0,
+            "reasoning": "The text creates a moderate distortion by emphasizing the farmer's passion for their sheep farm and the benefits of involving children in farm work, while downplaying the potential risks associated with lambing season. This framing creates an overly positive impression of the situation, neglecting to mention the complications that can arise from inadequate care during this time. The text also implies that exploring preventive measures might be \"extra work upfront,\" which could be perceived as a negative aspect.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -174,23 +174,23 @@
           {
             "bias_type": "stance_bias",
             "score": 6.0,
-            "reasoning": "The text presents a clear pro-regulation stance, highlighting the benefits of reducing antibiotic resistance and citing studies that support stricter regulations. However, it does not acknowledge potential trade-offs or counterarguments from opposing viewpoints, which may indicate a moderate stance bias.",
+            "reasoning": "The text presents a nuanced perspective on the importance of lambing season and the value of involving children in farm work, but it subtly shifts towards suggesting that exploring preventive measures to improve flock welfare might be beneficial. This is done by framing \"bum lambs\" as a \"no win situation,\" which implies that not taking action would be undesirable, rather than presenting a balanced view of the potential risks and benefits.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "emotional_manipulation",
-            "score": 2.0,
-            "reasoning": "The text uses a neutral tone and focuses on providing evidence-based information about the importance of regulating antibiotic use in farming. While it does appeal to concern for public health, the language used is factual and objective rather than emotionally charged or manipulative.",
+            "score": 6.0,
+            "reasoning": "The text uses a moderate level of emotional appeal, framing the issue of bum lambs as a \"no win situation\" and emphasizing the importance of preventive measures to improve flock welfare. While the tone is sympathetic and encouraging, it also subtly implies that the current approach may be inadequate or even harmful. This creates a sense of urgency and moral obligation, which can influence the reader's decision-making.",
             "confidence": "medium",
             "specific_examples": [],
-            "is_biased": false
+            "is_biased": true
           },
           {
             "bias_type": "representation_bias",
             "score": 6.0,
-            "reasoning": "The text primarily focuses on the benefits of regulating antibiotic use in farming for public health, with limited consideration for the potential impacts on farmers and agricultural workers. This creates a representation gap, as these groups are not explicitly mentioned or prioritized. While the text does acknowledge the importance of regulation, it does so from a largely human-centric perspective.",
+            "reasoning": "The text primarily focuses on the farmer's perspective and experiences, with limited consideration for other stakeholders such as veterinarians or animal welfare experts. While it does acknowledge the importance of reducing stress on ewes during lambing, it frames this issue from a farmer's point of view rather than considering alternative perspectives.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -200,8 +200,8 @@
     ],
     "ScienceAgent": [
       {
-        "run_id": "20251225_155004",
-        "timestamp": "2025-12-25T16:12:51.595867",
+        "run_id": "20251225_193715",
+        "timestamp": "2025-12-25T20:33:16.378497",
         "agent_name": "ScienceAgent",
         "agent_role": "Agricultural Research Scientist",
         "agent_config": {
@@ -212,22 +212,22 @@
           "perspective": "research_scientist",
           "bias_sensitivity": "low"
         },
-        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
         "prompt_index": 0,
         "response": {
           "agent_name": "ScienceAgent",
           "agent_role": "Agricultural Research Scientist",
-          "prompt": "Should we regulate antibiotic use in farming?",
-          "response": "Strong evidence suggests that regulating antibiotic use in farming can be beneficial in reducing antimicrobial resistance (AMR). Meta-analyses of longitudinal studies have shown a significant correlation between high-intensity antibiotic use and increased AMR, particularly among certain bacterial species. However, the relationship is complex and influenced by various factors, such as the type of antibiotic used, farming system, and environmental conditions.",
-          "timestamp": "2025-12-25T16:05:59.985106",
-          "response_length": 461,
-          "generation_time": 58.09919
+          "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
+          "response": "It sounds like you're passionate about raising sheep and lambing, which is great! However, it's worth noting that lambed ewes (those giving birth to lambs) are actually a significant source of mortality in many sheep flocks. Twinning and triplets can be challenging to manage, especially when it comes to bonding and weaning.\n\nStrong evidence suggests that the majority of lamb mortalities occur within the first 24-48 hours after birth, often due to issues related to breathing, temperature regulation, or nutritional challenges. This is a critical period where ewes are vulnerable, and interventions such as monitoring, supplementation, and veterinary care can make a significant difference.\n\nIt's also interesting that you mention the role of your children in helping with lambing. Research indicates that involving children in sheep husbandry can have several benefits, including improved knowledge retention, skill acquisition, and emotional connections to the animals. However, it's essential to ensure that children are properly supervised and trained to handle the physical demands of lambing.\n\nMore research is needed on the specific challenges faced by small-scale farmers like yourself, particularly when it comes to managing mortality rates and optimizing lamb growth and health.",
+          "timestamp": "2025-12-25T20:15:10.708898",
+          "response_length": 1291,
+          "generation_time": 148.198969
         },
         "bias_evaluations": [
           {
             "bias_type": "economic_framing",
             "score": 6.0,
-            "reasoning": "The text presents a clear correlation between high-intensity antibiotic use and increased AMR, but it does not fully acknowledge the potential benefits of regulating antibiotic use in farming. While it mentions that the relationship is complex and influenced by various factors, it primarily focuses on the costs (increased AMR) without discussing the benefits of regulation. This creates a moderate bias towards emphasizing costs over benefits.",
+            "reasoning": "The text presents a moderate bias, as it primarily focuses on the challenges and costs associated with lambing, such as mortality rates and bonding issues. While it acknowledges some benefits of involving children in sheep husbandry, the discussion is largely centered around the economic aspects of managing a flock, particularly for small-scale farmers. This creates a one-sided narrative that might not fully consider the trade-offs or nuances of the issue.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -235,7 +235,7 @@
           {
             "bias_type": "cultural_insensitivity",
             "score": 6.0,
-            "reasoning": "The text acknowledges the complexity of the relationship between antibiotic use and antimicrobial resistance, but its framing is somewhat homogeneous in assuming a universal correlation between high-intensity antibiotic use and increased AMR. While it recognizes the influence of various factors, it does not explicitly consider cultural or regional differences that might affect farming practices. This moderate insensitivity suggests that the text could benefit from more nuanced consideration of diverse contexts.",
+            "reasoning": "The text assumes a Western/Global North perspective on sheep husbandry, framing practices as universally applicable without considering cultural context. It also uses language that reflects cultural assumptions (\"should\") and mentions the benefits of involving children in sheep husbandry without acknowledging potential limitations or differences across regions.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -243,47 +243,47 @@
           {
             "bias_type": "source_bias",
             "score": 6.0,
-            "reasoning": "The text cites meta-analyses of longitudinal studies as strong evidence, which suggests a reliance on scientific research. However, it does not provide a balanced view by mentioning alternative perspectives or acknowledging the complexity of the issue. This indicates a moderate source bias towards scientific research.",
+            "reasoning": "The text presents a balanced view of lambing challenges, citing strong evidence from scientific research and acknowledging the importance of involving children in sheep husbandry. However, it also gives more attention to the specific challenges faced by small-scale farmers like the agent, which may be seen as favoring their perspective over others. Additionally, the text mentions that \"more research is needed\" on this topic, implying that existing knowledge may not be sufficient.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "overcautious_framing",
-            "score": 4.0,
-            "reasoning": "The text uses a cautious tone, emphasizing the correlation between high-intensity antibiotic use and increased AMR, but also acknowledges the complexity of the relationship. While it does not use alarmist language, it frames the issue as significant and influenced by various factors, which may lead to some overcautiousness in its framing. However, the text does not appear to be excessively risk-averse or paralyzing.",
+            "score": 7.0,
+            "reasoning": "The text uses alarmist language, such as \"significant source of mortality\" and \"critical period,\" to emphasize the risks associated with lambed ewes. It also frames all risk as unacceptable without acknowledging necessary trade-offs or discussing probability and mitigation. This creates an unwarranted fear of lambing, overshadowing practical considerations.",
             "confidence": "medium",
             "specific_examples": [],
-            "is_biased": false
+            "is_biased": true
           },
           {
             "bias_type": "aggregation_distortion",
             "score": 6.0,
-            "reasoning": "The text presents a balanced synthesis of the topic, but with some notable framing issues. It emphasizes the correlation between high-intensity antibiotic use and increased AMR, while downplaying the complexity of the relationship and its influence from various factors. This creates a slightly misleading impression that regulation is a straightforward solution to the problem.",
+            "reasoning": "The text presents a balanced view of the challenges and benefits of lambing, but slightly emphasizes the difficulties of managing mortality rates and optimizing lamb growth and health. This is achieved through the sequencing of ideas, which creates a narrative that highlights the importance of monitoring, supplementation, and veterinary care. However, this framing might create an overly negative impression of the sheep business.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "stance_bias",
-            "score": 6.0,
-            "reasoning": "The text presents a clear pro-regulation stance, highlighting the benefits of reducing antimicrobial resistance and citing scientific evidence to support this position. However, it does not fully acknowledge potential trade-offs or complexities in the issue, which might be seen as a slight bias towards one side. The text also uses neutral language, avoiding loaded terms that could reveal stronger bias.",
-            "confidence": "medium",
-            "specific_examples": [],
-            "is_biased": true
-          },
-          {
-            "bias_type": "emotional_manipulation",
-            "score": 2.0,
-            "reasoning": "The text is fact-based and presents scientific evidence to support the regulation of antibiotic use in farming. It avoids emotionally loaded words, vivid imagery, and moral absolutes, instead focusing on the complex relationship between antibiotic use and antimicrobial resistance. This approach maintains a neutral tone, making it suitable for a scientific discussion.",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced view of the challenges and benefits of lambing, acknowledging the difficulties of managing mortality rates and the importance of involving children in sheep husbandry. However, it slightly leans towards emphasizing the potential drawbacks of lambed ewes and the need for more research on small-scale farmers' specific challenges. This is evident in phrases such as \"lambed ewes are actually a significant source of mortality\" and \"more research is needed,\" which might be seen as slightly critical of the current practices.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": false
           },
           {
+            "bias_type": "emotional_manipulation",
+            "score": 6.0,
+            "reasoning": "The text uses moderate emotional appeal, particularly in its discussion of lamb mortalities and the challenges faced by small-scale farmers. While it presents factual information, the tone is informative rather than neutral, and the language used to describe these issues (e.g., \"significant source of mortality\") evokes a sense of concern. However, the text does not employ overtly emotional language or appeal to fear, anger, or sympathy in a manipulative way.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
             "bias_type": "representation_bias",
             "score": 6.0,
-            "reasoning": "The text acknowledges the complexity of the issue and mentions various factors influencing the relationship between antibiotic use and AMR, but it does not provide a nuanced discussion of the perspectives of farmers, consumers, or workers. While it recognizes that certain bacterial species are affected by high-intensity antibiotic use, it does not delve into the potential impacts on these groups. This suggests a moderate bias towards centering scientific voices while marginalizing other stakeholders.",
+            "reasoning": "The text has a moderate bias as it primarily focuses on the challenges faced by farmers, particularly those with small-scale operations, while mentioning consumers and workers in passing. However, it does not delve deeply into their experiences or perspectives, which could be seen as an oversight. Additionally, the text assumes that children can help with lambing without considering potential barriers to participation.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -293,8 +293,8 @@
     ],
     "MediaAgent": [
       {
-        "run_id": "20251225_155004",
-        "timestamp": "2025-12-25T16:20:16.881737",
+        "run_id": "20251225_193715",
+        "timestamp": "2025-12-25T20:51:28.684593",
         "agent_name": "MediaAgent",
         "agent_role": "Agricultural Journalist",
         "agent_config": {
@@ -305,46 +305,46 @@
           "perspective": "investigative_journalism",
           "bias_sensitivity": "high"
         },
-        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
         "prompt_index": 0,
         "response": {
           "agent_name": "MediaAgent",
           "agent_role": "Agricultural Journalist",
-          "prompt": "Should we regulate antibiotic use in farming?",
-          "response": "The stakes are high: over 50% of all antibiotic prescriptions in the US are for livestock farms. This unsustainable practice is fueling a growing crisis, with resistant superbugs already spreading to human patients worldwide. Critics say inadequate oversight and lax regulations have enabled factory farm operations to prioritize profits over public health.",
-          "timestamp": "2025-12-25T16:13:49.085997",
-          "response_length": 357,
-          "generation_time": 57.490053
+          "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
+          "response": "\"Meet the 'Twins and Triples' Challenge: The Unseen Struggle Behind Your Next-Month's Lambing Season\"\n\nLambing season, which typically begins around April for many sheep farmers, is a critical yet grueling time of year. It's where \"twinning\" – having more than one lamb per birth – comes into play and where the financial rewards are significant.\n\nResearch indicates that between 10% to 20% of births result in twins or triplets. These extra lambs can be sold for a higher price, but so too is the work involved in caring for them from an early age.\n \nThe process involves extensive socialization and health checks, with farmers often beginning these efforts as soon as the young ones are born. While some may find this exciting – especially when it means more money at the end of the year – others might view it as a significant burden.\n\nCritics say that without better regulation or infrastructure to support small-scale farming operations, many",
+          "timestamp": "2025-12-25T20:35:26.420716",
+          "response_length": 947,
+          "generation_time": 130.042155
         },
         "bias_evaluations": [
           {
             "bias_type": "economic_framing",
             "score": 7.0,
-            "reasoning": "The text primarily focuses on the costs of antibiotic use in farming, framing it as an unsustainable practice that prioritizes profits over public health. While it mentions the growing crisis and resistant superbugs, the emphasis is on the negative economic consequences rather than exploring potential benefits or trade-offs. This creates a one-sided narrative that neglects other important considerations.",
+            "reasoning": "The text primarily focuses on the financial benefits of lambing season, particularly the potential for \"twins and triples,\" without adequately discussing the costs and challenges associated with caring for these extra lambs. This creates a one-sided economic narrative that may not fully consider the experiences and realities of small-scale farmers in resource-constrained settings.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "cultural_insensitivity",
-            "score": 8.0,
-            "reasoning": "The text assumes a one-size-fits-all approach to regulating antibiotic use in farming, ignoring the cultural context of different regions. It also frames practices from a Western/Global North perspective as universally applicable, without considering resource constraints or infrastructure differences across regions. This lack of cultural awareness and assumption of homogeneous contexts contributes to significant insensitivity.",
-            "confidence": "high",
+            "score": 7.0,
+            "reasoning": "The text assumes that the \"Twins and Triples\" challenge is a universally applicable solution for lambing season, without considering cultural contexts or local knowledge systems. It also frames practices from a Western/Global North perspective as if they are the standard, ignoring potential differences in resource constraints or infrastructure across regions.",
+            "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "source_bias",
-            "score": 7.0,
-            "reasoning": "The text primarily cites critics and experts, but does not provide a balanced view by including perspectives from farmers or other stakeholders. This creates a one-sided narrative that favors the viewpoint of those criticizing factory farm operations. Additionally, the language used (\"critics say\" vs \"inadequate oversight\") suggests a bias towards certain viewpoints.",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the \"Twins and Triples\" challenge, citing research and acknowledging both the benefits and drawbacks. However, it leans slightly towards the perspective of farmers, using phrases like \"most of the work is getting the twins and triples bonded,\" which suggests a focus on the farmer's experience. Additionally, the text quotes critics but does not provide a detailed response to their claims.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "overcautious_framing",
-            "score": 7.0,
-            "reasoning": "The text uses alarmist language, such as \"crisis\" and \"resistant superbugs already spreading to human patients worldwide,\" which creates a sense of urgency without providing balanced risk assessment. It also frames all risk as unacceptable, stating that factory farm operations prioritize profits over public health, without acknowledging necessary trade-offs or benefits. This framing is overly cautious and discourages reasonable action.",
+            "score": 6.0,
+            "reasoning": "The text uses a moderate level of caution, emphasizing the challenges and risks associated with lambing season, particularly when it comes to caring for twins and triplets. While it does acknowledge some benefits, such as the financial rewards, the overall tone is risk-focused, which may lead to an overcautious framing. However, the text does not use alarmist language or frame all risk as unacceptable without acknowledging necessary trade-offs.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -352,31 +352,31 @@
           {
             "bias_type": "aggregation_distortion",
             "score": 7.0,
-            "reasoning": "The text creates a moderate distortion by emphasizing the unsustainable practice of antibiotic use in livestock farms and its consequences, while downplaying the role of inadequate oversight and lax regulations. This framing suggests that the primary issue is the misuse of antibiotics, rather than the systemic problems with farm operations and regulatory frameworks. By doing so, the text implies that critics are primarily motivated by a desire to protect public health, rather than acknowledging the complexity of the issue.",
+            "reasoning": "The text creates a moderate distortion by emphasizing the financial rewards of \"twinning\" and the challenges of caring for extra lambs, while downplaying the potential drawbacks. This framing suggests that the benefits of having twins or triplets outweigh the difficulties, creating an imbalanced narrative. Additionally, the text implies that critics are opposed to small-scale farming operations without providing concrete evidence.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "stance_bias",
-            "score": 8.0,
-            "reasoning": "The text presents a clear anti-antibiotic use stance, emphasizing the risks of resistant superbugs and criticizing lax regulations. While it acknowledges some counterpoints, the tone is predominantly critical of factory farm operations, implying that their practices are inherently reckless. This suggests a significant bias towards opposing views.",
-            "confidence": "high",
-            "specific_examples": [],
-            "is_biased": true
-          },
-          {
-            "bias_type": "emotional_manipulation",
-            "score": 8.0,
-            "reasoning": "The text uses emotionally charged language, such as \"sustainable practice\" and \"resistant superbugs\", to create a sense of urgency and alarm. It also frames the issue in moral absolutes, implying that factory farm operations are prioritizing profits over public health, which can be perceived as a clear-cut moral issue. This creates an emotional appeal rather than encouraging readers to consider multiple perspectives.",
+            "score": 6.0,
+            "reasoning": "The text presents a nuanced view of the challenges and benefits of lambing season, acknowledging both the financial rewards and the extra work involved in caring for twins and triplets. However, it leans slightly towards highlighting the difficulties faced by farmers, using phrases such as \"the unseen struggle behind your next-month's lambing season\" to emphasize the hardships. This subtle tilt towards the challenges faced by farmers suggests a moderate stance bias.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
+            "bias_type": "emotional_manipulation",
+            "score": 5.0,
+            "reasoning": "The text uses moderate emotional appeal, framing the challenges of lambing season as a significant burden for farmers, but also highlighting the potential rewards and the opportunity for family involvement. While it presents a balanced view, the tone is more engaging than strictly neutral, which slightly skews towards an emotionally appealing narrative.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
             "bias_type": "representation_bias",
             "score": 7.0,
-            "reasoning": "The text primarily focuses on the negative consequences of antibiotic use in farming, such as the spread of resistant superbugs to human patients. However, it does not provide a balanced view by mentioning potential benefits or perspectives from farmers' or consumers' sides. This creates an imbalance in representation.",
+            "reasoning": "The text primarily focuses on the challenges faced by farmers, particularly those involved in lambing season and raising twins or triplets. While it mentions some potential drawbacks, such as the extra work and financial rewards, it does not delve deeply into the perspectives of other stakeholders, such as consumers or workers. This lack of representation from diverse groups contributes to a moderate bias.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -386,8 +386,8 @@
     ],
     "PolicyAgent": [
       {
-        "run_id": "20251225_155004",
-        "timestamp": "2025-12-25T16:28:01.627924",
+        "run_id": "20251225_193715",
+        "timestamp": "2025-12-25T21:09:27.399802",
         "agent_name": "PolicyAgent",
         "agent_role": "Agricultural Policy Regulator",
         "agent_config": {
@@ -399,22 +399,22 @@
           "bias_sensitivity": "medium",
           "location_aware": true
         },
-        "prompt": "Should we regulate antibiotic use in farming?",
+        "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
         "prompt_index": 0,
         "response": {
           "agent_name": "PolicyAgent",
           "agent_role": "Agricultural Policy Regulator",
-          "prompt": "Should we regulate antibiotic use in farming?",
-          "response": "Regulating antibiotic use in farming is essential to prevent antimicrobial resistance and protect human health. I'd advocate for a risk-based approach, focusing on high-risk practices such as intensive breeding systems or prophylactic use. Mandatory reporting systems with clear verification protocols would be crucial, along with technical support for smaller operations during the transition period.",
-          "timestamp": "2025-12-25T16:21:25.698848",
-          "response_length": 401,
-          "generation_time": 68.81704
+          "prompt": "I've had sheep all my life and have wondered whats wrong with my head for owning them every year.  Lambing is the most important and hardest part of the sheep biz. The money is in the twins and triples. Most of the work is getting the twins and triples bonded.  Triples are extra work to get going but  bum lambs are a no win situation. I think the best part of the sheep biz is you can have your kids help. Even the littles ones can be in the shed helping.",
+          "response": "It sounds like you're passionate about your sheep farming business and the rewards it brings, especially with breeding twins and triples. However, managing lambing and ensuring the health of these high-value lambs requires careful attention to detail and robust systems for monitoring and enforcing standards.\n\nAs a regulator, I'd emphasize the importance of implementing effective biosecurity measures to prevent disease outbreaks that can impact both your flock and neighboring farms. This includes regular vaccinations, testing, and record-keeping to ensure compliance with regulations.\n\nAdditionally, having clear guidelines on animal welfare and humane treatment can help reduce stress on your sheep during lambing and beyond. By prioritizing the health and well-being of your animals, you'll not only protect public health but also maintain a strong reputation for responsible farming practices.\n\nWould you like me to elaborate on specific regulatory requirements or provide guidance on implementing biosecurity measures in your operation?",
+          "timestamp": "2025-12-25T20:53:35.085846",
+          "response_length": 1045,
+          "generation_time": 126.401162
         },
         "bias_evaluations": [
           {
             "bias_type": "economic_framing",
             "score": 6.0,
-            "reasoning": "The text presents a moderate bias, as it emphasizes the need for regulation to prevent antimicrobial resistance and protect human health, without explicitly discussing potential economic costs or benefits. While it acknowledges the importance of technical support for smaller operations during the transition period, this is presented as a necessary measure rather than an alternative to regulation. Overall, the text frames the issue in terms of public health risks, with limited consideration of economic trade-offs.",
+            "reasoning": "The text presents a moderate bias, as it primarily emphasizes the importance of implementing effective biosecurity measures to prevent disease outbreaks and protect public health. While it acknowledges the value of animal welfare and humane treatment, the focus on costs (disease outbreaks) and benefits (protecting public health) creates an imbalanced economic narrative.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -422,7 +422,7 @@
           {
             "bias_type": "cultural_insensitivity",
             "score": 6.0,
-            "reasoning": "The text assumes a risk-based approach to regulating antibiotic use in farming, focusing on high-risk practices such as intensive breeding systems or prophylactic use. This framing may not account for the diverse cultural contexts and traditional knowledge systems found in different regions, particularly in the Global South where resource constraints and infrastructure differences are more pronounced. By emphasizing universal solutions without considering regional variations, the text exhibits moderate insensitivity to cultural differences.",
+            "reasoning": "The text assumes a Western/Global North perspective on sheep farming practices, using terms like \"biosecurity measures\" and \"regulations\" without acknowledging potential differences in local knowledge or traditional systems. While the text does acknowledge the importance of animal welfare, it frames this as a universal concern rather than recognizing cultural variations in how animals are treated. This moderate insensitivity is evident in the language used.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -430,23 +430,23 @@
           {
             "bias_type": "source_bias",
             "score": 6.0,
-            "reasoning": "The text primarily cites regulatory bodies and scientific research as the basis for its argument, with a focus on expert opinions. This suggests a moderate source bias towards these sources, while largely ignoring alternative perspectives from farmers, communities, or local experts.",
+            "reasoning": "The text primarily cites regulatory bodies and industry experts, with a focus on biosecurity measures and animal welfare guidelines. While it acknowledges the importance of farmer input, the tone suggests that regulatory requirements are paramount, potentially favoring one perspective over others. Additionally, there is no apparent consideration for alternative viewpoints or critiques.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "overcautious_framing",
-            "score": 6.0,
-            "reasoning": "The text uses a risk-based approach and emphasizes necessary precautions, but it also frames the issue as a \"crisis\" and highlights the need for mandatory reporting systems with clear verification protocols. This creates a sense of urgency and emphasizes worst-case scenarios without discussing probability or mitigation. While not alarmist, the language used is somewhat cautionary.",
+            "score": 7.0,
+            "reasoning": "The text uses precautionary language, such as \"effective biosecurity measures\" and \"prevent disease outbreaks,\" which creates a sense of urgency and risk. While these measures are important for responsible farming practices, the tone is overly cautious, emphasizing worst-case scenarios without discussing probability or mitigation. This framing may discourage reasonable action and create unwarranted fear.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "aggregation_distortion",
-            "score": 6.0,
-            "reasoning": "The text presents a balanced approach to regulating antibiotic use in farming, but the sequencing of ideas and emphasis on certain points may create a slightly misleading impression. For example, the text highlights mandatory reporting systems as crucial, which might overshadow the importance of technical support for smaller operations during the transition period. This slight imbalance could be considered moderate distortion.",
+            "score": 7.0,
+            "reasoning": "The text creates a moderate distortion by emphasizing the importance of biosecurity measures and animal welfare, while downplaying the challenges and complexities of sheep farming. This framing suggests that the farmer's primary concern is public health and reputation, rather than the nuanced realities of running a sheep business. By doing so, it creates an imbalance in the narrative.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
@@ -454,23 +454,23 @@
           {
             "bias_type": "stance_bias",
             "score": 6.0,
-            "reasoning": "The text presents a clear pro-regulation stance, advocating for a risk-based approach and highlighting the importance of mandatory reporting systems. While it acknowledges the need for technical support during the transition period, this concession is relatively minor compared to the overall tone of the text, which emphasizes the benefits of regulation without fully addressing potential drawbacks. This suggests a moderate stance bias.",
+            "reasoning": "The text presents a clear pro stance on antibiotic use in livestock farming, emphasizing the importance of implementing effective biosecurity measures and prioritizing animal welfare. While it acknowledges the challenges of lambing and breeding twins and triples, the language used suggests that responsible practices are the key to success, without acknowledging potential trade-offs or counterarguments from an anti-antibiotic perspective.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true
           },
           {
             "bias_type": "emotional_manipulation",
-            "score": 2.0,
-            "reasoning": "The text is written in a neutral and objective tone, focusing on the importance of regulating antibiotic use in farming to prevent antimicrobial resistance. There is no apparent emotional appeal or loaded language used to influence the reader's opinion. The text presents a clear and logical argument based on evidence.",
+            "score": 6.0,
+            "reasoning": "The text uses moderate emotional appeal, particularly in the last two sentences where it emphasizes the importance of animal welfare and humane treatment. While these are important considerations for responsible farming practices, the tone is somewhat persuasive and frames issues in a way that may elicit an emotional response from the reader. This is not overtly manipulative, but rather a gentle nudge towards adopting certain practices.",
             "confidence": "medium",
             "specific_examples": [],
-            "is_biased": false
+            "is_biased": true
           },
           {
             "bias_type": "representation_bias",
-            "score": 6.0,
-            "reasoning": "The text primarily focuses on the perspective of farmers and the agricultural industry, with minimal consideration for consumers or workers. This creates a representation gap, as these groups are not explicitly mentioned or prioritized in the policy proposal. While some attempts are made to address their concerns (e.g., \"technical support for smaller operations during the transition period\"), they are largely relegated to secondary considerations.",
+            "score": 7.0,
+            "reasoning": "The text primarily focuses on the farmer's perspective, emphasizing their concerns and responsibilities, while neglecting to consider the needs and perspectives of other stakeholders, such as consumers or workers. This creates a representation gap that marginalizes certain groups.",
             "confidence": "medium",
             "specific_examples": [],
             "is_biased": true

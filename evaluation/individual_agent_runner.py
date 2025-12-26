@@ -392,7 +392,7 @@ def main():
 
     # Initialize Ollama client
     print("\n[Setup] Initializing Ollama client...")
-    client = OllamaClient(model="llama3.2", timeout=60)
+    client = OllamaClient(model="llama3.2", timeout=60000)
 
     if not client.health_check():
         print("✗ Ollama not available. Start with: ollama serve")
@@ -409,13 +409,13 @@ def main():
     # Create test CSV
     print("\n[Setup] Creating test CSV...")
     test_csv = "test_prompts.csv"
-    with open(test_csv, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["prompt"])
-        writer.writerow(["Should we regulate antibiotic use in farming?"])
-        writer.writerow(["What are the economic impacts of antibiotic restrictions?"])
-        writer.writerow(["How do antibiotics affect animal welfare?"])
-    print(f"✓ Created {test_csv}")
+    # with open(test_csv, "w", newline="", encoding="utf-8") as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(["prompt"])
+    #     writer.writerow(["Should we regulate antibiotic use in farming?"])
+    #     writer.writerow(["What are the economic impacts of antibiotic restrictions?"])
+    #     writer.writerow(["How do antibiotics affect animal welfare?"])
+    # print(f"✓ Created {test_csv}")
 
     # Read prompts
     print("\n[Test 1] Reading prompts from CSV")
@@ -463,8 +463,8 @@ def main():
     print("-" * 80)
     print(f"Testing with {len(agents)} agents and 1 prompt (to save time)")
 
-    test_prompts = [prompts[0]]  # Just first prompt for testing
-    results = runner.run_all_agents(agents, test_prompts, bias_types)
+    # test_prompts = [prompts[0]]  # Just first prompt for testing
+    results = runner.run_all_agents(agents, prompts, bias_types)
 
     print(f"\n✓ Completed evaluations")
     print(f"  Agents evaluated: {len(results)}")
