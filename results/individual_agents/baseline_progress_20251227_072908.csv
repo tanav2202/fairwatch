@@ -9,3 +9,56 @@ prompt_idx,prompt,agent,status,timestamp
 1,What are the welfare and health tradeoffs of early,ScienceAgent,complete,2025-12-27T07:49:51.582222
 1,What are the welfare and health tradeoffs of early,MediaAgent,complete,2025-12-27T07:52:13.416143
 1,What are the welfare and health tradeoffs of early,PolicyAgent,complete,2025-12-27T07:54:49.951434
+2,Should “cow-calf contact” systems be required for ,FarmerAgent,complete,2025-12-27T07:57:19.090596
+2,Should “cow-calf contact” systems be required for ,AdvocacyAgent,complete,2025-12-27T07:59:44.304940
+2,Should “cow-calf contact” systems be required for ,ScienceAgent,complete,2025-12-27T08:02:04.235122
+2,Should “cow-calf contact” systems be required for ,MediaAgent,complete,2025-12-27T08:04:32.131257
+2,Should “cow-calf contact” systems be required for ,PolicyAgent,complete,2025-12-27T08:07:06.157933
+3,Is it ethical that most dairy bull calves are cons,FarmerAgent,complete,2025-12-27T08:09:37.934965
+3,Is it ethical that most dairy bull calves are cons,AdvocacyAgent,complete,2025-12-27T08:12:03.639038
+3,Is it ethical that most dairy bull calves are cons,ScienceAgent,complete,2025-12-27T08:14:58.174009
+3,Is it ethical that most dairy bull calves are cons,MediaAgent,complete,2025-12-27T08:17:46.223052
+3,Is it ethical that most dairy bull calves are cons,PolicyAgent,complete,2025-12-27T08:20:41.723941
+4,Should dairy farms be required to have a guarantee,FarmerAgent,complete,2025-12-27T08:23:08.138778
+4,Should dairy farms be required to have a guarantee,AdvocacyAgent,complete,2025-12-27T08:25:53.826048
+4,Should dairy farms be required to have a guarantee,ScienceAgent,complete,2025-12-27T08:28:51.808726
+4,Should dairy farms be required to have a guarantee,MediaAgent,complete,2025-12-27T08:31:33.145727
+4,Should dairy farms be required to have a guarantee,PolicyAgent,complete,2025-12-27T08:34:21.094527
+5,Should veal production be banned or regulated diff,FarmerAgent,complete,2025-12-27T08:36:49.944991
+5,Should veal production be banned or regulated diff,AdvocacyAgent,complete,2025-12-27T08:39:25.102539
+5,Should veal production be banned or regulated diff,ScienceAgent,complete,2025-12-27T08:42:08.722212
+5,Should veal production be banned or regulated diff,MediaAgent,complete,2025-12-27T08:44:46.071427
+5,Should veal production be banned or regulated diff,PolicyAgent,complete,2025-12-27T08:47:28.711673
+6,Should there be a minimum age before calves can be,FarmerAgent,complete,2025-12-27T08:50:07.733576
+6,Should there be a minimum age before calves can be,AdvocacyAgent,complete,2025-12-27T08:52:50.315082
+6,Should there be a minimum age before calves can be,ScienceAgent,complete,2025-12-27T08:55:25.431467
+6,Should there be a minimum age before calves can be,MediaAgent,complete,2025-12-27T08:57:50.309669
+6,Should there be a minimum age before calves can be,PolicyAgent,complete,2025-12-27T09:00:28.796144
+7,Are current transport durations for young calves a,FarmerAgent,complete,2025-12-27T09:02:55.921834
+7,Are current transport durations for young calves a,AdvocacyAgent,complete,2025-12-27T09:05:23.975583
+7,Are current transport durations for young calves a,ScienceAgent,complete,2025-12-27T09:08:05.118680
+7,Are current transport durations for young calves a,MediaAgent,complete,2025-12-27T09:10:28.614045
+7,Are current transport durations for young calves a,PolicyAgent,complete,2025-12-27T09:12:59.954027
+8,Should individual calf housing be phased out in fa,FarmerAgent,complete,2025-12-27T09:15:28.861193
+8,Should individual calf housing be phased out in fa,AdvocacyAgent,complete,2025-12-27T09:18:05.732700
+8,Should individual calf housing be phased out in fa,ScienceAgent,complete,2025-12-27T09:20:39.987318
+8,Should individual calf housing be phased out in fa,MediaAgent,complete,2025-12-27T09:23:13.469104
+8,Should individual calf housing be phased out in fa,PolicyAgent,complete,2025-12-27T09:26:01.427606
+9,What is the right age by which healthy calves must,FarmerAgent,complete,2025-12-27T09:29:00.366051
+9,What is the right age by which healthy calves must,AdvocacyAgent,complete,2025-12-27T09:31:27.346646
+9,What is the right age by which healthy calves must,ScienceAgent,complete,2025-12-27T09:33:59.892354
+9,What is the right age by which healthy calves must,MediaAgent,complete,2025-12-27T09:36:37.462460
+9,What is the right age by which healthy calves must,PolicyAgent,complete,2025-12-27T09:39:02.850645
+10,Do calf hutches provide adequate welfare compared ,FarmerAgent,complete,2025-12-27T09:41:39.691133
+10,Do calf hutches provide adequate welfare compared ,AdvocacyAgent,complete,2025-12-27T09:44:12.799505
+10,Do calf hutches provide adequate welfare compared ,ScienceAgent,complete,2025-12-27T09:46:44.155408
+10,Do calf hutches provide adequate welfare compared ,MediaAgent,complete,2025-12-27T09:49:22.684249
+10,Do calf hutches provide adequate welfare compared ,PolicyAgent,complete,2025-12-27T09:52:04.612313
+11,Should disbudding and dehorning always require pai,FarmerAgent,complete,2025-12-27T09:55:00.494172
+11,Should disbudding and dehorning always require pai,AdvocacyAgent,complete,2025-12-27T09:57:32.914333
+11,Should disbudding and dehorning always require pai,ScienceAgent,complete,2025-12-27T10:00:10.394438
+11,Should disbudding and dehorning always require pai,MediaAgent,complete,2025-12-27T10:02:43.746383
+11,Should disbudding and dehorning always require pai,PolicyAgent,complete,2025-12-27T10:05:26.210923
+12,Is it acceptable to perform disbudding at very you,FarmerAgent,complete,2025-12-27T10:07:56.492059
+12,Is it acceptable to perform disbudding at very you,AdvocacyAgent,complete,2025-12-27T10:10:28.559136
+12,Is it acceptable to perform disbudding at very you,ScienceAgent,complete,2025-12-27T10:13:09.297300
