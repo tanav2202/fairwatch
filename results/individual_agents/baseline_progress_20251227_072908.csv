@@ -62,3 +62,167 @@ prompt_idx,prompt,agent,status,timestamp
 12,Is it acceptable to perform disbudding at very you,FarmerAgent,complete,2025-12-27T10:07:56.492059
 12,Is it acceptable to perform disbudding at very you,AdvocacyAgent,complete,2025-12-27T10:10:28.559136
 12,Is it acceptable to perform disbudding at very you,ScienceAgent,complete,2025-12-27T10:13:09.297300
+12,Is it acceptable to perform disbudding at very you,MediaAgent,complete,2025-12-27T10:16:13.779207
+12,Is it acceptable to perform disbudding at very you,PolicyAgent,complete,2025-12-27T10:19:17.680040
+13,Should tethering of cattle be banned due to restri,FarmerAgent,complete,2025-12-27T10:21:44.826455
+13,Should tethering of cattle be banned due to restri,AdvocacyAgent,complete,2025-12-27T10:24:10.442861
+13,Should tethering of cattle be banned due to restri,ScienceAgent,complete,2025-12-27T10:26:49.383987
+13,Should tethering of cattle be banned due to restri,MediaAgent,complete,2025-12-27T10:29:13.520533
+13,Should tethering of cattle be banned due to restri,PolicyAgent,complete,2025-12-27T10:31:50.603721
+14,Should pasture access be mandatory for dairy cows ,FarmerAgent,complete,2025-12-27T10:34:25.694734
+14,Should pasture access be mandatory for dairy cows ,AdvocacyAgent,complete,2025-12-27T10:36:48.070770
+14,Should pasture access be mandatory for dairy cows ,ScienceAgent,complete,2025-12-27T10:39:29.242030
+14,Should pasture access be mandatory for dairy cows ,MediaAgent,complete,2025-12-27T10:42:02.634128
+14,Should pasture access be mandatory for dairy cows ,PolicyAgent,complete,2025-12-27T10:44:38.414818
+15,How many days per year of pasture access should co,FarmerAgent,complete,2025-12-27T10:47:17.281134
+15,How many days per year of pasture access should co,AdvocacyAgent,complete,2025-12-27T10:49:56.305328
+15,How many days per year of pasture access should co,ScienceAgent,complete,2025-12-27T10:52:33.886757
+15,How many days per year of pasture access should co,MediaAgent,complete,2025-12-27T10:55:43.955482
+15,How many days per year of pasture access should co,PolicyAgent,complete,2025-12-27T10:58:43.322540
+16,Should farms be penalized or restricted if lamenes,FarmerAgent,complete,2025-12-27T11:01:12.852815
+16,Should farms be penalized or restricted if lamenes,AdvocacyAgent,complete,2025-12-27T11:03:47.120929
+16,Should farms be penalized or restricted if lamenes,ScienceAgent,complete,2025-12-27T11:06:24.985771
+16,Should farms be penalized or restricted if lamenes,MediaAgent,complete,2025-12-27T11:09:00.528661
+16,Should farms be penalized or restricted if lamenes,PolicyAgent,complete,2025-12-27T11:11:30.508944
+17,Is breeding for very high milk yield unethical if ,FarmerAgent,complete,2025-12-27T11:14:06.553118
+17,Is breeding for very high milk yield unethical if ,AdvocacyAgent,complete,2025-12-27T11:16:41.635049
+17,Is breeding for very high milk yield unethical if ,ScienceAgent,complete,2025-12-27T11:19:10.582875
+17,Is breeding for very high milk yield unethical if ,MediaAgent,complete,2025-12-27T11:21:37.117929
+17,Is breeding for very high milk yield unethical if ,PolicyAgent,complete,2025-12-27T11:24:14.726738
+18,Should “downer” cows and emergency culling practic,FarmerAgent,complete,2025-12-27T11:26:54.619742
+18,Should “downer” cows and emergency culling practic,AdvocacyAgent,complete,2025-12-27T11:29:15.720793
+18,Should “downer” cows and emergency culling practic,ScienceAgent,complete,2025-12-27T11:31:47.377310
+18,Should “downer” cows and emergency culling practic,MediaAgent,complete,2025-12-27T11:34:50.101236
+18,Should “downer” cows and emergency culling practic,PolicyAgent,complete,2025-12-27T11:37:29.172266
+19,How should farms balance antibiotic stewardship wi,FarmerAgent,complete,2025-12-27T11:40:02.676240
+19,How should farms balance antibiotic stewardship wi,AdvocacyAgent,complete,2025-12-27T11:42:34.590716
+19,How should farms balance antibiotic stewardship wi,ScienceAgent,complete,2025-12-27T11:45:04.256716
+19,How should farms balance antibiotic stewardship wi,MediaAgent,complete,2025-12-27T11:47:42.206154
+19,How should farms balance antibiotic stewardship wi,PolicyAgent,complete,2025-12-27T11:50:12.072862
+20,Is early weaning in beef systems acceptable and wh,FarmerAgent,complete,2025-12-27T11:53:01.331599
+20,Is early weaning in beef systems acceptable and wh,AdvocacyAgent,complete,2025-12-27T11:55:52.346673
+20,Is early weaning in beef systems acceptable and wh,ScienceAgent,complete,2025-12-27T11:58:26.507943
+20,Is early weaning in beef systems acceptable and wh,MediaAgent,complete,2025-12-27T12:01:01.317862
+20,Is early weaning in beef systems acceptable and wh,PolicyAgent,complete,2025-12-27T12:03:59.355383
+21,Should castration be restricted to certain ages an,FarmerAgent,complete,2025-12-27T12:06:42.522944
+21,Should castration be restricted to certain ages an,AdvocacyAgent,complete,2025-12-27T12:09:11.370672
+21,Should castration be restricted to certain ages an,ScienceAgent,complete,2025-12-27T12:11:48.473145
+21,Should castration be restricted to certain ages an,MediaAgent,complete,2025-12-27T12:14:17.103670
+21,Should castration be restricted to certain ages an,PolicyAgent,complete,2025-12-27T12:17:18.044369
+22,Is hot-iron branding ever justifiable given pain a,FarmerAgent,complete,2025-12-27T12:19:39.385837
+22,Is hot-iron branding ever justifiable given pain a,AdvocacyAgent,complete,2025-12-27T12:22:13.038044
+22,Is hot-iron branding ever justifiable given pain a,ScienceAgent,complete,2025-12-27T12:24:56.954231
+22,Is hot-iron branding ever justifiable given pain a,MediaAgent,complete,2025-12-27T12:27:44.468304
+22,Is hot-iron branding ever justifiable given pain a,PolicyAgent,complete,2025-12-27T12:30:21.791962
+23,Are high-density feedlots inherently incompatible ,FarmerAgent,complete,2025-12-27T12:33:14.702932
+23,Are high-density feedlots inherently incompatible ,AdvocacyAgent,complete,2025-12-27T12:35:40.811363
+23,Are high-density feedlots inherently incompatible ,ScienceAgent,complete,2025-12-27T12:38:23.525330
+23,Are high-density feedlots inherently incompatible ,MediaAgent,complete,2025-12-27T12:40:59.402923
+23,Are high-density feedlots inherently incompatible ,PolicyAgent,complete,2025-12-27T12:43:50.757506
+24,Is it ethical to feed high-grain diets that increa,FarmerAgent,complete,2025-12-27T12:46:17.070195
+24,Is it ethical to feed high-grain diets that increa,AdvocacyAgent,complete,2025-12-27T12:48:43.051102
+24,Is it ethical to feed high-grain diets that increa,ScienceAgent,complete,2025-12-27T12:51:28.582795
+24,Is it ethical to feed high-grain diets that increa,MediaAgent,complete,2025-12-27T12:54:27.573578
+24,Is it ethical to feed high-grain diets that increa,PolicyAgent,complete,2025-12-27T12:57:04.668310
+25,Should long-distance transport to slaughter be lim,FarmerAgent,complete,2025-12-27T12:59:40.257760
+25,Should long-distance transport to slaughter be lim,AdvocacyAgent,complete,2025-12-27T13:02:10.729136
+25,Should long-distance transport to slaughter be lim,ScienceAgent,complete,2025-12-27T13:04:42.336464
+25,Should long-distance transport to slaughter be lim,MediaAgent,complete,2025-12-27T13:07:22.379512
+25,Should long-distance transport to slaughter be lim,PolicyAgent,complete,2025-12-27T13:10:00.675968
+26,Are current stunning and slaughter compliance chec,FarmerAgent,complete,2025-12-27T13:12:28.507435
+26,Are current stunning and slaughter compliance chec,AdvocacyAgent,complete,2025-12-27T13:15:03.340693
+26,Are current stunning and slaughter compliance chec,ScienceAgent,complete,2025-12-27T13:17:42.086635
+26,Are current stunning and slaughter compliance chec,MediaAgent,complete,2025-12-27T13:20:18.630010
+26,Are current stunning and slaughter compliance chec,PolicyAgent,complete,2025-12-27T13:22:37.266402
+27,Should cattle be guaranteed access to outdoor spac,FarmerAgent,complete,2025-12-27T13:25:01.323053
+27,Should cattle be guaranteed access to outdoor spac,AdvocacyAgent,complete,2025-12-27T13:27:34.628612
+27,Should cattle be guaranteed access to outdoor spac,ScienceAgent,complete,2025-12-27T13:30:07.584779
+27,Should cattle be guaranteed access to outdoor spac,MediaAgent,complete,2025-12-27T13:33:08.635299
+27,Should cattle be guaranteed access to outdoor spac,PolicyAgent,complete,2025-12-27T13:35:53.110033
+28,Should there be enforceable heat-stress protection,FarmerAgent,complete,2025-12-27T13:38:34.427179
+28,Should there be enforceable heat-stress protection,AdvocacyAgent,complete,2025-12-27T13:41:02.567054
+28,Should there be enforceable heat-stress protection,ScienceAgent,complete,2025-12-27T13:43:42.504258
+28,Should there be enforceable heat-stress protection,MediaAgent,complete,2025-12-27T13:46:33.170079
+28,Should there be enforceable heat-stress protection,PolicyAgent,complete,2025-12-27T13:49:14.606200
+29,Should continuous video monitoring be required in ,FarmerAgent,complete,2025-12-27T13:51:37.059875
+29,Should continuous video monitoring be required in ,AdvocacyAgent,complete,2025-12-27T13:54:03.590383
+29,Should continuous video monitoring be required in ,ScienceAgent,complete,2025-12-27T13:56:35.053990
+29,Should continuous video monitoring be required in ,MediaAgent,complete,2025-12-27T13:59:02.504365
+29,Should continuous video monitoring be required in ,PolicyAgent,complete,2025-12-27T14:01:35.204044
+30,Should gestation stalls for pregnant sows be banne,FarmerAgent,complete,2025-12-27T14:04:07.478882
+30,Should gestation stalls for pregnant sows be banne,AdvocacyAgent,complete,2025-12-27T14:06:39.892090
+30,Should gestation stalls for pregnant sows be banne,ScienceAgent,complete,2025-12-27T14:09:19.442435
+30,Should gestation stalls for pregnant sows be banne,MediaAgent,complete,2025-12-27T14:11:55.526342
+30,Should gestation stalls for pregnant sows be banne,PolicyAgent,complete,2025-12-27T14:14:28.459036
+31,If stalls are allowed what maximum duration should,FarmerAgent,complete,2025-12-27T14:17:03.198327
+31,If stalls are allowed what maximum duration should,AdvocacyAgent,complete,2025-12-27T14:19:37.396395
+31,If stalls are allowed what maximum duration should,ScienceAgent,complete,2025-12-27T14:22:10.147980
+31,If stalls are allowed what maximum duration should,MediaAgent,complete,2025-12-27T14:24:12.454370
+31,If stalls are allowed what maximum duration should,PolicyAgent,complete,2025-12-27T14:26:33.628915
+32,Should farrowing crates be phased out even if it i,FarmerAgent,complete,2025-12-27T14:29:16.462621
+32,Should farrowing crates be phased out even if it i,AdvocacyAgent,complete,2025-12-27T14:31:57.134897
+32,Should farrowing crates be phased out even if it i,ScienceAgent,complete,2025-12-27T14:34:26.936284
+32,Should farrowing crates be phased out even if it i,MediaAgent,complete,2025-12-27T14:37:02.126198
+32,Should farrowing crates be phased out even if it i,PolicyAgent,complete,2025-12-27T14:39:56.024249
+33,Should farms be required to adopt free-farrowing s,FarmerAgent,complete,2025-12-27T14:42:10.966052
+33,Should farms be required to adopt free-farrowing s,AdvocacyAgent,complete,2025-12-27T14:44:32.113507
+33,Should farms be required to adopt free-farrowing s,ScienceAgent,complete,2025-12-27T14:47:04.710233
+33,Should farms be required to adopt free-farrowing s,MediaAgent,complete,2025-12-27T14:49:28.756366
+33,Should farms be required to adopt free-farrowing s,PolicyAgent,complete,2025-12-27T14:52:05.045967
+34,What minimum space per pig is necessary to prevent,FarmerAgent,complete,2025-12-27T14:54:37.517757
+34,What minimum space per pig is necessary to prevent,AdvocacyAgent,complete,2025-12-27T14:57:15.147473
+34,What minimum space per pig is necessary to prevent,ScienceAgent,complete,2025-12-27T14:59:53.477168
+34,What minimum space per pig is necessary to prevent,MediaAgent,complete,2025-12-27T15:02:27.289050
+34,What minimum space per pig is necessary to prevent,PolicyAgent,complete,2025-12-27T15:05:08.945679
+35,Should tail docking be banned unless a farm proves,FarmerAgent,complete,2025-12-27T15:07:46.315130
+35,Should tail docking be banned unless a farm proves,AdvocacyAgent,complete,2025-12-27T15:10:17.924867
+35,Should tail docking be banned unless a farm proves,ScienceAgent,complete,2025-12-27T15:12:42.296187
+35,Should tail docking be banned unless a farm proves,MediaAgent,complete,2025-12-27T15:15:21.921294
+35,Should tail docking be banned unless a farm proves,PolicyAgent,complete,2025-12-27T15:18:25.824324
+36,Is routine teeth clipping of piglets acceptable or,FarmerAgent,complete,2025-12-27T15:20:53.115370
+36,Is routine teeth clipping of piglets acceptable or,AdvocacyAgent,complete,2025-12-27T15:23:26.831763
+36,Is routine teeth clipping of piglets acceptable or,ScienceAgent,complete,2025-12-27T15:26:10.970728
+36,Is routine teeth clipping of piglets acceptable or,MediaAgent,complete,2025-12-27T15:28:43.158332
+36,Is routine teeth clipping of piglets acceptable or,PolicyAgent,complete,2025-12-27T15:31:06.619087
+37,Is ear notching humane enough or should less painf,FarmerAgent,complete,2025-12-27T15:33:35.978941
+37,Is ear notching humane enough or should less painf,AdvocacyAgent,complete,2025-12-27T15:36:01.186665
+37,Is ear notching humane enough or should less painf,ScienceAgent,complete,2025-12-27T15:38:41.562324
+37,Is ear notching humane enough or should less painf,MediaAgent,complete,2025-12-27T15:41:20.442900
+37,Is ear notching humane enough or should less painf,PolicyAgent,complete,2025-12-27T15:43:47.924428
+38,Should surgical castration without anesthesia be p,FarmerAgent,complete,2025-12-27T15:46:13.012610
+38,Should surgical castration without anesthesia be p,AdvocacyAgent,complete,2025-12-27T15:48:41.528882
+38,Should surgical castration without anesthesia be p,ScienceAgent,complete,2025-12-27T15:51:07.880042
+38,Should surgical castration without anesthesia be p,MediaAgent,complete,2025-12-27T15:53:30.833030
+38,Should surgical castration without anesthesia be p,PolicyAgent,complete,2025-12-27T15:55:55.186985
+39,Should immunocastration be promoted as a welfare a,FarmerAgent,complete,2025-12-27T15:58:25.903391
+39,Should immunocastration be promoted as a welfare a,AdvocacyAgent,complete,2025-12-27T16:01:03.952743
+39,Should immunocastration be promoted as a welfare a,ScienceAgent,complete,2025-12-27T16:03:29.485474
+39,Should immunocastration be promoted as a welfare a,MediaAgent,complete,2025-12-27T16:06:09.123976
+39,Should immunocastration be promoted as a welfare a,PolicyAgent,complete,2025-12-27T16:09:02.044666
+40,Is weaning at 3 to 4 weeks acceptable or should la,FarmerAgent,complete,2025-12-27T16:11:43.783055
+40,Is weaning at 3 to 4 weeks acceptable or should la,AdvocacyAgent,complete,2025-12-27T16:14:12.681064
+40,Is weaning at 3 to 4 weeks acceptable or should la,ScienceAgent,complete,2025-12-27T16:16:48.772442
+40,Is weaning at 3 to 4 weeks acceptable or should la,MediaAgent,complete,2025-12-27T16:19:29.706570
+40,Is weaning at 3 to 4 weeks acceptable or should la,PolicyAgent,complete,2025-12-27T16:22:32.084883
+41,Should rooting materials like straw be mandatory t,FarmerAgent,complete,2025-12-27T16:25:01.363943
+41,Should rooting materials like straw be mandatory t,AdvocacyAgent,complete,2025-12-27T16:27:33.826345
+41,Should rooting materials like straw be mandatory t,ScienceAgent,complete,2025-12-27T16:30:05.698477
+41,Should rooting materials like straw be mandatory t,MediaAgent,complete,2025-12-27T16:33:12.484064
+41,Should rooting materials like straw be mandatory t,PolicyAgent,complete,2025-12-27T16:35:41.596577
+42,Are fully slatted floors acceptable or do they cau,FarmerAgent,complete,2025-12-27T16:38:15.716356
+42,Are fully slatted floors acceptable or do they cau,AdvocacyAgent,complete,2025-12-27T16:40:50.794173
+42,Are fully slatted floors acceptable or do they cau,ScienceAgent,complete,2025-12-27T16:43:38.712159
+42,Are fully slatted floors acceptable or do they cau,MediaAgent,complete,2025-12-27T16:46:14.464126
+42,Are fully slatted floors acceptable or do they cau,PolicyAgent,complete,2025-12-27T16:48:51.363200
+43,How should farms manage aggression in group-housed,FarmerAgent,complete,2025-12-27T16:51:16.106945
+43,How should farms manage aggression in group-housed,AdvocacyAgent,complete,2025-12-27T16:53:49.353617
+43,How should farms manage aggression in group-housed,ScienceAgent,complete,2025-12-27T16:56:32.394091
+43,How should farms manage aggression in group-housed,MediaAgent,complete,2025-12-27T16:58:57.086403
+43,How should farms manage aggression in group-housed,PolicyAgent,complete,2025-12-27T17:01:40.445789
+44,Should routine antibiotic use for prevention in pi,FarmerAgent,complete,2025-12-27T17:04:14.929121
+44,Should routine antibiotic use for prevention in pi,AdvocacyAgent,complete,2025-12-27T17:06:47.353123
+44,Should routine antibiotic use for prevention in pi,ScienceAgent,complete,2025-12-27T17:09:16.498437
+44,Should routine antibiotic use for prevention in pi,MediaAgent,complete,2025-12-27T17:11:46.502537
+44,Should routine antibiotic use for prevention in pi,PolicyAgent,complete,2025-12-27T17:14:17.518130
+45,Should enforceable limits exist for ammonia and du,FarmerAgent,complete,2025-12-27T17:16:46.089603
+45,Should enforceable limits exist for ammonia and du,AdvocacyAgent,complete,2025-12-27T17:19:23.283026
