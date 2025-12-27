@@ -15,11 +15,9 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, project_root)
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import experiment_config as config
-from bias_detector import BiasType
 from individual_agent_runner import IndividualAgentRunner
 
 from agents.advocacy_agent import AdvocacyAgent
@@ -27,6 +25,7 @@ from agents.farmer_agent import FarmerAgent
 from agents.media_agent import MediaAgent
 from agents.policy_agent import PolicyAgent
 from agents.science_agent import ScienceAgent
+from evaluation.bias_detector import BiasType
 from utils.ollama_client import OllamaClient
 
 
