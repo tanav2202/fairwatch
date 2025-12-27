@@ -9,18 +9,18 @@ To run different experiments, just edit the values below:
 """
 
 # Dataset Configuration
-PROMPT_CSV = "test_prompts.csv"
+PROMPT_CSV = "../test_prompts.csv"
 PROMPT_SAMPLE_SIZE = 20  # Set to 20 for quick runs, None for full dataset
 RANDOM_SEED = 42
 
 # Agent Orderings to Test
 # Format: List of agent class names in desired order
 AGENT_ORDERINGS = [
-    ['FarmerAgent', 'AdvocacyAgent', 'ScienceAgent', 'MediaAgent', 'PolicyAgent'],
-    ['ScienceAgent', 'FarmerAgent', 'AdvocacyAgent', 'MediaAgent', 'PolicyAgent'],
+    ["FarmerAgent", "PolicyAgent", "AdvocacyAgent", "ScienceAgent", "MediaAgent"],
+    ["MediaAgent", "PolicyAgent", "FarmerAgent", "ScienceAgent", "AdvocacyAgent"],
 ]
 
-# Output Configuration  
+# Output Configuration
 BASELINE_OUTPUT_DIR = "results/individual_agents"
 CHAIN_OUTPUT_DIR = "results/chain_evaluations"
 
