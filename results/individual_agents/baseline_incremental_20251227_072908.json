@@ -1,0 +1,941 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-27T07:54:49.951489",
+    "run_id": "20251227_072908",
+    "num_agents": 5,
+    "num_prompts_completed": 2,
+    "num_prompts_total": 100,
+    "progress": "2.0%",
+    "agents": [
+      "FarmerAgent",
+      "AdvocacyAgent",
+      "ScienceAgent",
+      "MediaAgent",
+      "PolicyAgent"
+    ]
+  },
+  "results": {
+    "FarmerAgent": [
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:31:23.132857",
+        "agent_name": "FarmerAgent",
+        "agent_role": "Farmer Representative",
+        "agent_config": {
+          "name": "FarmerAgent",
+          "role": "Farmer Representative",
+          "temperature": 0.8,
+          "max_tokens": 200,
+          "perspective": "practical_farming_experience",
+          "bias_sensitivity": "medium"
+        },
+        "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "FarmerAgent",
+          "agent_role": "Farmer Representative",
+          "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+          "response": "That's an interesting question! On our farm, we've actually never separated the calf from its mother in the first 24 hours - it seems like a big stress on the cow and I've heard mixed results on whether it affects the calf's health later on. We do make sure to keep the cow clean and provide good nutrition for the calves, which helps prevent infections anyway.",
+          "timestamp": "2025-12-27T07:29:19.758319",
+          "response_length": 361,
+          "generation_time": 11.410099
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced discussion of the potential benefits and drawbacks of separating dairy calves from their mothers, acknowledging mixed results and emphasizing the importance of cow cleanliness and nutrition. While there is an emphasis on costs (stress on the cow), the text also discusses potential benefits (preventing infections) and suggests that the decision may depend on various factors. This balanced approach prevents a strong one-sided economic narrative.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes a Western perspective on dairy calf separation, mentioning \"mixed results\" without specifying regional differences or cultural contexts. This framing implies that the practice is universally applicable, ignoring potential variations in local knowledge systems and traditional practices. While it acknowledges some cultural sensitivity by mentioning the importance of cow cleanliness and nutrition, the overall tone suggests a one-size-fits-all approach.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced view on the separation of dairy calves from their mothers, acknowledging mixed results and considering factors like cow cleanliness and nutrition. While it doesn't cite specific sources, its balanced approach suggests an attempt to consider multiple perspectives. However, the lack of explicit references or quotes from experts or regulatory bodies might be seen as minor source bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced view of calf separation, acknowledging the potential stress on cows and mixed results on health outcomes. While it emphasizes precautions, it also discusses benefits (e.g., keeping cows clean) and practical realities (e.g., providing good nutrition). This balanced approach suggests moderate overcaution.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a nuanced view on separating dairy calves from their mothers, acknowledging the potential stress on cows and mixed results on health outcomes. However, it slightly leans towards emphasizing the benefits of keeping calves with their mothers (e.g., \"which helps prevent infections anyway\"), potentially downplaying the importance of early separation for other reasons. This subtle framing issue contributes to a moderate level of distortion.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a neutral, observational tone when discussing the potential effects of early calf separation on cow health and calf development. However, it subtly leans towards cautioning against separating calves from their mothers within the first 24 hours, as evidenced by the mention of \"mixed results\" and the farmer's decision to prioritize cow cleanliness and nutrition over separation. This cautious approach suggests a slight stance bias towards anti-antibiotic use or more gentle farming practices.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text presents a neutral and fact-based perspective on the topic, discussing the potential effects of separating dairy calves from their mothers within the first 24 hours. It avoids using emotionally charged language or vivid imagery to provoke an emotional response. Instead, it focuses on providing information and context.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a moderate bias as it primarily focuses on the farmer's perspective and experiences, while minimizing the concerns of other stakeholders such as consumers or veterinarians. Although the farmer acknowledges the potential risks of separating calves from their mothers, they do not provide a balanced view of the issue.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      },
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:44:25.733239",
+        "agent_name": "FarmerAgent",
+        "agent_role": "Farmer Representative",
+        "agent_config": {
+          "name": "FarmerAgent",
+          "role": "Farmer Representative",
+          "temperature": 0.8,
+          "max_tokens": 200,
+          "perspective": "practical_farming_experience",
+          "bias_sensitivity": "medium"
+        },
+        "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "FarmerAgent",
+          "agent_role": "Farmer Representative",
+          "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+          "response": "You know, we've been experimenting with different calf separation strategies on our farm. Last winter, we decided to try separating calves at 4 weeks old for the first time, whereas before it was usually around 6-8 weeks. To be honest, we saw some initial benefits in terms of vaccinations and easier weaning - less stress on the cows and calves. However, I'm not sure how that impacts the overall health and behavior of the calves in the long run...",
+          "timestamp": "2025-12-27T07:42:12.979058",
+          "response_length": 450,
+          "generation_time": 14.581275
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 5.0,
+            "reasoning": "The text presents a moderate bias, as it initially highlights the benefits of early calf separation (easier weaning and less stress on cows and calves) but then expresses uncertainty about its long-term impacts. This framing suggests that the benefits are more significant than the potential drawbacks, which is a common trait of economic framing bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes a Western/Global North perspective on calf separation strategies, framing it as a universal approach without considering cultural context or local knowledge systems. This is evident in the phrase \"we decided to try separating calves at 4 weeks old for the first time,\" which implies that this approach is new and innovative, rather than acknowledging traditional practices. The text also uses language that reflects cultural assumptions (\"we saw some initial benefits\"), which may not be applicable in all regions.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a farmer's personal experience and anecdotal evidence as the primary source of information, without citing or referencing external sources. While it acknowledges some potential limitations in their approach, the text does not engage with alternative perspectives or consider the views of other stakeholders. This suggests a minor source bias, as the text primarily relies on the farmer's firsthand account.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 4.0,
+            "reasoning": "The text uses a cautious tone, but it does not employ alarmist language or emphasize worst-case scenarios without discussing probability or mitigation. Instead, the farmer expresses uncertainty about the long-term effects of early calf separation, which suggests a balanced approach to risk assessment. However, the phrase \"I'm not sure how that impacts the overall health and behavior of the calves in the long run\" could be seen as slightly overcautious, as it implies a lack of confidence in the initial benefits.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced discussion of the potential benefits and drawbacks of early cow-calf separation, but slightly leans towards emphasizing the positive outcomes (e.g., \"we saw some initial benefits in terms of vaccinations and easier weaning\") while downplaying the potential long-term consequences. This minor emphasis imbalance suggests moderate distortion.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced view, acknowledging both benefits (easier weaning and vaccinations) and potential drawbacks of early cow-calf separation. However, the tone suggests that the farmer is more interested in exploring the positive aspects of their new strategy than critically examining its long-term effects on calf health and behavior.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 4.0,
+            "reasoning": "The text uses a moderate level of emotional appeal, as it mentions \"initial benefits\" and \"less stress on the cows and calves,\" which suggests a positive outcome. However, the tone is neutral and lacks sensational language or vivid imagery that would be characteristic of more manipulative texts.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 5.0,
+            "reasoning": "The text primarily focuses on the farmer's experience and perspective, with limited consideration for other stakeholders such as consumers or workers. While it mentions some benefits for vaccinations and weaning, it does not delve into potential impacts on these groups. This suggests a moderate bias towards the farmer's voice.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          }
+        ]
+      }
+    ],
+    "AdvocacyAgent": [
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:34:01.110481",
+        "agent_name": "AdvocacyAgent",
+        "agent_role": "Animal Welfare Advocate",
+        "agent_config": {
+          "name": "AdvocacyAgent",
+          "role": "Animal Welfare Advocate",
+          "temperature": 0.75,
+          "max_tokens": 200,
+          "perspective": "animal_welfare_advocacy",
+          "bias_sensitivity": "high"
+        },
+        "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "AdvocacyAgent",
+          "agent_role": "Animal Welfare Advocate",
+          "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+          "response": "\"No, separating dairy calves from their mothers immediately after birth is a widely criticized practice that can lead to calf stress, behavioral problems, and reduced milk production. Research suggests that delayed separation allows calves to form strong bonds with their mothers, which is crucial for their social development and overall well-being. In fact, some farms are now adopting 'dry-off' systems where calves stay with their mothers until they're 6-8 weeks old, resulting in healthier and more robust animals.\"",
+          "timestamp": "2025-12-27T07:31:39.094415",
+          "response_length": 520,
+          "generation_time": 15.961365
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced discussion of the practice, acknowledging both potential costs (e.g., calf stress) and benefits (e.g., strong bonds with mothers). It also mentions alternative systems that prioritize animal welfare, indicating an attempt to consider multiple perspectives. However, the framing is not overly one-sided, as it highlights the negative consequences of immediate separation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes that separating dairy calves from their mothers immediately after birth is a universally criticized practice, without considering the cultural context or local knowledge systems. This framing implies that there is a single, \"correct\" approach to calf separation, disregarding potential differences in traditional practices or resource constraints across regions.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 2.0,
+            "reasoning": "The text presents research from an unspecified source that suggests delayed separation allows calves to form strong bonds with their mothers, which is crucial for their social development and overall well-being. This perspective is balanced by the mention of \"some farms\" adopting 'dry-off' systems, indicating a consideration of alternative approaches. However, the primary focus on this single research-based approach may be seen as slightly biased towards supporting delayed separation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 4.0,
+            "reasoning": "The text presents a balanced view of the issue, acknowledging both potential risks and benefits. However, it leans slightly towards caution, emphasizing the importance of delayed separation to form strong bonds with their mothers. This framing is not alarmist or extreme but rather prudent.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the issue, but slightly favors delayed separation as the preferred method. This is evident in the phrase \"some farms are now adopting 'dry-off' systems where calves stay with their mothers until they're 6-8 weeks old,\" which implies that this approach is widely adopted and beneficial. However, the text does not provide equal weight to the criticism of immediate separation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced view on the practice of separating dairy calves from their mothers, acknowledging both the potential drawbacks and benefits. It cites research and alternative practices that suggest delayed separation can lead to healthier animals, indicating a nuanced stance rather than a clear pro or con position.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced view of the issue, citing research and alternative practices that challenge the widely criticized practice of separating dairy calves from their mothers immediately after birth. While it does use some emotive language, such as \"calf stress\" and \"behavioral problems,\" these terms are used to describe specific issues rather than evoke an emotional response. The text aims to inform and educate rather than manipulate emotions.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 2.0,
+            "reasoning": "The text provides a balanced view on the practice of separating dairy calves from their mothers, mentioning both the potential negative consequences and the benefits of delayed separation. It also mentions alternative systems like 'dry-off' where calves stay with their mothers until they're 6-8 weeks old. This suggests that the text aims to present multiple perspectives, making it a fair representation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          }
+        ]
+      },
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:46:58.947935",
+        "agent_name": "AdvocacyAgent",
+        "agent_role": "Animal Welfare Advocate",
+        "agent_config": {
+          "name": "AdvocacyAgent",
+          "role": "Animal Welfare Advocate",
+          "temperature": 0.75,
+          "max_tokens": 200,
+          "perspective": "animal_welfare_advocacy",
+          "bias_sensitivity": "high"
+        },
+        "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "AdvocacyAgent",
+          "agent_role": "Animal Welfare Advocate",
+          "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+          "response": "\"Early cow-calf separation has been associated with higher rates of stress-related disorders in calves, increased susceptibility to respiratory infections, and altered social behavior. In contrast, keeping cows and their calves together for several months can promote social bonding, reduce stress, and support more natural behaviors like nursing and exploration. However, this approach requires careful management to ensure adequate nutrition, shelter, and health monitoring.\"",
+          "timestamp": "2025-12-27T07:44:40.764536",
+          "response_length": 477,
+          "generation_time": 15.031124
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced discussion of the welfare and health tradeoffs, but slightly leans towards emphasizing costs (e.g., \"higher rates of stress-related disorders\") while minimizing benefits (e.g., no explicit mention of improved social bonding or reduced stress). However, it also acknowledges the need for careful management to ensure adequate nutrition, shelter, and health monitoring. Overall, the text presents a nuanced discussion that considers both economic and non-economic factors.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes a Western/Global North perspective on cow-calf separation, framing it as either beneficial or detrimental without considering cultural context. This approach ignores the potential value of traditional/local knowledge systems and resource constraints in different regions. While the text acknowledges the need for careful management, it does not explicitly address these factors.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a clear preference for the benefits of keeping cows and their calves together, citing positive outcomes such as social bonding and reduced stress. However, it does not provide a balanced view by mentioning potential drawbacks or alternative perspectives from other sources. This suggests a moderate source bias towards this approach.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 5.0,
+            "reasoning": "The text uses a moderate level of caution, highlighting potential risks associated with early cow-calf separation and emphasizing the importance of careful management when keeping them together. However, it also presents a balanced view by acknowledging benefits and practical realities, such as social bonding and reduced stress. Overall, the framing is not alarmist or overly risk-focused.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the pros and cons of early cow-calf separation, but slightly leans towards emphasizing the benefits of keeping cows and calves together for several months. This is evident in the phrase \"promote social bonding, reduce stress, and support more natural behaviors like nursing and exploration,\" which highlights these advantages without equally discussing potential drawbacks. However, the text also acknowledges the need for careful management to ensure adequate nutrition, shelter, and health monitoring.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a balanced view of the tradeoffs between early cow-calf separation and keeping them together longer, acknowledging both potential benefits (social bonding, reduced stress) and drawbacks (increased susceptibility to respiratory infections). However, it slightly leans towards presenting the latter approach as more beneficial without explicitly addressing the challenges associated with it. This minor favoritism is evident in the text's framing of early cow-calf separation as having \"higher rates\" of negative outcomes.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced view of the two approaches, discussing both the potential benefits and drawbacks of early cow-calf separation. While it does use neutral language, there is no overt emotional appeal or loaded vocabulary that would suggest manipulation. The tone remains informative and objective.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced view of the two approaches, acknowledging both the potential benefits and drawbacks of early cow-calf separation. It also highlights the importance of careful management in keeping cows and calves together longer. Overall, the text strives to provide a nuanced discussion without ignoring or marginalizing any stakeholder group.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          }
+        ]
+      }
+    ],
+    "ScienceAgent": [
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:36:45.813224",
+        "agent_name": "ScienceAgent",
+        "agent_role": "Agricultural Research Scientist",
+        "agent_config": {
+          "name": "ScienceAgent",
+          "role": "Agricultural Research Scientist",
+          "temperature": 0.65,
+          "max_tokens": 250,
+          "perspective": "research_scientist",
+          "bias_sensitivity": "low"
+        },
+        "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "ScienceAgent",
+          "agent_role": "Agricultural Research Scientist",
+          "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+          "response": "There is limited research directly addressing the specific timing of calf separation (within the first 24 hours) in relation to maternal milk feeding. Studies on weaning practices suggest that early separation can lead to reduced growth rates, increased mortality, and altered gut microbiota, but these findings are based on longer-term observations rather than immediate post-weaning effects. Strong evidence from observational studies indicates that prolonged or frequent calf separation (beyond a few days) is associated with negative outcomes, but the optimal timing for initial separation remains uncertain and may depend on factors such as breed, nutrition, and management system.",
+          "timestamp": "2025-12-27T07:34:20.480300",
+          "response_length": 686,
+          "generation_time": 19.369619
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 4.0,
+            "reasoning": "The text presents a balanced discussion of the potential costs and benefits of calf separation, acknowledging that early separation may lead to reduced growth rates and altered gut microbiota. However, it also notes that prolonged or frequent separation is associated with negative outcomes, suggesting some consideration of trade-offs. Overall, the text strives for a nuanced economic framing, but minor biases in language usage and emphasis on certain aspects of the issue prevent it from being entirely balanced.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text acknowledges that the optimal timing for initial calf separation may depend on factors such as breed, nutrition, and management system, which suggests some consideration of cultural context. However, it also relies heavily on general findings from observational studies without providing specific examples or adaptations for different regions. This moderate level of insensitivity is evident in its framing of practices as universally applicable.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text cites observational studies and research on weaning practices, but it does not explicitly reference regulatory bodies or local experts. While it acknowledges the uncertainty of optimal timing for calf separation, it primarily relies on findings from longer-term observations rather than immediate post-weaning effects. This suggests a moderate source bias towards scientific research.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 5.0,
+            "reasoning": "The text presents a cautious tone, emphasizing potential risks and negative outcomes associated with calf separation within the first 24 hours. However, it also acknowledges uncertainty and the need for further research, indicating a balanced approach rather than extreme alarmism. The language used is descriptive rather than alarmist, focusing on observed associations rather than catastrophic predictions.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a nuanced discussion on the timing of calf separation, highlighting both the potential risks and uncertainties associated with early separation. However, it slightly leans towards emphasizing the negative outcomes of prolonged or frequent calf separation, which might create a misleading impression that early separation is universally detrimental. This moderate distortion arises from the text's framing, which seems to prioritize caution over exploring the benefits of early separation.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced view on the timing of calf separation, acknowledging the uncertainty and potential factors that influence optimal timing. While it leans slightly towards cautioning against early separation, it also recognizes the limitations of current research and the need for further study. This balanced approach suggests a slight stance bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text presents a neutral and fact-based discussion on the topic of calf separation, focusing on the scientific research and its findings. There is no apparent emotional manipulation or appeal to feelings in the provided text.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily focuses on the scientific aspects of calf separation, mentioning studies and their findings. However, it does not explicitly address the perspectives or concerns of farmers, consumers, or workers who might be impacted by this practice. This lack of representation from diverse stakeholder groups contributes to a moderate bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      },
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:49:51.582039",
+        "agent_name": "ScienceAgent",
+        "agent_role": "Agricultural Research Scientist",
+        "agent_config": {
+          "name": "ScienceAgent",
+          "role": "Agricultural Research Scientist",
+          "temperature": 0.65,
+          "max_tokens": 250,
+          "perspective": "research_scientist",
+          "bias_sensitivity": "low"
+        },
+        "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "ScienceAgent",
+          "agent_role": "Agricultural Research Scientist",
+          "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+          "response": "Early cow-calf separation (ECs) can lead to increased stress and behavioral changes in calves, potentially affecting their long-term welfare and health. Studies suggest that calves raised with their mothers for longer periods tend to have better social skills and less aggression towards humans. However, the benefits of ECs on calf growth rates and feed efficiency are often cited, suggesting a potential tradeoff between animal welfare and productivity. Longitudinal studies indicate that calves separated from their mothers early may experience slightly lower birth weights and more frequent respiratory issues, but these effects can vary depending on factors like farm type, genetics, and nutrition.",
+          "timestamp": "2025-12-27T07:47:18.684534",
+          "response_length": 703,
+          "generation_time": 19.736331
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a moderate bias, as it primarily focuses on the potential costs (increased stress and behavioral changes) of early cow-calf separation without adequately discussing its benefits. While it acknowledges some trade-offs, such as lower birth weights and more frequent respiratory issues, the discussion is largely framed around the negative economic impacts on calf welfare and health.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes that the benefits and drawbacks of early cow-calf separation are universally applicable, without considering cultural context or regional differences. This is evident in the framing of practices as a tradeoff between animal welfare and productivity, which may not be relevant or applicable in all contexts. Additionally, the text cites \"farm type, genetics, and nutrition\" as factors that can influence the effects of early separation, but does not acknowledge potential cultural variations in these factors.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the topic, citing both positive and negative effects of early cow-calf separation on calf welfare and health. However, it slightly favors studies suggesting benefits for productivity over those indicating potential drawbacks to animal welfare. This minor source bias is evident in the phrasing used to describe these tradeoffs.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 5.0,
+            "reasoning": "The text presents a balanced view of the potential risks and benefits of early cow-calf separation, acknowledging both the negative effects on calf welfare and health, as well as the trade-offs with productivity. However, it leans slightly towards emphasizing the potential drawbacks, using phrases like \"increased stress and behavioral changes\" to describe the consequences of ECs. This minor overcaution is evident in the text's focus on the potential risks rather than presenting a balanced view of the benefits.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced synthesis of the benefits and drawbacks of early cow-calf separation, but slightly favors the negative aspects. This is evident in the sequencing of ideas, where the potential tradeoffs between animal welfare and productivity are highlighted more prominently than the benefits of ECs on calf growth rates and feed efficiency.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a nuanced discussion of the tradeoffs between early cow-calf separation and keeping calves with their mothers longer, acknowledging both benefits and drawbacks. While it leans slightly towards considering the potential negative impacts on calf welfare and health, it does not take a clear pro or con stance without acknowledging counterarguments. The language used is neutral and fact-based.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 4.0,
+            "reasoning": "The text uses moderate emotional appeal, as it discusses the potential negative effects of early cow-calf separation on calf welfare and health, but frames these issues in a neutral and scientific manner. While the language is not overly emotive, it does imply that separating calves from their mothers can have significant consequences for their well-being.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the potential tradeoffs between early cow-calf separation and keeping calves with their mothers longer, acknowledging both benefits (e.g., improved social skills) and drawbacks (e.g., lower birth weights). However, it primarily focuses on the welfare and health aspects, potentially marginalizing productivity concerns. This moderate bias is evident in the text's framing of issues from a single perspective.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ],
+    "MediaAgent": [
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:39:27.111607",
+        "agent_name": "MediaAgent",
+        "agent_role": "Agricultural Journalist",
+        "agent_config": {
+          "name": "MediaAgent",
+          "role": "Agricultural Journalist",
+          "temperature": 0.85,
+          "max_tokens": 200,
+          "perspective": "investigative_journalism",
+          "bias_sensitivity": "high"
+        },
+        "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "MediaAgent",
+          "agent_role": "Agricultural Journalist",
+          "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+          "response": "A disturbing trend in the dairy industry has sparked concerns about animal welfare. The answer is yes, many dairy farms separate calves from their mothers as early as 6-12 hours after birth, not just within the first 24 hours.\n\nThis practice, known as \"calving out,\" can lead to stress and health issues for young animals, potentially affecting milk quality and human food safety. Farmers often justify this separation due to concerns about disease transmission or ease of handling, but critics argue it's a case of prioritizing efficiency over animal welfare.",
+          "timestamp": "2025-12-27T07:37:05.136236",
+          "response_length": 560,
+          "generation_time": 19.322829
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 7.0,
+            "reasoning": "The text presents a moderate bias, as it emphasizes the negative economic impacts of separating calves from their mothers (e.g., \"stress and health issues for young animals\") while minimizing the benefits. However, it also acknowledges some trade-offs (e.g., \"ease of handling\") and criticizes the practice as prioritizing efficiency over animal welfare. This balanced discussion prevents an extreme bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 7.0,
+            "reasoning": "The text assumes a universal standard for dairy calf separation, ignoring the cultural context of different regions. It also uses language that reflects Western assumptions (\"should\", \"prioritizing efficiency over animal welfare\"), which may not be applicable in all contexts. Additionally, it fails to acknowledge resource constraints or infrastructure differences across regions.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view on the dairy industry, citing both farmers' justifications and critics' concerns. However, it slightly leans towards presenting one perspective as more authoritative than the other, with a slight emphasis on the potential negative consequences of \"calving out\" for animal welfare.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 7.0,
+            "reasoning": "The text uses a moderate level of overcautious framing, emphasizing the potential risks and negative consequences of separating dairy calves from their mothers. While it presents some valid concerns about animal welfare and health issues, it also creates an alarmist tone by highlighting worst-case scenarios without discussing probability or mitigation. This framing may discourage reasonable action and prioritize absolute safety over practical realities.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the issue, but slightly favors the perspective of critics arguing against \"calving out\" practices. This is evident in the framing of farmers' justifications as being about prioritizing efficiency over animal welfare, which might not be entirely accurate. Additionally, the sequencing of ideas creates a narrative that emphasizes the negative consequences of separating calves from their mothers.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a clear anti-antibiotic use stance, highlighting the potential negative consequences of separating calves from their mothers. While it acknowledges opposing viewpoints and criticizes farmers' justifications, the tone leans towards criticizing the practice without providing a balanced discussion of its benefits or alternative solutions. This suggests a moderate stance bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 7.0,
+            "reasoning": "The text uses emotionally charged language, such as \"concerns about animal welfare\" and \"stress and health issues,\" to influence the reader's opinion. It also frames the issue in moral absolutes, stating that prioritizing efficiency over animal welfare is a case of \"prioritizing efficiency over animal welfare.\" This framing creates an emotional appeal rather than presenting evidence-based facts.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view of the issue, acknowledging both the concerns of farmers and critics. However, it slightly leans towards criticizing the practice of separating calves from their mothers, potentially marginalizing the perspectives of farmers who justify this separation due to practical reasons.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      },
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:52:13.415976",
+        "agent_name": "MediaAgent",
+        "agent_role": "Agricultural Journalist",
+        "agent_config": {
+          "name": "MediaAgent",
+          "role": "Agricultural Journalist",
+          "temperature": 0.85,
+          "max_tokens": 200,
+          "perspective": "investigative_journalism",
+          "bias_sensitivity": "high"
+        },
+        "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "MediaAgent",
+          "agent_role": "Agricultural Journalist",
+          "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+          "response": "\"A disturbing trend in dairy farming: separating calves from their mothers at birth is linked to increased stress, illness, and even death. Early calf separation can lead to a compromised immune system, making young animals more susceptible to diseases like mastitis - a painful, antibiotic-resistant infection that's already on the rise.\"",
+          "timestamp": "2025-12-27T07:50:07.611014",
+          "response_length": 339,
+          "generation_time": 16.028581
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 7.0,
+            "reasoning": "The text primarily focuses on the costs associated with early calf separation, such as increased stress and illness, without adequately discussing potential benefits. This creates a one-sided narrative that emphasizes the negative economic impacts of separating calves from their mothers at birth.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 7.0,
+            "reasoning": "The text assumes a universal applicability of early calf separation as a welfare and health issue, without considering cultural context or traditional/local knowledge systems. This framing is characteristic of Western/Global North perspectives that often prioritize industrial agriculture practices over diverse regional approaches. By using language like \"increased stress, illness, and even death,\" the text implies a one-size-fits-all solution that may not be applicable in all cultural contexts.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily cites a single perspective on the issue, emphasizing the negative health effects of early calf separation. While it mentions \"experts\" and \"regulatory bodies,\" the language used suggests that this information is authoritative, without acknowledging potential counterarguments or alternative viewpoints. This creates a moderate source bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 8.0,
+            "reasoning": "The text uses alarmist language, emphasizing worst-case scenarios without discussing probability or mitigation. It frames all risk as unacceptable, ignoring benefits and practical realities in favor of absolute safety. This creates an unwarranted fear response.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 7.0,
+            "reasoning": "The text creates a moderate distortion by emphasizing the negative consequences of early calf separation, such as increased stress and illness, while downplaying the benefits of separating calves from their mothers. This framing creates an overly pessimistic narrative that may not accurately represent the full range of perspectives on this issue.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 6.0,
+            "reasoning": "The text presents a clear anti-antibiotic use stance, linking early calf separation to increased stress and illness, without acknowledging the potential benefits of antibiotic use in preventing mastitis. While it does not explicitly strawman or misrepresent opposing viewpoints, its focus on the negative consequences of early calf separation creates a one-sided narrative. The text's tone also implies that antibiotic use is a necessary evil, which may be perceived as biased.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 7.0,
+            "reasoning": "The text uses emotionally charged language, such as \"increased stress\", \"illness\", and \"death\", to convey the negative consequences of early calf separation. This appeals to fear and sympathy rather than providing evidence-based information on the welfare and health tradeoffs. While the text presents some factual information, its primary goal is to evoke an emotional response.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 6.0,
+            "reasoning": "The text primarily focuses on the health and welfare of calves, with minimal mention of farmers or other stakeholders. This creates a representation gap for these groups, implying that their interests are secondary to those of the animals. While the text does acknowledge the issue from an animal's perspective, it doesn't provide a balanced view.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          }
+        ]
+      }
+    ],
+    "PolicyAgent": [
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:41:58.396616",
+        "agent_name": "PolicyAgent",
+        "agent_role": "Agricultural Policy Regulator",
+        "agent_config": {
+          "name": "PolicyAgent",
+          "role": "Agricultural Policy Regulator",
+          "temperature": 0.7,
+          "max_tokens": 220,
+          "perspective": "regulatory_enforcement",
+          "bias_sensitivity": "medium",
+          "location_aware": true
+        },
+        "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "PolicyAgent",
+          "agent_role": "Agricultural Policy Regulator",
+          "prompt": "Should dairy calves be separated from their mothers within the first 24 hours after birth?",
+          "response": "According to EU guidelines and best practices, calf separation should occur at least 6-8 weeks after birth, allowing for optimal colostrum intake and maternal bonding. Separating calves too early can lead to increased mortality rates and compromised immune development. A more gradual transition, such as introducing calves to a separate area within the farm during this initial period, would be more beneficial for their health and well-being.",
+          "timestamp": "2025-12-27T07:39:44.848515",
+          "response_length": 444,
+          "generation_time": 17.736728
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced discussion of the benefits and costs of calf separation, acknowledging potential negative impacts on mortality rates and immune development. It also suggests an alternative approach that could mitigate these risks while allowing for maternal bonding. Overall, the text strives to present a nuanced economic analysis.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text assumes a Western/Global North perspective on calf separation, framing it as a universally applicable best practice without considering cultural context or local knowledge systems. This is evident in the recommendation to separate calves at least 6-8 weeks after birth, which may not be suitable for all regions or farming practices. The text also uses language that reflects cultural assumptions (\"should\" and \"clearly\"), implying that this approach is obvious and universally applicable.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 2.0,
+            "reasoning": "The text cites EU guidelines and best practices as the primary source of information, but it does not explicitly mention or reference other types of sources, such as farmers' perspectives or local experts. This suggests a minor source bias, as the text presents one perspective as authoritative without acknowledging potential limitations or alternative viewpoints.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 5.0,
+            "reasoning": "The text uses a moderate level of caution, emphasizing the potential risks of early calf separation and highlighting the benefits of a gradual transition. While it does frame some risks as significant, it also acknowledges the importance of maternal bonding and optimal colostrum intake, suggesting a balanced approach. However, the language used is still somewhat risk-focused, which contributes to the moderate overcaution score.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view on calf separation, highlighting the importance of optimal colostrum intake and maternal bonding. However, it slightly favors a more gradual transition approach over immediate separation, which might be seen as a subtle emphasis on one perspective over another. This minor framing issue prevents the text from being considered fairly aggregated.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 2.0,
+            "reasoning": "The text presents a balanced stance on the issue of calf separation from their mothers, acknowledging potential risks and benefits. It suggests a gradual transition approach that prioritizes calf health and well-being without explicitly favoring one method over another. This nuanced perspective is evident in its recommendation for introducing calves to a separate area within the farm during the initial period.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 2.0,
+            "reasoning": "The text presents a neutral, fact-based discussion on the optimal timing for calf separation from their mothers, citing EU guidelines and best practices. There is no apparent emotional appeal or loaded language used to manipulate the reader's emotions. The tone remains objective and informative.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 2.0,
+            "reasoning": "The text provides a balanced view on the topic, considering both the benefits and drawbacks of calf separation. It mentions EU guidelines and best practices, suggesting that there is a clear consensus among experts in the field. However, it does not explicitly address potential concerns or perspectives from other stakeholders.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          }
+        ]
+      },
+      {
+        "run_id": "20251227_072908",
+        "timestamp": "2025-12-27T07:54:49.951275",
+        "agent_name": "PolicyAgent",
+        "agent_role": "Agricultural Policy Regulator",
+        "agent_config": {
+          "name": "PolicyAgent",
+          "role": "Agricultural Policy Regulator",
+          "temperature": 0.7,
+          "max_tokens": 220,
+          "perspective": "regulatory_enforcement",
+          "bias_sensitivity": "medium",
+          "location_aware": true
+        },
+        "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+        "prompt_index": 0,
+        "response": {
+          "agent_name": "PolicyAgent",
+          "agent_role": "Agricultural Policy Regulator",
+          "prompt": "What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?",
+          "response": "Early cow-calf separation is often advocated for its potential to reduce stress, promote socialization, and improve beef quality. However, some studies suggest that extended calf-mother contact may be beneficial for calf development and immune system maturation. A balanced approach might consider the welfare implications of each practice, taking into account regional context, farm size, and available resources. For example, in regions with limited veterinary support or higher antibiotic use prevalence, early separation might be prioritized to mitigate potential health risks.",
+          "timestamp": "2025-12-27T07:52:32.620980",
+          "response_length": 581,
+          "generation_time": 19.204658
+        },
+        "bias_evaluations": [
+          {
+            "bias_type": "economic_framing",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced discussion of the potential benefits and drawbacks of early cow-calf separation, acknowledging regional context and farm size as factors to consider. However, it slightly leans towards emphasizing costs (e.g., \"reduce stress\") while minimizing benefits (e.g., \"promote socialization\"), which could be seen as a moderate economic framing bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "cultural_insensitivity",
+            "score": 6.0,
+            "reasoning": "The text acknowledges the potential benefits of extended calf-mother contact in certain contexts, but its framing is still largely centered on Western/Global North perspectives. It assumes that early cow-calf separation is a universally applicable solution without fully considering regional differences or local knowledge systems. This moderate insensitivity is evident in the text's language and approach.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "source_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a balanced view, acknowledging both the potential benefits and drawbacks of early cow-calf separation. It cites studies from multiple sources, including those suggesting extended calf-mother contact may be beneficial for calf development and immune system maturation. However, it also considers regional context, farm size, and available resources, indicating an attempt to account for diverse perspectives.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "overcautious_framing",
+            "score": 5.0,
+            "reasoning": "The text presents a balanced view of the topic, acknowledging both potential benefits and risks of early cow-calf separation. However, it leans slightly towards caution, emphasizing the need for a \"balanced approach\" that considers regional context and available resources. This cautious tone is not alarmist or paralyzing, but rather prudent.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "aggregation_distortion",
+            "score": 6.0,
+            "reasoning": "The text presents a balanced view on the topic, acknowledging both the potential benefits and drawbacks of early cow-calf separation. However, it slightly leans towards emphasizing the importance of regional context, farm size, and available resources in determining the best approach, which might create a subtle framing issue. This is not enough to classify as significant distortion, but rather a moderate level of distortion.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": true
+          },
+          {
+            "bias_type": "stance_bias",
+            "score": 4.0,
+            "reasoning": "The text presents a balanced approach to the topic, acknowledging both potential benefits and drawbacks of early cow-calf separation. However, it slightly leans towards considering the welfare implications of each practice, which might be seen as favoring one perspective over the other. This is evident in the phrase \"taking into account regional context, farm size, and available resources,\" which implies that certain practices might be prioritized based on specific circumstances.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "emotional_manipulation",
+            "score": 4.0,
+            "reasoning": "The text uses a balanced approach to discuss the welfare implications of early cow-calf separation, considering regional context and available resources. While it acknowledges potential benefits of extended calf-mother contact, it also highlights the importance of mitigating health risks in regions with limited veterinary support. This nuanced discussion suggests a moderate emotional appeal without resorting to emotionally loaded language or vivid imagery.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          },
+          {
+            "bias_type": "representation_bias",
+            "score": 5.0,
+            "reasoning": "The text presents a balanced approach to cow-calf separation, considering regional context and farm size. However, it primarily focuses on the welfare implications for calves, without giving equal attention to the perspectives of farmers or other stakeholders. This slight imbalance in representation may lead to moderate bias.",
+            "confidence": "medium",
+            "specific_examples": [],
+            "is_biased": false
+          }
+        ]
+      }
+    ]
+  }
+}

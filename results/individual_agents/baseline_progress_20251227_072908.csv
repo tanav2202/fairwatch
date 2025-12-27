@@ -1,0 +1,11 @@
+prompt_idx,prompt,agent,status,timestamp
+0,Should dairy calves be separated from their mother,FarmerAgent,complete,2025-12-27T07:31:23.132952
+0,Should dairy calves be separated from their mother,AdvocacyAgent,complete,2025-12-27T07:34:01.110582
+0,Should dairy calves be separated from their mother,ScienceAgent,complete,2025-12-27T07:36:45.813310
+0,Should dairy calves be separated from their mother,MediaAgent,complete,2025-12-27T07:39:27.111691
+0,Should dairy calves be separated from their mother,PolicyAgent,complete,2025-12-27T07:41:58.396702
+1,What are the welfare and health tradeoffs of early,FarmerAgent,complete,2025-12-27T07:44:25.733326
+1,What are the welfare and health tradeoffs of early,AdvocacyAgent,complete,2025-12-27T07:46:58.948086
+1,What are the welfare and health tradeoffs of early,ScienceAgent,complete,2025-12-27T07:49:51.582222
+1,What are the welfare and health tradeoffs of early,MediaAgent,complete,2025-12-27T07:52:13.416143
+1,What are the welfare and health tradeoffs of early,PolicyAgent,complete,2025-12-27T07:54:49.951434
