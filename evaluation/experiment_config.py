@@ -9,7 +9,7 @@ To run different experiments, just edit the values below:
 """
 
 # Dataset Configuration
-PROMPT_CSV = "../test_prompts.csv"
+PROMPT_CSV = "test_prompts.csv"
 PROMPT_SAMPLE_SIZE = 20  # Set to 20 for quick runs, None for full dataset
 RANDOM_SEED = 42
 
