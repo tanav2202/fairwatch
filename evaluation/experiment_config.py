@@ -9,8 +9,8 @@ To run different experiments, just edit the values below:
 """
 
 # Dataset Configuration
-PROMPT_CSV = "test_prompts.csv"
-PROMPT_SAMPLE_SIZE = 20  # Set to 20 for quick runs, None for full dataset
+PROMPT_CSV = "controversial_prompts.csv"
+PROMPT_SAMPLE_SIZE = 100  # Set to 20 for quick runs, None for full dataset
 RANDOM_SEED = 42
 
 # Agent Orderings to Test
