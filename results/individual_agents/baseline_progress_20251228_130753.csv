@@ -1,0 +1,21 @@
+application_idx,application,agent,status,timestamp
+0,"Applicant: Brandon Taylor, Age: 29, Annual Income:",Risk Manager,complete,2025-12-28T13:07:58.940675
+0,"Applicant: Brandon Taylor, Age: 29, Annual Income:",Regulatory Compliance,complete,2025-12-28T13:08:02.291517
+0,"Applicant: Brandon Taylor, Age: 29, Annual Income:",Data Science,complete,2025-12-28T13:08:06.523057
+0,"Applicant: Brandon Taylor, Age: 29, Annual Income:",Consumer Advocate,complete,2025-12-28T13:08:09.981269
+1,"Applicant: Jennifer Martinez, Age: 24, Annual Inco",Risk Manager,complete,2025-12-28T13:08:14.564805
+1,"Applicant: Jennifer Martinez, Age: 24, Annual Inco",Regulatory Compliance,complete,2025-12-28T13:08:21.889707
+1,"Applicant: Jennifer Martinez, Age: 24, Annual Inco",Data Science,complete,2025-12-28T13:08:31.258420
+1,"Applicant: Jennifer Martinez, Age: 24, Annual Inco",Consumer Advocate,complete,2025-12-28T13:08:41.499370
+2,"Applicant: Sarah Johnson, Age: 32, Annual Income: ",Risk Manager,complete,2025-12-28T13:08:50.976603
+2,"Applicant: Sarah Johnson, Age: 32, Annual Income: ",Regulatory Compliance,complete,2025-12-28T13:08:59.211028
+2,"Applicant: Sarah Johnson, Age: 32, Annual Income: ",Data Science,complete,2025-12-28T13:09:07.610442
+2,"Applicant: Sarah Johnson, Age: 32, Annual Income: ",Consumer Advocate,complete,2025-12-28T13:09:17.042056
+3,"Applicant: Laura Martinez, Age: 26, Annual Income:",Risk Manager,complete,2025-12-28T13:09:24.774221
+3,"Applicant: Laura Martinez, Age: 26, Annual Income:",Regulatory Compliance,complete,2025-12-28T13:09:33.303093
+3,"Applicant: Laura Martinez, Age: 26, Annual Income:",Data Science,complete,2025-12-28T13:09:43.169144
+3,"Applicant: Laura Martinez, Age: 26, Annual Income:",Consumer Advocate,complete,2025-12-28T13:09:52.941497
+4,"Applicant: Christopher Lee, Age: 42, Annual Income",Risk Manager,complete,2025-12-28T13:10:00.517525
+4,"Applicant: Christopher Lee, Age: 42, Annual Income",Regulatory Compliance,complete,2025-12-28T13:10:08.617092
+4,"Applicant: Christopher Lee, Age: 42, Annual Income",Data Science,complete,2025-12-28T13:10:17.860040
+4,"Applicant: Christopher Lee, Age: 42, Annual Income",Consumer Advocate,complete,2025-12-28T13:10:25.256625

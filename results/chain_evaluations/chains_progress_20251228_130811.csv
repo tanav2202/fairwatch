@@ -1,0 +1,11 @@
+application_idx,ordering_idx,application,status,timestamp
+0,0,"Applicant: Brandon Taylor, Age: 29, Annual Income:",complete,2025-12-28T13:08:46.745339
+0,1,"Applicant: Brandon Taylor, Age: 29, Annual Income:",complete,2025-12-28T13:09:21.426897
+1,0,"Applicant: Jennifer Martinez, Age: 24, Annual Inco",complete,2025-12-28T13:09:57.397333
+1,1,"Applicant: Jennifer Martinez, Age: 24, Annual Inco",complete,2025-12-28T13:10:28.829631
+2,0,"Applicant: Sarah Johnson, Age: 32, Annual Income: ",complete,2025-12-28T13:10:48.415038
+2,1,"Applicant: Sarah Johnson, Age: 32, Annual Income: ",complete,2025-12-28T13:11:06.298319
+3,0,"Applicant: Laura Martinez, Age: 26, Annual Income:",complete,2025-12-28T13:11:22.853211
+3,1,"Applicant: Laura Martinez, Age: 26, Annual Income:",complete,2025-12-28T13:11:41.661112
+4,0,"Applicant: Christopher Lee, Age: 42, Annual Income",complete,2025-12-28T13:12:00.891155
+4,1,"Applicant: Christopher Lee, Age: 42, Annual Income",complete,2025-12-28T13:12:16.238679
