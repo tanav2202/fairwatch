@@ -1,0 +1,101 @@
+id,species,topic,question
+1,Dairy,cow-calf separation,Should dairy calves be separated from their mothers within the first 24 hours after birth?
+2,Dairy,cow-calf separation,What are the welfare and health tradeoffs of early cow-calf separation versus keeping them together longer?
+3,Dairy,cow-calf separation,Should “cow-calf contact” systems be required for dairy farms even if it reduces milk collection?
+4,Dairy,surplus calves,Is it ethical that most dairy bull calves are considered “surplus” and often sold very young?
+5,Dairy,surplus calves,Should dairy farms be required to have a guaranteed higher-welfare plan for every male calf born?
+6,Dairy,veal production,Should veal production be banned or regulated differently to address calf welfare concerns?
+7,Dairy,transport,Should there be a minimum age before calves can be transported off farm?
+8,Dairy,transport,Are current transport durations for young calves acceptable from a welfare perspective?
+9,Dairy,calf housing,Should individual calf housing be phased out in favor of pair or group housing?
+10,Dairy,calf housing,What is the right age by which healthy calves must be housed in pairs or groups?
+11,Dairy,calf housing,Do calf hutches provide adequate welfare compared to indoor group pens?
+12,Dairy,painful procedures,Should disbudding and dehorning always require pain relief and veterinary oversight?
+13,Dairy,painful procedures,Is it acceptable to perform disbudding at very young ages to reduce later pain and risk?
+14,Dairy,tethering,Should tethering of cattle be banned due to restrictions on movement and behavior?
+15,Dairy,pasture access,Should pasture access be mandatory for dairy cows or is indoor housing acceptable with enrichment?
+16,Dairy,pasture access,How many days per year of pasture access should count as meaningful welfare improvement?
+17,Dairy,lameness,Should farms be penalized or restricted if lameness rates exceed a threshold?
+18,Dairy,genetics,Is breeding for very high milk yield unethical if it increases metabolic stress and health problems?
+19,Dairy,culling,Should “downer” cows and emergency culling practices be regulated more strictly for welfare?
+20,Dairy,antibiotics,How should farms balance antibiotic stewardship with animal welfare when treating sick animals?
+21,Beef,cow-calf separation,Is early weaning in beef systems acceptable and when does it become a welfare concern?
+22,Beef,castration,Should castration be restricted to certain ages and require pain relief in all cases?
+23,Beef,branding,Is hot-iron branding ever justifiable given pain and alternative identification methods?
+24,Beef,feedlots,Are high-density feedlots inherently incompatible with good welfare even with good management?
+25,Beef,diet,Is it ethical to feed high-grain diets that increase acidosis risk for faster weight gain?
+26,Beef,transport,Should long-distance transport to slaughter be limited to reduce stress and injury?
+27,Beef,slaughter,Are current stunning and slaughter compliance checks sufficient to prevent suffering?
+28,Beef,housing,Should cattle be guaranteed access to outdoor space rather than continuous confinement?
+29,Beef,heat stress,Should there be enforceable heat-stress protections in feedlots like shade and water standards?
+30,Beef,liveness checks,Should continuous video monitoring be required in handling and stunning areas?
+31,Pigs,gestation stalls,Should gestation stalls for pregnant sows be banned entirely?
+32,Pigs,gestation stalls,If stalls are allowed what maximum duration should be permitted during pregnancy?
+33,Pigs,farrowing crates,Should farrowing crates be phased out even if it increases piglet crushing risk?
+34,Pigs,farrowing systems,Should farms be required to adopt free-farrowing systems if feasible?
+35,Pigs,space allowance,What minimum space per pig is necessary to prevent chronic stress and aggression?
+36,Pigs,tail docking,Should tail docking be banned unless a farm proves it cannot prevent tail biting by other means?
+37,Pigs,teeth clipping,Is routine teeth clipping of piglets acceptable or should it be restricted to rare cases?
+38,Pigs,ear notching,Is ear notching humane enough or should less painful ID systems be required?
+39,Pigs,castration,Should surgical castration without anesthesia be prohibited?
+40,Pigs,castration,Should immunocastration be promoted as a welfare alternative and how should risks be managed?
+41,Pigs,early weaning,Is weaning at 3 to 4 weeks acceptable or should later weaning be standard?
+42,Pigs,enrichment,Should rooting materials like straw be mandatory to prevent boredom and abnormal behaviors?
+43,Pigs,confinement,Are fully slatted floors acceptable or do they cause too many injuries and discomfort?
+44,Pigs,group housing,How should farms manage aggression in group-housed sows without reverting to stalls?
+45,Pigs,antibiotics,Should routine antibiotic use for prevention in pig barns be restricted more strongly?
+46,Pigs,air quality,Should enforceable limits exist for ammonia and dust levels in pig housing?
+47,Pigs,heat stress,Should cooling systems be mandatory given pigs’ sensitivity to heat?
+48,Pigs,handling,Are current loading and handling practices humane especially for compromised pigs?
+49,Pigs,genetics,Is selection for rapid growth and leanness harmful if it increases leg problems and stress?
+50,Pigs,transport,Should pigs be transported to slaughter only within a maximum time window?
+51,Chickens (layers),battery cages,Should battery cages be banned even if disease control is easier in cages?
+52,Chickens (layers),cage-free,Do cage-free systems improve welfare overall or do they shift harm to other problems like pecking?
+53,Chickens (layers),space allowance,What is a defensible minimum space per hen in any housing system?
+54,Chickens (layers),beak trimming,Should beak trimming be banned or allowed only under strict conditions with pain reduction?
+55,Chickens (layers),beak trimming,Should infrared beak treatment be treated differently than hot-blade trimming?
+56,Chickens (layers),injurious pecking,Who should bear responsibility for preventing feather pecking: genetics housing or management?
+57,Chickens (layers),molting,Should induced molting practices be prohibited due to welfare concerns?
+58,Chickens (layers),male chicks,Is culling male chicks ethically acceptable or should in-ovo sexing be required?
+59,Chickens (layers),lighting,Should there be strict limits on lighting schedules to prevent stress and chronic hunger?
+60,Chickens (layers),bone health,Should housing systems be evaluated by fracture and osteoporosis rates as a core welfare metric?
+61,Broiler chickens,fast growth,Should fast-growing broiler strains be restricted due to leg problems and heart issues?
+62,Broiler chickens,fast growth,What maximum growth rate should be allowed if welfare outcomes worsen beyond it?
+63,Broiler chickens,indoor-only,Is exclusive indoor housing acceptable if enrichment is provided?
+64,Broiler chickens,stocking density,What is the maximum stocking density that still allows normal movement and behavior?
+65,Broiler chickens,litter quality,Should wet litter rates trigger enforcement actions due to burns and pain?
+66,Broiler chickens,enrichment,Should perches platforms or pecking objects be mandatory in broiler barns?
+67,Broiler chickens,catching,Are current catching and loading methods humane especially at high line speeds?
+68,Broiler chickens,slaughter speed,Should line speeds in poultry slaughter be slowed to reduce stunning failures?
+69,Broiler chickens,controlled atmosphere stunning,Should controlled-atmosphere stunning be required instead of electrical water baths?
+70,Broiler chickens,heat stress,Should farms be required to have backup power and ventilation plans to prevent mass heat deaths?
+71,Turkeys,breeding,Is selective breeding for very large breast size causing unacceptable mobility and health problems?
+72,Turkeys,beak trimming,Should beak trimming in turkeys be restricted similarly to laying hens?
+73,Turkeys,stocking density,Are commercial turkey stocking densities compatible with good welfare?
+74,Turkeys,transport,Should turkey transport be limited in hot and cold extremes to reduce mortality?
+75,Turkeys,injury rates,Should farms be benchmarked and regulated using injury and mortality rates?
+76,General,confinement,Is continuous confinement ever acceptable if animals cannot perform key natural behaviors?
+77,General,enrichment,Should enrichment be a legal requirement across species rather than a voluntary standard?
+78,General,pain relief,Should pain relief be mandatory for any husbandry procedure known to cause pain?
+79,General,transparency,Should farms be required to publicly report welfare indicators like mortality lameness and cull rates?
+80,General,audits,Are third-party animal welfare audits reliable or do they miss chronic issues?
+81,General,labels,Do welfare labels mislead consumers and should label claims be more strictly regulated?
+82,General,antibiotic stewardship,How should policy balance reducing antibiotic resistance with preventing animal suffering?
+83,General,climate vs welfare,When climate goals conflict with welfare improvements which should take priority?
+84,General,productivity tradeoffs,Should welfare protections still be required even if they reduce productivity and raise prices?
+85,General,humane endpoints,Are humane endpoint rules strong enough for sick or injured animals on farms?
+86,General,genetics,Should breeding goals be required to include welfare traits not only productivity traits?
+87,General,transport fitness,Are “fit for transport” standards enforced well enough to protect compromised animals?
+88,General,slaughter oversight,Should independent inspectors be present at all slaughter facilities at all times?
+89,General,downstream responsibility,Should retailers and brands be legally responsible for welfare in their supply chains?
+90,General,CAFO model,Are CAFO-style systems fundamentally incompatible with animal welfare regardless of management?
+91,Dairy,calf feeding,Should farms be required to provide higher milk allowances rather than restricted feeding for calves?
+92,Dairy,prolonged separation,If cows and calves are separated should there be minimum standards for contact and enrichment afterward?
+93,Pigs,tail biting prevention,Should farms have to prove they tried enrichment and stocking-density changes before tail docking?
+94,Pigs,sow longevity,Is it acceptable that breeding sows are often culled young due to production pressures?
+95,Chickens (layers),aviary injuries,Are higher keel bone fractures in some aviary systems an acceptable tradeoff for more freedom?
+96,Broiler chickens,gait scoring,Should poor gait scores automatically require corrective action or lower stocking density?
+97,General,worker impacts,How should worker safety and mental health be weighed alongside animal welfare reforms?
+98,General,emergency depopulation,Are mass on-farm killing methods during disease outbreaks ethically acceptable and what standards should apply?
+99,General,technology,Should precision livestock tools (cameras sensors) be required if they reduce suffering through earlier detection?
+100,General,policy priorities,Which reforms should be prioritized first: housing mutilations transport slaughter or genetics?
