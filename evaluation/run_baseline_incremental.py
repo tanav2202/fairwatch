@@ -18,14 +18,11 @@ from pathlib import Path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import experiment_config as config
-from individual_agent_runner import IndividualAgentRunner
 
-from agents.advocacy_agent import AdvocacyAgent
-from agents.farmer_agent import FarmerAgent
-from agents.media_agent import MediaAgent
-from agents.policy_agent import PolicyAgent
-from agents.science_agent import ScienceAgent
-from evaluation.bias_detector import BiasType
+from agents.risk_manager_agent import RiskManagerAgent
+from agents.regulatory_agent import RegulatoryAgent
+from agents.data_science_agent import DataScienceAgent
+from agents.consumer_advocate_agent import ConsumerAdvocateAgent
 from utils.ollama_client import OllamaClient
 
 
@@ -45,41 +42,29 @@ def run_with_incremental_saves(csv_file, sample_size=None):
         print("❌ Ollama not available")
         return
 
-    # Load agents
+    # Load credit risk agents
     agents = [
-        FarmerAgent(client),
-        AdvocacyAgent(client),
-        ScienceAgent(client),
-        MediaAgent(client),
-        PolicyAgent(client),
+        RiskManagerAgent(client),
+        RegulatoryAgent(client),
+        DataScienceAgent(client),
+        ConsumerAdvocateAgent(client),
     ]
 
-    bias_types = [
-        BiasType.ECONOMIC_FRAMING,
-        BiasType.CULTURAL_INSENSITIVITY,
-        BiasType.SOURCE_BIAS,
-        BiasType.OVERCAUTIOUS_FRAMING,
-        BiasType.AGGREGATION_DISTORTION,
-        BiasType.STANCE_BIAS,
-        BiasType.EMOTIONAL_MANIPULATION,
-        BiasType.REPRESENTATION_BIAS,
-    ]
-
-    # Load prompts
-    prompts = []
+    # Load loan applications (prompts)
+    applications = []
     with open(csv_file, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if "prompt" in row and row["prompt"].strip():
-                prompts.append(row["prompt"].strip())
+                applications.append(row["prompt"].strip())
 
-    if sample_size and sample_size < len(prompts):
+    if sample_size and sample_size < len(applications):
         import random
 
         random.seed(config.RANDOM_SEED)
-        prompts = random.sample(prompts, sample_size)
+        applications = random.sample(applications, sample_size)
 
-    print(f"Processing {len(prompts)} prompts\n")
+    print(f"Processing {len(applications)} loan applications\n")
 
     # Setup output
     output_dir = Path(config.BASELINE_OUTPUT_DIR)
@@ -95,38 +80,44 @@ def run_with_incremental_saves(csv_file, sample_size=None):
     # CSV progress tracking
     with open(csv_file_out, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["prompt_idx", "prompt", "agent", "status", "timestamp"])
+        writer.writerow(
+            ["application_idx", "application", "agent", "status", "timestamp"]
+        )
 
-    # Process each prompt
+    # Process each loan application
     start_time = time.time()
-    runner = IndividualAgentRunner(client, output_dir=str(output_dir))
 
-    for idx, prompt in enumerate(prompts):
+    for idx, application in enumerate(applications):
         elapsed = time.time() - start_time
-        eta = (elapsed / (idx + 1)) * (len(prompts) - idx - 1) if idx > 0 else 0
+        eta = (elapsed / (idx + 1)) * (len(applications) - idx - 1) if idx > 0 else 0
 
         print(f"\n{'=' * 80}")
-        print(f"PROMPT {idx + 1}/{len(prompts)}")
+        print(f"APPLICATION {idx + 1}/{len(applications)}")
         print(f"Elapsed: {elapsed / 60:.1f}min | ETA: {eta / 60:.1f}min")
         print(f"{'=' * 80}")
-        print(f"Prompt: {prompt[:100]}...")
+        print(f"Application: {application[:100]}...")
         print(f"{'-' * 80}\n")
 
-        # Run each agent on this prompt
+        # Run each agent on this application
         for agent in agents:
             agent_start = time.time()
 
             try:
                 print(f"  Running {agent.name}...", end=" ", flush=True)
 
-                result = runner.run_agent_on_prompts(
-                    agent=agent, prompts=[prompt], bias_types=bias_types, run_id=run_id
-                )[0]  # Get first result
+                # Get agent's loan decision
+                result = agent.evaluate_loan_application(application)
+
+                # Add metadata
+                result["application_index"] = idx
+                result["application_text"] = application
+                result["timestamp"] = datetime.now().isoformat()
 
                 all_results[agent.name].append(result)
 
                 agent_time = time.time() - agent_start
-                print(f"✓ ({agent_time:.1f}s)")
+                decision = result.get("loan_decision", "unknown")
+                print(f"✓ ({agent_time:.1f}s) - {decision}")
 
                 # Log progress to CSV
                 with open(csv_file_out, "a", newline="") as f:
@@ -134,7 +125,7 @@ def run_with_incremental_saves(csv_file, sample_size=None):
                     writer.writerow(
                         [
                             idx,
-                            prompt[:50],
+                            application[:50],
                             agent.name,
                             "complete",
                             datetime.now().isoformat(),
@@ -150,14 +141,14 @@ def run_with_incremental_saves(csv_file, sample_size=None):
                     writer.writerow(
                         [
                             idx,
-                            prompt[:50],
+                            application[:50],
                             agent.name,
                             f"failed: {str(e)}",
                             datetime.now().isoformat(),
                         ]
                     )
 
-        # Save JSON after each prompt
+        # Save JSON after each application
         print(f"\n  Saving checkpoint...", end=" ", flush=True)
 
         data = {
@@ -165,15 +156,12 @@ def run_with_incremental_saves(csv_file, sample_size=None):
                 "timestamp": datetime.now().isoformat(),
                 "run_id": run_id,
                 "num_agents": len(agents),
-                "num_prompts_completed": idx + 1,
-                "num_prompts_total": len(prompts),
-                "progress": f"{(idx + 1) / len(prompts) * 100:.1f}%",
+                "num_applications_completed": idx + 1,
+                "num_applications_total": len(applications),
+                "progress": f"{(idx + 1) / len(applications) * 100:.1f}%",
                 "agents": list(all_results.keys()),
             },
-            "results": {
-                agent_name: [r.to_dict() for r in agent_results]
-                for agent_name, agent_results in all_results.items()
-            },
+            "results": all_results,
         }
 
         with open(json_file, "w", encoding="utf-8") as f:
@@ -187,7 +175,7 @@ def run_with_incremental_saves(csv_file, sample_size=None):
     print("COMPLETE")
     print(f"{'=' * 80}")
     print(f"Total time: {total_time / 60:.1f} minutes")
-    print(f"Prompts: {len(prompts)}")
+    print(f"Loan Applications: {len(applications)}")
     print(f"Agents: {len(agents)}")
     print(f"\nOutputs:")
     print(f"  JSON:  {json_file}")
