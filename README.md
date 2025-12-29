@@ -1,0 +1,34 @@
+# FAIRWATCH
+
+### Generate individual baseline results for the simple prompt
+```bash
+python evaluation/run_individual_baseline_incremental.py \
+  --llm llama3.2 \
+  --prompts data/prompts_simple.csv \
+  --output outputs_simple
+```
+
+### Generate Consumer → Data → Regulatory → Risk sequential results 
+
+```bash
+python evaluation/run_sequential_chains_incremental.py \
+  --llm llama3.2 \
+  --prompts data/prompts_simple.csv \
+  --ordering consumer_data_regulatory_risk \
+  --output outputs_simple
+```
+
+- note change ordering and run different sequences 
+    - regulatory_risk_consumer_data
+    - data_consumer_risk_regulatory
+    - risk_regulatory_data_consumer
+
+
+### Generate Parallel + judge LLM results 
+
+```bash
+python evaluation/run_parallel_chains_incremental.py \
+  --llm llama3.2 \
+  --prompts data/prompts_simple.csv \
+  --output outputs_simple
+```
