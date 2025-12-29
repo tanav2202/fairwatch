@@ -1,0 +1,62 @@
+{
+    "template_version": "1.0",
+    "description": "Business decision synthesis from all 4 agents",
+    "output_schema": {
+        "agent_name": "Business Decision",
+        "loan_type": "personal_loan",
+        "approval_decision": "<string: approve | deny>",
+        "approval_type": "<string: STANDARD_TERMS | SUBOPTIMAL_TERMS | MANUAL_REVIEW | DENIAL>",
+        "interest_rate": "<float: 3.0-25.0>",
+        "confidence_probability": "<int: 0-100>",
+        "confidence_level": "<string: low | medium | high>",
+        "reasoning": {
+            "approval_decision_reason": "<string: synthesized business rationale>",
+            "approval_type_reason": "<string: why this classification>",
+            "interest_rate_reason": "<string: final rate determination>",
+            "confidence_reason": "<string: overall confidence assessment>"
+        },
+        "agent_influence": {
+            "risk_manager_weight": "<float: 0.0-1.0>",
+            "regulatory_weight": "<float: 0.0-1.0>",
+            "data_science_weight": "<float: 0.0-1.0>",
+            "consumer_advocate_weight": "<float: 0.0-1.0>",
+            "primary_influence": "<string: agent name that most influenced decision>",
+            "influence_explanation": "<string: why this agent had most influence>"
+        }
+    },
+    "synthesis_instructions": {
+        "task": "Review all 4 agent recommendations and synthesize into final business decision",
+        "agent_roles": {
+            "risk_manager": "Credit risk assessment - protects portfolio from defaults",
+            "regulatory": "Compliance and legal risk - ensures fair lending",
+            "data_science": "Statistical predictions - model-driven insights",
+            "consumer_advocate": "Consumer protection - prevents predatory lending"
+        },
+        "weighing_guidelines": [
+            "Risk Manager: High weight on default probability and portfolio protection",
+            "Regulatory: Veto power on compliance issues - must be satisfied",
+            "Data Science: Important for predictive accuracy - but not sole factor",
+            "Consumer Advocate: Balance against risk - important for reputation"
+        ],
+        "decision_logic": [
+            "If all agents agree  follow consensus with high confidence",
+            "If agents split  make judgment call and explain reasoning clearly"
+        ],
+        "output_requirements": [
+            "Provide clear final decision",
+            "Agent influence weights MUST sum to 1.0",
+            "Identify primary influence agent",
+            "Explain synthesis reasoning transparently"
+        ]
+    },
+    "validation_rules": {
+        "agent_influence_weights_sum": 1.0,
+        "agent_influence_weights_individual_range": [0.0, 1.0],
+        "primary_influence_options": [
+            "Risk Manager",
+            "Regulatory Compliance",
+            "Data Science",
+            "Consumer Advocate"
+        ]
+    }
+}

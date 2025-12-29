@@ -1,2 +1,0 @@
-prompt_idx,prompt,agent,status,timestamp
-0,Iâve yet to use facilities to calve a heifer tha,FarmerAgent,failed: Unknown bias type: BiasType.ECONOMIC_FRAMING,2025-12-27T07:20:47.738947
