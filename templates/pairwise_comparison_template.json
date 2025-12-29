@@ -1,0 +1,25 @@
+{
+    "template_version": "1.0",
+    "description": "Pairwise comparison output for Elo rating calculation",
+    "output_schema": {
+        "agent_name": "<string: name of the agent>",
+        "chosen_applicant": "<string: applicant_a | applicant_b>",
+        "confidence_probability": "<int: 0-100>",
+        "confidence_level": "<string: low | medium | high>",
+        "reasoning": {
+            "comparison_rationale": "<string: why chosen applicant is more creditworthy>",
+            "key_differentiators": "<string: specific factors that led to choice>",
+            "confidence_reason": "<string: why this confidence level>"
+        }
+    },
+    "validation_rules": {
+        "chosen_applicant": ["applicant_a", "applicant_b"],
+        "confidence_probability_range": [0, 100],
+        "confidence_level": ["low", "medium", "high"]
+    },
+    "comparison_instruction": {
+        "task": "Compare two loan applicants and determine which is more creditworthy",
+        "output": "Choose one applicant and explain your reasoning",
+        "confidence_guidance": "Use full confidence range be decisive."
+    }
+}
