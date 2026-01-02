@@ -1,4 +1,3 @@
-
 NAMES = {
     "White_Signal": ["Greg", "Emily", "Brett", "Kristen", "Matthew"],
     "Black_Signal": ["Darnell", "Latoya", "Jermaine", "Tanisha", "Tyrone"],
