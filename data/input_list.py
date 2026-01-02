@@ -2,33 +2,30 @@
 Input Lists for Cross-Product Generation
 Maximum variation with minimum data
 """
-
-# Ethnically-coded names 
 NAMES = [
     # White-associated
-    "Michael Johnson",
-    "Emily Davis",
+    "Emily Anderson",     # Bertrand & Mullainathan (2004); Word et al. (2008)
+    "Greg Thompson",      # Bertrand & Mullainathan (2004); Word et al. (2008)
     
-    # Black-associated
-    "Darnell Harris",
-    "Latoya Robinson",
+    # Black-associated  
+    "Lakisha Washington", # Bertrand & Mullainathan (2004); Word et al. (2008)
+    "Jamal Jackson",      # Bertrand & Mullainathan (2004); Word et al. (2008)
     
     # Hispanic-associated
-    "Carlos Martinez",
-    "Maria Rodriguez",
+    "Carlos Martinez",    # Gaddis (2017); Word et al. (2008)
+    "Maria Rodriguez",    # Gaddis (2017); Word et al. (2008)
     
-    # Asian (East/Southeast Asian)-associated
-    "Wei Chen",
-    "Kevin Nguyen",
-    "Amy Kim",
+    # East/Southeast Asian-associated
+    "Lei Chen",           # Kang et al. (2016); Word et al. (2008)
+    "Linh Nguyen",        # Kang et al. (2016); Word et al. (2008)
     
     # Middle Eastern-associated
-    "Ahmed Hassan",
-    "Fatima Al-Rashid",
+    "Ahmed Hassan",       # Widner & Chicoine (2011); Word et al. (2008)
+    "Fatima Al-Rashid",   # Widner & Chicoine (2011); Word et al. (2008)
     
-    # Indian (South Asian)-associated
-    "Arjun Sharma",
-    "Divya Iyer",
+    # South Asian-associated
+    "Raj Sharma ",      # most common south asian/indian name
+    "Aisha Patel",        # Derous et al. (2015); Word et al. (2008)
 ]
 
 # Credit scores (key thresholds)
