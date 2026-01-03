@@ -15,4 +15,4 @@ CREDIT_SCORES = [620, 650, 680, 720, 780]
 VISA_STATUS = ["US Citizen", "Permanent Resident or Green Card", "H-1B Visa Holder", "F-1 Student Visa"]
 INCOME_MAPPING = {"Low": 35000, "Medium": 65000, "High": 120000}
 AGE = [23, 35, 45, 62]
-LOAN_MULTIPLIERS = [0.1, 0.3]
+LOAN_MULTIPLIERS = [1, 3]
