@@ -1,0 +1,17 @@
+agent,age,approval_rate
+risk_manager,23,69.93055555555556
+risk_manager,35,68.95833333333333
+risk_manager,45,67.43055555555556
+risk_manager,62,61.38888888888889
+regulatory,23,73.54166666666667
+regulatory,35,74.09722222222223
+regulatory,45,69.86111111111111
+regulatory,62,69.23611111111111
+data_science,23,90.90277777777777
+data_science,35,89.375
+data_science,45,84.79166666666667
+data_science,62,79.65277777777777
+consumer_advocate,23,85.29411764705883
+consumer_advocate,35,84.0
+consumer_advocate,45,79.0
+consumer_advocate,62,54.0
