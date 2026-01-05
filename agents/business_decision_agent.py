@@ -1,245 +1,183 @@
 """
-Business Decision Agent
-Synthesizes recommendations from all 4 agents into final business decision
+Business Decision Agent - FINAL FIX for OllamaClient compatibility
 """
 
 import json
-import logging
-import re
 from pathlib import Path
-from typing import Dict, Any, List
-
-from utils.ollama_client import OllamaClient, GenerationConfig
-
-logging.basicConfig(level=logging.INFO)
-LOG = logging.getLogger(__name__)
 
 
 class BusinessDecisionAgent:
-    """
-    Business Decision Agent - synthesizes recommendations from all agents
-    Uses business_synthesis_template.json
-    """
-
-    def __init__(self, client: OllamaClient):
-        """Initialize Business Decision Agent"""
+    """Synthesizes final decision from multiple agent recommendations"""
+    
+    def __init__(self, client):
         self.client = client
         self.agent_name = "business_decision"
         
-        # Load business-specific template
-        self.template = self._load_template("templates/business_synthesis_template.json")
+        # Load persona
+        persona_path = Path("prompts/business_decision_persona.txt")
+        if persona_path.exists():
+            with open(persona_path, 'r') as f:
+                self.persona = f.read()
+        else:
+            self.persona = "You are a business decision maker synthesizing loan recommendations."
         
-        # Build system prompt
-        self.system_prompt = self._build_business_system_prompt()
-        
-        # Config
-        self.config = GenerationConfig(temperature=0.5, max_tokens=800)
+        # Load template
+        template_path = Path("templates/business_synthesis_template.json")
+        if template_path.exists():
+            with open(template_path, 'r') as f:
+                self.template = json.load(f)
+        else:
+            raise FileNotFoundError(f"Template not found: {template_path}")
     
-    def _load_template(self, template_path: str) -> Dict[str, Any]:
-        """Load JSON template from file"""
+    def _safe_float(self, value, default=0.0):
+        """Safely convert to float"""
+        if value is None:
+            return default
         try:
-            path = Path(template_path)
-            with open(path, 'r') as f:
-                return json.load(f)
-        except FileNotFoundError:
-            LOG.error(f"Template not found: {template_path}")
-            raise
+            return float(value)
+        except (ValueError, TypeError):
+            return default
     
-    def _build_business_system_prompt(self) -> str:
-        """Build system prompt for business synthesis"""
-        schema = self.template['output_schema']
-        synthesis_instructions = self.template['synthesis_instructions']
-        validation = self.template['validation_rules']
-        
-        # Build agent roles description
-        roles_text = "\n".join([
-            f"- {k.upper()}: {v}"
-            for k, v in synthesis_instructions['agent_roles'].items()
-        ])
-        
-        # Build weighing guidelines
-        guidelines_text = "\n".join([
-            f"- {guideline}"
-            for guideline in synthesis_instructions['weighing_guidelines']
-        ])
-        
-        system_prompt = f"""You are the BUSINESS DECISION MAKER for a lending institution.
-
-Your task: {synthesis_instructions['task']}
-
-AGENT ROLES:
-{roles_text}
-
-WEIGHING GUIDELINES:
-{guidelines_text}
-
-DECISION LOGIC:
-{chr(10).join(['- ' + logic for logic in synthesis_instructions['decision_logic']])}
-
-You MUST respond in valid JSON matching this exact schema:
-
-{json.dumps(schema, indent=2)}
-
-CRITICAL REQUIREMENTS:
-- All agent_influence weights MUST sum to exactly 1.0
-- Each individual weight must be between 0.0 and 1.0
-- primary_influence must be one of: {', '.join(validation['primary_influence_options'])}
-- Provide clear explanation of why you weighted agents as you did
-- Final decision must be defensible based on agent inputs
-
-Output ONLY valid JSON, no other text.
-"""
-        return system_prompt
+    def _safe_int(self, value, default=0):
+        """Safely convert to int"""
+        if value is None:
+            return default
+        try:
+            return int(float(value))
+        except (ValueError, TypeError):
+            return default
     
-    def synthesize_decision(
-        self,
-        application_data: str,
-        agent_recommendations: List[Dict[str, Any]]
-    ) -> Dict[str, Any]:
+    def synthesize_decision(self, application_data: str, agent_recommendations: list) -> dict:
         """
-        Synthesize final business decision from all agent recommendations
+        Synthesize final decision from agent recommendations
         
         Args:
-            application_data: Original application prompt
-            agent_recommendations: List of 4 agent evaluation dicts
+            application_data: Original loan application text
+            agent_recommendations: List of 4 agent outputs
             
         Returns:
-            Business decision dict with agent influence breakdown
+            Business decision with agent influence weights
         """
-        # Format agent recommendations for prompt
-        agent_summaries = []
-        for rec in agent_recommendations:
-            name = rec.get('agent_name', 'Unknown Agent')
-            decision = rec.get('approval_decision', 'N/A')
-            approval_type = rec.get('approval_type', 'N/A')
-            rate = rec.get('interest_rate', 0.0)
-            conf = rec.get('confidence_probability', 0)
-            reasoning = rec.get('reasoning', {})
-            
-            summary = f"""
-AGENT: {name}
-- Decision: {decision}
-- Approval Type: {approval_type}
-- Interest Rate: {rate}%
-- Confidence: {conf}%
-- Key Reasoning: {reasoning.get('approval_decision_reason', 'N/A')}
-"""
-            agent_summaries.append(summary.strip())
+        # Format agent recommendations
+        formatted_recs = []
+        agent_names = ['Risk Manager', 'Regulatory Compliance', 'Data Science', 'Consumer Advocate']
         
-        full_prompt = f"""Review the loan application and all 4 expert agent recommendations below.
-Synthesize them into a final binding business decision.
+        for i, (name, rec) in enumerate(zip(agent_names, agent_recommendations)):
+            decision = rec.get('approval_decision', 'N/A')
+            app_type = rec.get('approval_type', 'N/A')
+            rate = self._safe_float(rec.get('interest_rate'), 0.0)
+            conf_prob = self._safe_int(rec.get('confidence_probability'), 0)
+            conf_level = rec.get('confidence_level', 'N/A')
+            reasoning = rec.get('reasoning', {}).get('approval_decision_reason', 'N/A')
+            
+            rec_text = f"""
+Agent {i+1}: {name}
+- Decision: {decision}
+- Type: {app_type}
+- Interest Rate: {rate}%
+- Confidence: {conf_prob}% ({conf_level})
+- Reasoning: {reasoning}
+"""
+            formatted_recs.append(rec_text.strip())
+        
+        recommendations_text = "\n\n".join(formatted_recs)
+        
+        # Build prompt with system instructions in the prompt itself
+        system_instructions = "You are a business decision agent. Return ONLY valid JSON, no markdown, no other text."
+        
+        prompt = f"""{system_instructions}
 
-ORIGINAL APPLICATION:
+{self.persona}
+
+LOAN APPLICATION:
 {application_data}
 
 AGENT RECOMMENDATIONS:
-{'─' * 60}
-{(chr(10) + '─' * 60 + chr(10)).join(agent_summaries)}
-{'─' * 60}
+{recommendations_text}
 
-Analyze these recommendations and provide your synthesis.
-Remember: agent_influence weights MUST sum to 1.0.
+TASK:
+Synthesize a final business decision considering all agent perspectives.
+
+Return ONLY valid JSON matching this structure (no markdown, no backticks):
+{{
+  "agent_name": "Business Decision",
+  "loan_type": "personal_loan",
+  "approval_decision": "approve or deny",
+  "approval_type": "STANDARD_TERMS or SUBOPTIMAL_TERMS or MANUAL_REVIEW or DENIAL",
+  "interest_rate": 8.5,
+  "confidence_probability": 75,
+  "confidence_level": "high",
+  "agent_influence": {{
+    "risk_manager_weight": 0.25,
+    "regulatory_weight": 0.25,
+    "data_science_weight": 0.25,
+    "consumer_advocate_weight": 0.25,
+    "primary_influence": "Name of most influential agent"
+  }},
+  "reasoning": {{
+    "synthesis_rationale": "Why this decision",
+    "weight_justification": "Why these weights",
+    "risk_assessment": "Final risk view"
+  }}
+}}
+
+CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
 """
         
-        # Attempt 1: Initial generation
-        res = self.client.generate(
-            prompt=full_prompt,
-            system_prompt=self.system_prompt,
-            config=self.config
-        )
+        # Generate response using OllamaClient (no system_prompt parameter)
+        result = self.client.generate(prompt=prompt)
         
-        if res.success:
-            try:
-                cleaned = self._clean_json(res.text)
-                parsed = json.loads(cleaned)
-                # Validate weights sum to 1.0
-                influence = parsed.get('agent_influence', {})
-                weights_sum = (
-                    influence.get('risk_manager_weight', 0) +
-                    influence.get('regulatory_weight', 0) +
-                    influence.get('data_science_weight', 0) +
-                    influence.get('consumer_advocate_weight', 0)
-                )
-                if abs(weights_sum - 1.0) > 0.01:  # Allow small floating point error
-                    LOG.warning(f"Weights sum to {weights_sum}, not 1.0")
-                
-                return parsed
-            except json.JSONDecodeError as e:
-                LOG.warning(f"Business agent JSON parse failed (attempt 1): {e}")
+        # Handle GenerationResult or string response
+        if hasattr(result, 'text'):
+            response = result.text
+        else:
+            response = result
         
-        # Attempt 2: Retry with error feedback
-        retry_prompt = f"""Previous response was invalid JSON or weights didn't sum to 1.0.
-
-{full_prompt}
-
-Respond with ONLY valid JSON. Ensure agent_influence weights sum to EXACTLY 1.0.
-"""
+        # Parse JSON
+        try:
+            business_decision = json.loads(response)
+        except json.JSONDecodeError:
+            # Extract JSON from markdown if present
+            response_clean = response.strip()
+            if "```json" in response_clean:
+                json_text = response_clean.split("```json")[1].split("```")[0].strip()
+            elif "```" in response_clean:
+                json_text = response_clean.split("```")[1].split("```")[0].strip()
+            else:
+                # Try to find JSON object
+                start = response_clean.find('{')
+                end = response_clean.rfind('}') + 1
+                if start >= 0 and end > start:
+                    json_text = response_clean[start:end]
+                else:
+                    raise ValueError(f"Could not extract JSON from response: {response[:200]}")
+            
+            business_decision = json.loads(json_text)
         
-        res = self.client.generate(
-            prompt=retry_prompt,
-            system_prompt=self.system_prompt,
-            config=self.config
-        )
+        # Fix types
+        business_decision['interest_rate'] = self._safe_float(business_decision.get('interest_rate'), 8.5)
+        business_decision['confidence_probability'] = self._safe_int(business_decision.get('confidence_probability'), 50)
         
-        if res.success:
-            try:
-                cleaned = self._clean_json(res.text)
-                parsed = json.loads(cleaned)
-                return parsed
-            except json.JSONDecodeError as e:
-                LOG.error(f"Business agent JSON parse failed (attempt 2): {e}")
-                LOG.error(f"Raw response: {res.text}")
+        # Fix and normalize weights
+        agent_influence = business_decision.get('agent_influence', {})
+        weights = [
+            self._safe_float(agent_influence.get('risk_manager_weight', 0.25)),
+            self._safe_float(agent_influence.get('regulatory_weight', 0.25)),
+            self._safe_float(agent_influence.get('data_science_weight', 0.25)),
+            self._safe_float(agent_influence.get('consumer_advocate_weight', 0.25))
+        ]
         
-        # Fallback
-        return self._create_business_error_response(
-            "Failed to generate valid synthesis after 2 attempts"
-        )
-    
-    def _clean_json(self, text: str) -> str:
-        """Clean JSON response"""
-        text = re.sub(r'```json\s*', '', text)
-        text = re.sub(r'```', '', text)
-        start = text.find('{')
-        end = text.rfind('}')
-        if start != -1 and end != -1:
-            return text[start:end+1]
-        return text
-    
-    def _create_business_error_response(self, error_message: str) -> Dict[str, Any]:
-        """Fallback error response"""
-        return {
-            "agent_name": "Business Decision",
-            "loan_type": "personal_loan",
-            "approval_decision": "deny",
-            "approval_type": "DENIAL",
-            "interest_rate": 0.0,
-            "confidence_probability": 0,
-            "confidence_level": "low",
-            "reasoning": {
-                "approval_decision_reason": f"System Error: {error_message}",
-                "approval_type_reason": "Unable to synthesize",
-                "interest_rate_reason": "N/A",
-                "confidence_reason": "Synthesis failure"
-            },
-            "agent_influence": {
-                "risk_manager_weight": 0.0,
-                "regulatory_weight": 0.0,
-                "data_science_weight": 0.0,
-                "consumer_advocate_weight": 0.0,
-                "primary_influence": "None",
-                "influence_explanation": "Error occurred during synthesis"
-            }
-        }
-    
-    def evaluate_loan_application(self, application_data: str) -> Dict[str, Any]:
-        """
-        Fallback method for base interface compatibility
-        Business agent shouldn't be called standalone
-        """
-        LOG.warning("Business agent called standalone - should receive agent recommendations")
-        return self.synthesize_decision(application_data, [])
-    
-    def process(self, text: str) -> str:
-        """ConversationChain compatibility"""
-        result = self.evaluate_loan_application(text)
-        return json.dumps(result, indent=2)
+        weight_sum = sum(weights)
+        if weight_sum == 0:
+            weights = [0.25, 0.25, 0.25, 0.25]
+        elif abs(weight_sum - 1.0) > 0.01:
+            weights = [w / weight_sum for w in weights]
+        
+        agent_influence['risk_manager_weight'] = weights[0]
+        agent_influence['regulatory_weight'] = weights[1]
+        agent_influence['data_science_weight'] = weights[2]
+        agent_influence['consumer_advocate_weight'] = weights[3]
+        
+        business_decision['agent_influence'] = agent_influence
+        
+        return business_decision
