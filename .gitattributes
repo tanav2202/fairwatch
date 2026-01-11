@@ -1,1 +1,1 @@
-*.json filter=lfs diff=lfs merge=lfs -text
+# Standard git attributes. Removed LFS as it is not installed on this system.

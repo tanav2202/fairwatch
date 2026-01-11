@@ -1,3 +1,8 @@
+"""
+Base Agent Class
+Loads templates and personas from external files
+"""
+
 import json
 import logging
 import re
@@ -5,56 +10,69 @@ from pathlib import Path
 from typing import Dict, Any
 from utils.ollama_client import OllamaClient, GenerationConfig
 
-# logging setup
 logging.basicConfig(level=logging.INFO)
 LOG = logging.getLogger(__name__)
 
+
 class BaseAgent:
-    # base class for all the agents in the system
+    """Base class for all credit evaluation agents"""
     
-    def __init__(self, client: OllamaClient, agent_name: str):
-        # setup client and load persona/template
+    def __init__(self, client: OllamaClient, agent_name: str, template_path: str = "/DATA1/ai24resch11001/nikhil/fairwatch_vllm_turbo/templates/loan_evaluation_template.json"):
+        """
+        Initialize base agent
+        
+        Args:
+            client: OllamaClient instance
+            agent_name: Name of agent (used to load persona)
+        """
         self.client = client
         self.agent_name = agent_name
         
-        # files are expected in templates/ and prompts/ relative to root
-        self.template = self._load_template("templates/loan_evaluation_template.json")
-        self.persona = self._load_persona(f"prompts/{agent_name}_persona.txt")
+        # Load template and persona
+        self.template = self._load_template(template_path)
+        self.persona = self._load_persona(f"/DATA1/ai24resch11001/nikhil/fairwatch_vllm_turbo/prompts/{agent_name}_persona.txt")
         
-        # build the full system prompt for initialization
+        # Build system prompt
         self.system_prompt = self._build_system_prompt()
         
-        # default settings for results
+        # Default generation config
         self.config = GenerationConfig(temperature=0.7, max_tokens=500)
     
     def _load_template(self, template_path: str) -> Dict[str, Any]:
-        # load json schema for output
+        """Load JSON template from file"""
         try:
             path = Path(template_path)
             with open(path, 'r') as f:
                 return json.load(f)
-        except Exception as e:
-            LOG.error(f"failed to load template: {e}")
+        except FileNotFoundError:
+            LOG.error(f"Template not found: {template_path}")
+            raise
+        except json.JSONDecodeError:
+            LOG.error(f"Invalid JSON in template: {template_path}")
             raise
     
     def _load_persona(self, persona_path: str) -> str:
-        # load the persona text file
+        """Load persona description from file"""
         try:
             path = Path(persona_path)
             with open(path, 'r') as f:
                 return f.read().strip()
-        except Exception as e:
-            LOG.error(f"failed to load persona: {e}")
+        except FileNotFoundError:
+            LOG.error(f"Persona not found: {persona_path}")
             raise
     
     def _build_system_prompt(self) -> str:
-        # put together the persona, schema, and rules into one big system prompt
+        """Build system prompt from persona and template"""
         schema = self.template['output_schema']
         definitions = self.template.get('approval_type_definitions', {})
         confidence_guidance = self.template.get('confidence_guidance', {})
         
-        approval_types_text = "\n".join([f"- {k}: {v}" for k, v in definitions.items()])
+        # Build approval type definitions section
+        approval_types_text = "\n".join([
+            f"- {k}: {v}" for k, v in definitions.items()
+        ])
         
+        # Build confidence guidance section
         confidence_text = f"""
 Confidence Scoring Guidance:
 - {confidence_guidance.get('instruction', 'Use full 0-100 range')}
@@ -89,8 +107,10 @@ ABSOLUTELY CRITICAL - NEVER USE NULL OR OMIT FIELDS:
 - confidence_probability: MUST be integer 0-100, NEVER null, NEVER omitted
 - confidence_level: MUST be "low"/"medium"/"high", NEVER null, NEVER omitted
 - interest_rate: MUST be float 2.0-30.0, NEVER null, NEVER omitted
+- Even for obvious denials, provide confidence (use 0-20 for low confidence denials)
+- Even for denials, provide an interest_rate (use high rate like 25.0 for denied applications)
 
-VALID DENIAL EXAMPLE:
+VALID DENIAL EXAMPLE (follow this format exactly):
 {{
   "agent_name": "Your Agent Name",
   "loan_type": "personal_loan",
@@ -100,21 +120,39 @@ VALID DENIAL EXAMPLE:
   "confidence_probability": 5,
   "confidence_level": "low",
   "reasoning": {{
-    "approval_decision_reason": "reason here",
-    "approval_type_reason": "reason here",
-    "interest_rate_reason": "reason here",
-    "confidence_reason": "reason here"
+    "approval_decision_reason": "High risk due to low income and poor credit",
+    "approval_type_reason": "Does not meet minimum criteria",
+    "interest_rate_reason": "High rate reflects elevated risk profile",
+    "confidence_reason": "Low confidence due to clear risk indicators"
+  }}
+}}
+
+VALID APPROVAL EXAMPLE:
+{{
+  "agent_name": "Your Agent Name",
+  "loan_type": "personal_loan",
+  "approval_decision": "approve",
+  "approval_type": "STANDARD_TERMS",
+  "interest_rate": 8.5,
+  "confidence_probability": 85,
+  "confidence_level": "high",
+  "reasoning": {{
+    "approval_decision_reason": "Good credit and stable income",
+    "approval_type_reason": "Meets all standard criteria",
+    "interest_rate_reason": "Market rate for this credit profile",
+    "confidence_reason": "High confidence based on strong financials"
   }}
 }}
 """
         return system_prompt
     
     def _clean_json(self, text: str) -> str:
-        # strip markdown formatting if any
+        """Clean JSON response from potential markdown formatting"""
+        # Remove markdown code blocks
         text = re.sub(r'```json\s*', '', text)
         text = re.sub(r'```', '', text)
         
-        # find the actual brackets
+        # Extract JSON object
         start = text.find('{')
         end = text.rfind('}')
         if start != -1 and end != -1:
@@ -123,28 +161,66 @@ VALID DENIAL EXAMPLE:
         return text
     
     def _fix_null_values(self, parsed: Dict[str, Any]) -> Dict[str, Any]:
-        # patch any nulls that leaked through
+        """
+        Fix null values in parsed JSON response
+        LLMs sometimes return null instead of proper values
+        """
         fixed = False
         
+        # Fix confidence_probability
         if parsed.get('confidence_probability') is None:
             parsed['confidence_probability'] = 0
             fixed = True
+            LOG.warning(f"{self.agent_name}: Fixed null confidence_probability -> 0")
         
+        # Fix confidence_level
         if parsed.get('confidence_level') is None:
             parsed['confidence_level'] = 'low'
             fixed = True
+            LOG.warning(f"{self.agent_name}: Fixed null confidence_level -> 'low'")
         
+        # Fix interest_rate
         if parsed.get('interest_rate') is None:
-            parsed['interest_rate'] = 25.0 if parsed.get('approval_decision') == 'deny' else 10.0
+            # Use high rate for denials, medium for approvals
+            if parsed.get('approval_decision') == 'deny':
+                parsed['interest_rate'] = 25.0
+            else:
+                parsed['interest_rate'] = 10.0
             fixed = True
+            LOG.warning(f"{self.agent_name}: Fixed null interest_rate -> {parsed['interest_rate']}")
+        
+        # Fix reasoning sub-fields
+        reasoning = parsed.get('reasoning', {})
+        if reasoning:
+            if reasoning.get('approval_decision_reason') is None:
+                reasoning['approval_decision_reason'] = "Not provided"
+                fixed = True
+            if reasoning.get('approval_type_reason') is None:
+                reasoning['approval_type_reason'] = "Not provided"
+                fixed = True
+            if reasoning.get('interest_rate_reason') is None:
+                reasoning['interest_rate_reason'] = "Not provided"
+                fixed = True
+            if reasoning.get('confidence_reason') is None:
+                reasoning['confidence_reason'] = "Not provided"
+                fixed = True
         
         if fixed:
-            LOG.warning(f"{self.agent_name}: fixed some nulls in output")
+            LOG.warning(f"{self.agent_name}: Applied null-value fixes to response")
         
         return parsed
     
     def evaluate_loan_application(self, application_data: str) -> Dict[str, Any]:
-        # main evaluation logic with a retry if json fails
+        """
+        Evaluate a loan application
+        
+        Args:
+            application_data: Loan application prompt text
+            
+        Returns:
+            Dictionary with evaluation results
+        """
+        # Attempt 1: Initial generation
         res = self.client.generate(
             prompt=application_data,
             system_prompt=self.system_prompt,
@@ -155,33 +231,58 @@ VALID DENIAL EXAMPLE:
             try:
                 cleaned = self._clean_json(res.text)
                 parsed = json.loads(cleaned)
+                
+                # Fix null values
                 parsed = self._fix_null_values(parsed)
+                
+                # Add agent name and loan type
                 parsed['agent_name'] = self.agent_name.replace('_', ' ').title()
                 parsed['loan_type'] = 'personal_loan'
+                
                 return parsed
-            except:
-                LOG.warning(f"{self.agent_name} failed first try, retrying...")
+            except json.JSONDecodeError as e:
+                LOG.warning(f"{self.agent_name} JSON parse failed (attempt 1): {e}")
         
-        # retry logic
-        retry_prompt = f"Previous response was invalid JSON.\n\nAPPLICATION DATA:\n{application_data}\n\nRespond with ONLY valid JSON."
+        # Attempt 2: Retry with error feedback
+        retry_prompt = f"""Previous response was invalid JSON. 
         
-        res = self.client.generate(prompt=retry_prompt, system_prompt=self.system_prompt, config=self.config)
+APPLICATION DATA:
+{application_data}
+
+Respond with ONLY valid JSON matching the required schema. 
+CRITICAL: Do NOT use null values. All fields must have valid values.
+For denials, use: confidence_probability: 5, confidence_level: "low", interest_rate: 25.0
+
+No explanation, just JSON."""
+        
+        res = self.client.generate(
+            prompt=retry_prompt,
+            system_prompt=self.system_prompt,
+            config=self.config
+        )
         
         if res.success:
             try:
                 cleaned = self._clean_json(res.text)
                 parsed = json.loads(cleaned)
+                
+                # Fix null values
                 parsed = self._fix_null_values(parsed)
+                
+                # Add agent name and loan type
                 parsed['agent_name'] = self.agent_name.replace('_', ' ').title()
                 parsed['loan_type'] = 'personal_loan'
+                
                 return parsed
-            except:
-                LOG.error(f"{self.agent_name} failed completely.")
+            except json.JSONDecodeError as e:
+                LOG.error(f"{self.agent_name} JSON parse failed (attempt 2): {e}")
+                LOG.error(f"Raw response: {res.text}")
         
-        return self._create_error_response("Parsing error")
+        # Fallback: Return error response
+        return self._create_error_response("Failed to generate valid JSON after 2 attempts")
     
     def _create_error_response(self, error_message: str) -> Dict[str, Any]:
-        # fallback response if everything fails
+        """Create error response matching template schema"""
         return {
             "agent_name": self.agent_name.replace('_', ' ').title(),
             "loan_type": "personal_loan",
@@ -191,14 +292,17 @@ VALID DENIAL EXAMPLE:
             "confidence_probability": 0,
             "confidence_level": "low",
             "reasoning": {
-                "approval_decision_reason": f"error: {error_message}",
-                "approval_type_reason": "failed",
-                "interest_rate_reason": "n/a",
-                "confidence_reason": "n/a"
+                "approval_decision_reason": f"System Error: {error_message}",
+                "approval_type_reason": "Unable to evaluate",
+                "interest_rate_reason": "N/A",
+                "confidence_reason": "System failure"
             }
         }
     
     def process(self, text: str) -> str:
-        # helper for chain compatibility
+        """
+        Process method for ConversationChain compatibility
+        Returns JSON string
+        """
         result = self.evaluate_loan_application(text)
         return json.dumps(result, indent=2)
