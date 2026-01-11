@@ -9,16 +9,16 @@ from typing import List, Dict, Any
 import aiohttp
 import tqdm.asyncio
 
-# Configure logging
+# logging setup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Constants
+# prompt constants
 BUSINESS_PERSONA = "You are a business decision maker synthesizing loan recommendations."
 SYSTEM_INSTRUCTIONS = "You are a business decision agent. Return ONLY valid JSON, no markdown, no other text."
 
 class VLLMClientAsync:
-    """Minimal Async Client for vLLM (copied/adapted from vllm_client_async.py)"""
+    # small async client for vllm
     def __init__(self, base_url: str = "http://localhost:8000/v1"):
         self.base_url = base_url.rstrip('/')
         self.api_key = "EMPTY"
@@ -26,7 +26,7 @@ class VLLMClientAsync:
     async def generate(self, prompt: str, system_prompt: str = None, config: Dict = None) -> str:
         url = f"{self.base_url}/completions"
         
-        # PROMPT FORMATTING (Llama 3)
+        # formatting for llama 3
         if system_prompt:
              full_prompt = (
                  f"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n"
@@ -80,7 +80,7 @@ class LegacyConverter:
         except (ValueError, TypeError): return default
     
     def _format_business_prompt(self, application_data: str, agent_recommendations: list) -> str:
-        """Exact logic from BusinessDecisionAgent"""
+        # using same logic as the main agent
         formatted_recs = []
         # Note: In the sequential logic, we usually just list them in order of appearance
         # But BusinessDecisionAgent.py had a fixed list 'Risk Manager', 'Regulatory Compliance'...
@@ -158,7 +158,7 @@ CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
         return prompt
 
     async def start_chain_conversion(self, chain_data: Dict, ordering: List[str]) -> Dict:
-        """Converts a single vLLM chain output to Legacy Format with Business Decision"""
+        # converting a single chain to the legacy structure
         
         original_app = chain_data['input']
         decisions_map = chain_data['decisions'] # agent_key -> result
@@ -166,7 +166,7 @@ CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
         conversation_history = []
         current_input = original_app
         
-        # 1. Reconstruct Conversation History
+        # rebuilding context for each agent
         # We need to build the prompt for each agent in order.
         # Logic: 
         # Agent 1 sees Original App.
@@ -231,7 +231,7 @@ CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
                 "output": output
             })
             
-        # 2. Generate Business Decision
+        # synthesizing final business decision
         business_prompt = self._format_business_prompt(original_app, agent_outputs_list)
         
         business_decision = None

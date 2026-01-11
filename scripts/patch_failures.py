@@ -1,4 +1,3 @@
-
 import asyncio
 import json
 import logging
@@ -7,22 +6,25 @@ import os
 import aiohttp
 from typing import Dict, List
 
-# Configure logging
+# logging setup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Constants
+# prompt templates and persona setup
 BUSINESS_PERSONA = "You are a business decision maker synthesizing loan recommendations."
 SYSTEM_INSTRUCTIONS = "You are a business decision agent. Return ONLY valid JSON, no markdown, no other text."
 PORT = 8005
 
 class VLLMClientAsync:
+    # helper class to talk to vllm server
     def __init__(self, base_url: str = f"http://localhost:{PORT}/v1"):
         self.base_url = base_url.rstrip('/')
         self.api_key = "EMPTY"
 
     async def generate(self, prompt: str, system_prompt: str = None, config: Dict = None) -> str:
         url = f"{self.base_url}/completions"
+        
+        # formatting for llama 3
         if system_prompt:
              full_prompt = (
                  f"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n"
@@ -62,6 +64,7 @@ class VLLMClientAsync:
                 return ""
 
 class PatchWorker:
+    # worker class to handle the logic of fixing failed decisions
     def __init__(self, client: VLLMClientAsync):
         self.client = client
 
@@ -76,6 +79,7 @@ class PatchWorker:
         except (ValueError, TypeError): return default
     
     def _format_business_prompt(self, application_data: str, agent_recommendations: list) -> str:
+        # building the list of previous agent recommendations
         formatted_recs = []
         for i, rec in enumerate(agent_recommendations):
             if rec is None: rec = {}
@@ -92,6 +96,7 @@ class PatchWorker:
         
         recommendations_text = "\n\n".join(formatted_recs)
         
+        # main synthesis prompt logic
         prompt = f"""{SYSTEM_INSTRUCTIONS}
 
 {BUSINESS_PERSONA}
@@ -133,26 +138,21 @@ CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
         return prompt
 
     async def patch_decision(self, record: Dict) -> Dict:
-        # Extract data
-        initial_prompt = record.get('initial_prompt') # This is the application data json string usually
-        # Actually initial_prompt in output is often just the string prompt.
-        # But wait, looking at file: "initial_prompt": "{\"name\":\"Emily...
-        # So yes, it's the JSON string of app data + prompt.
-        
+        # get application data and previous outputs
+        initial_prompt = record.get('initial_prompt')
         all_agent_outputs = record.get('all_agent_outputs', [])
         
-        # Format prompt
         prompt = self._format_business_prompt(initial_prompt, all_agent_outputs)
         
-        # Retry loop
+        # loop until we get a valid response (max 5 tries)
         for attempt in range(5):
             response_text = await self.client.generate(
                 prompt=prompt,
-                system_prompt=None, # Included in prompt
+                system_prompt=None, 
                 config={"temperature": 0.2 + (attempt * 0.1), "max_tokens": 1500}
             )
             
-            # Clean and parse
+            # clean up any markdown blocks if the model included them
             cleaned_text = response_text.strip()
             if cleaned_text.startswith("```json"):
                 cleaned_text = cleaned_text[7:]
@@ -165,12 +165,11 @@ CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
             try:
                 decision_json = json.loads(cleaned_text)
                 
-                # Check critical fields
+                # final check for confidence value
                 conf = decision_json.get("confidence_probability")
                 if conf is None or conf == 0:
                     raise ValueError("Zero confidence generated")
                 
-                # Ensure it's a valid structure update
                 logger.info("Successfully synthesized valid business decision.")
                 return decision_json
             except Exception as e:
@@ -180,6 +179,7 @@ CRITICAL: Return ONLY the JSON object. Weights must sum to 1.0.
         return None
 
 async def process_file(filepath: str, worker: PatchWorker):
+    # scan a file for records that need patching
     logger.info(f"Scanning {os.path.basename(filepath)}...")
     try:
         with open(filepath, 'r') as f:
@@ -195,7 +195,7 @@ async def process_file(filepath: str, worker: PatchWorker):
         needs_patch = False
         biz = r.get("business_decision", {})
         
-        # Check reasons to patch
+        # logic for identifying bad records
         conf = biz.get("confidence_probability")
         if conf is None or not isinstance(conf, (int, float)) or conf <= 0:
             needs_patch = True
@@ -207,7 +207,7 @@ async def process_file(filepath: str, worker: PatchWorker):
             logger.info(f"Record {idx}: Found Error String in reasoning")
             
         if needs_patch:
-            # Try to patch
+            # run the patcher
             logger.info(f"Patching record {idx}...")
             new_decision = await worker.patch_decision(r)
             if new_decision:
@@ -217,6 +217,7 @@ async def process_file(filepath: str, worker: PatchWorker):
                 logger.error(f"Could not patch record {idx}. Keeping original error.")
 
     if modified:
+        # save the file back if we changed anything
         logger.info(f"Saving patched file: {filepath}")
         with open(filepath, 'w') as f:
             json.dump(data, f, indent=2)
@@ -224,8 +225,9 @@ async def process_file(filepath: str, worker: PatchWorker):
         logger.info(f"No changes needed for {filepath}")
 
 async def main():
-    directory = "/DATA1/ai24resch11001/nikhil/fairwatch_vllm_turbo/batch4_outputs"
-    pattern = os.path.join(directory, "sequential_*_legacy.json")
+    # just scans all sequential files in the folder
+    directory = "sequential_inference"
+    pattern = os.path.join(directory, "sequential_*.json")
     files = sorted(glob.glob(pattern))
     
     client = VLLMClientAsync()

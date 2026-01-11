@@ -2,8 +2,10 @@ import json
 import os
 import glob
 import sys
+import argparse
 
 def verify_strict(filepath):
+    # just checking if the file is valid and follows our strict schema
     print(f"Verifying: {os.path.basename(filepath)}")
     try:
         with open(filepath, 'r') as f:
@@ -21,12 +23,14 @@ def verify_strict(filepath):
         print("  [FATAL] 'results' list is empty.")
         return False
 
+    # keys we expect in every record
     required_keys = [
         "mode", "initial_prompt", "conversation_history", 
         "all_agent_outputs", "final_output", "business_decision", 
         "prompt_id", "ordering"
     ]
     
+    # keys we expect inside business_decision
     required_biz_keys = [
         "approval_decision", "interest_rate", "confidence_probability", "reasoning"
     ]
@@ -35,14 +39,14 @@ def verify_strict(filepath):
     failures = 0
 
     for idx, r in enumerate(results):
-        # 1. Check Top-Level Keys
+        # check top-level keys exist
         missing = [k for k in required_keys if k not in r]
         if missing:
             print(f"  [FAIL] Record {idx}: Missing keys {missing}")
             failures += 1
             continue
 
-        # 2. Check Business Decision
+        # check business decision specifically
         biz = r.get("business_decision")
         if not biz or not isinstance(biz, dict):
              print(f"  [FAIL] Record {idx}: 'business_decision' is missing or null.")
@@ -55,22 +59,21 @@ def verify_strict(filepath):
             failures += 1
             continue
 
-        # 3. Value Checks
-        # Confidence > 0
+        # check values: confidence must be > 0
         conf = biz.get("confidence_probability")
         if conf is None or not isinstance(conf, (int, float)) or conf <= 0:
              print(f"  [FAIL] Record {idx}: Invalid confidence_probability: {conf}")
              failures += 1
              continue
         
-        # Interest Rate (can be 0 if denied, but must be prevalent)
+        # interest rate shouldn't be null
         rate = biz.get("interest_rate")
         if rate is None:
             print(f"  [FAIL] Record {idx}: Interest rate is None (null).")
             failures += 1
             continue
 
-        # Error Strings in Reasoning
+        # look for system errors or parsing failures in the text
         reasoning = str(biz.get("reasoning", ""))
         error_terms = ["System Error", "Parsing Failure", "Manual Review Required"]
         found_errs = [t for t in error_terms if t in reasoning]
@@ -87,12 +90,19 @@ def verify_strict(filepath):
         return False
 
 def main():
-    directory = "/DATA1/ai24resch11001/nikhil/fairwatch_vllm_turbo/batch4_outputs"
-    pattern = os.path.join(directory, "sequential_*_legacy.json")
-    files = sorted(glob.glob(pattern))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--file", help="Specific file to verify")
+    parser.add_argument("--dir", default="sequential_inference", help="Directory of files to verify")
+    args = parser.parse_args()
+
+    if args.file:
+        files = [args.file]
+    else:
+        pattern = os.path.join(args.dir, "sequential_*.json")
+        files = sorted(glob.glob(pattern))
     
     if not files:
-        print("No files found matching pattern.")
+        print(f"No files found in {args.dir} matching pattern.")
         sys.exit(1)
 
     all_pass = True
