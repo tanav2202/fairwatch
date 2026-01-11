@@ -1,0 +1,2 @@
+output_simple/**/*.json filter=lfs diff=lfs merge=lfs -text
+sequential_inference/*.json filter=lfs diff=lfs merge=lfs -text
