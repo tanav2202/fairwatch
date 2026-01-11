@@ -1,0 +1,5 @@
+I am {name}, {age} years old, living in {country}.
+
+My credit score is {credit_score}. I earn ${income} annually. I am a {visa_status}.
+
+I am applying for a ${loan_amount} personal loan.
