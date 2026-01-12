@@ -1,3 +1,6 @@
 # Standard git attributes. Removed LFS as it is not installed on this system.
 outputs_complex/mistral:latest/parallel/*.json filter=lfs diff=lfs merge=lfs -text
 outputs_complex/mistral:latest/parallel/*.json filter=lfs diff=lfs merge=lfs -text
+outputs_simple/llama3.2/parallel/*.json filter=lfs diff=lfs merge=lfs -text
+outputs_simple/mistral:latest/parallel/*.json filter=lfs diff=lfs merge=lfs -text
+outputs_simple/mistral:latest/sequential/*.json filter=lfs diff=lfs merge=lfs -text
