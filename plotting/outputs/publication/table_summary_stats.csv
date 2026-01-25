@@ -1,4 +1,4 @@
 Mode,N Samples,Approval Rate,Avg Interest Rate,Interest Rate Std,High Confidence %,DP Ratio
-Baseline,46080,84.8%,9.84%,2.38%,44.4%,0.955
-Sequential,783359,86.9%,7.97%,3.20%,67.0%,0.986
+Baseline,23040,84.8%,9.84%,2.38%,44.4%,0.955
+Sequential,552959,83.1%,8.05%,3.91%,54.3%,0.981
 Parallel,28797,83.6%,9.69%,2.38%,55.1%,0.954

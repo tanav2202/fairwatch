@@ -41,7 +41,9 @@ class FairWatchDataLoader:
     def extract_agent_order_from_filename(self, filename: str) -> List[str]:
         """Extract agent order from sequential filename."""
         name = filename.replace("sequential_", "").replace(".json", "")
-        name = name.replace("_legacy", "").replace("_final", "")
+        name = (
+            name.replace("_legacy", "").replace("_final", "").replace("_formatted", "")
+        )
 
         # Build ordered list by finding positions
         agents_found = []
@@ -110,8 +112,12 @@ class FairWatchDataLoader:
                         {"source": "baseline", "filename": filename, "data": data}
                     )
                 else:
-                    # Extract agent name: baseline_consumer_advocate_70b.json -> Consumer Advocate
-                    agent = filename.replace("baseline_", "").replace("_70b.json", "")
+                    # Extract agent name: baseline_consumer_advocate_70b_formatted.json -> Consumer Advocate
+                    agent = (
+                        filename.replace("baseline_", "")
+                        .replace("_70b_formatted.json", "")
+                        .replace("_70b.json", "")
+                    )
                     agent = agent.replace("_", " ").title()
                     all_data["baselines"].append(
                         {
@@ -173,24 +179,45 @@ class FairWatchDataLoader:
                 continue
 
             for result in item["data"]["results"]:
+                # Parse input to get demographic info
+                input_str = result.get("input", "")
+                base_info = self.parse_prompt(input_str)
+
                 record = {
                     "source": source,
                     "agent": agent,
-                    "prompt_id": result.get("prompt_id"),
-                    "mode": result.get("mode", "baseline"),
+                    "chain_id": result.get("chain_id"),
+                    "mode": "baseline",
+                    **base_info,
                 }
 
-                prompt = result.get("prompt", "")
-                record.update(self.parse_prompt(prompt))
-
-                bd = result.get("business_decision", {})
-                if bd:
-                    record["approval_decision"] = bd.get("approval_decision")
-                    record["approval_type"] = bd.get("approval_type")
-                    record["interest_rate"] = bd.get("interest_rate")
-                    record["confidence_probability"] = bd.get("confidence_probability")
-                    record["confidence_level"] = bd.get("confidence_level")
-                    records.append(record)
+                # New format uses "decisions" dict
+                decisions = result.get("decisions", {})
+                if decisions:
+                    # Get the agent's decision (there's only one for baseline)
+                    agent_key = list(decisions.keys())[0] if decisions else None
+                    if agent_key:
+                        bd = decisions[agent_key]
+                        record["approval_decision"] = bd.get("approval_decision")
+                        record["approval_type"] = bd.get("approval_type")
+                        record["interest_rate"] = bd.get("interest_rate")
+                        record["confidence_probability"] = bd.get(
+                            "confidence_probability"
+                        )
+                        record["confidence_level"] = bd.get("confidence_level")
+                        records.append(record)
+                else:
+                    # Old format uses "business_decision"
+                    bd = result.get("business_decision", {})
+                    if bd:
+                        record["approval_decision"] = bd.get("approval_decision")
+                        record["approval_type"] = bd.get("approval_type")
+                        record["interest_rate"] = bd.get("interest_rate")
+                        record["confidence_probability"] = bd.get(
+                            "confidence_probability"
+                        )
+                        record["confidence_level"] = bd.get("confidence_level")
+                        records.append(record)
 
         return pd.DataFrame(records)
 
@@ -409,9 +436,28 @@ class FairWatchDataLoader:
         return pd.DataFrame(records)
 
     def parse_prompt(self, prompt: str) -> Dict:
-        """Extract applicant information from prompt text."""
+        """Extract applicant information from prompt text or JSON input."""
         info = {}
 
+        # Try to parse as JSON first (new format)
+        try:
+            data = json.loads(prompt)
+            if isinstance(data, dict):
+                info["name"] = data.get("name")
+                info["age"] = data.get("age")
+                info["income"] = data.get("income")
+                info["credit_score"] = data.get("credit_score")
+                info["visa_status"] = data.get("visa_status")
+                info["loan_amount"] = data.get("loan_amount")
+                info["dti_ratio"] = data.get("dti_ratio")
+                info["ethnicity_signal"] = data.get(
+                    "ethnicity_signal", self.infer_ethnicity(data.get("name", ""))
+                )
+                return info
+        except (json.JSONDecodeError, TypeError):
+            pass  # Fall through to text parsing
+
+        # Text parsing (old format)
         name_match = re.search(r"My name is ([^.]+)\.", prompt)
         info["name"] = name_match.group(1) if name_match else None
 

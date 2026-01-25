@@ -1,0 +1,18 @@
+{
+  "agent": "Consumer Advocate",
+  "total_records": 5760,
+  "approval_rate": 0.7991319444444445,
+  "avg_interest_rate": 9.199250488811645,
+  "ethnicity_approval_rates": {
+    "Asian_Signal": 0.7833333333333333,
+    "Black_Signal": 0.8416666666666667,
+    "Hispanic_Signal": 0.80625,
+    "Unknown": 0.8005952380952381,
+    "White_Signal": 0.7708333333333334
+  },
+  "approval_type_distribution": {
+    "STANDARD_TERMS": 0.5105902777777778,
+    "SUBOPTIMAL_TERMS": 0.28854166666666664,
+    "DENIAL": 0.20086805555555556
+  }
+}

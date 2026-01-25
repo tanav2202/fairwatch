@@ -1,0 +1,11 @@
+{
+  "total_records": 22234,
+  "agents": [
+    "Regulatory",
+    "Data Science",
+    "Business Decision",
+    "Consumer Advocate",
+    "Risk Manager"
+  ],
+  "overall_approval_rate": 0.8606638481604749
+}

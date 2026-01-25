@@ -1,0 +1,9 @@
+{
+  "total_records": 535799,
+  "experiment_types": {
+    "sequential": 490702,
+    "parallel": 24720,
+    "baseline": 20377
+  },
+  "overall_approval_rate": 0.9173085429424094
+}

@@ -4,9 +4,39 @@ This directory contains visualization outputs from the FairWatch multi-agent loa
 
 ## Dataset Summary
 
-- **Total Records**: 858,237
-- **Sequential Orderings**: 22 (of 24 possible permutations)
+- **Total Records**: 576,000
+- **Baseline Records**: 23,040 (4 agents × 5,760 samples each)
+- **Sequential Records**: 552,960 (24 orderings × 5,760 chains × 4 agents)
+- **Sequential Orderings**: 24 (all possible permutations)
 - **Agents**: Consumer Advocate, Data Science, Regulatory, Risk Manager
+
+---
+
+## individual/
+
+**Individual analysis for each baseline agent and sequential ordering.**
+
+### individual/baselines/
+
+Each agent has its own folder with:
+
+- `overview_dashboard.png/pdf` - Comprehensive overview (approval rates, interest rates, demographics)
+- `ethnicity_credit_heatmap.png/pdf` - Approval rates by ethnicity and credit score
+- `interest_rate_demographics.png/pdf` - Interest rates by demographics
+- `summary_stats.json` - Raw statistics
+
+Agents: `consumer_advocate/`, `data_science/`, `regulatory/`, `risk_manager/`
+
+### individual/sequential/
+
+Each ordering has its own folder (24 total) with:
+
+- `chain_overview.png/pdf` - Chain analysis dashboard
+- `per_agent_analysis.png/pdf` - Per-agent breakdown within the chain
+- `decision_flow.png/pdf` - Decision evolution through chain positions
+- `summary_stats.json` - Raw statistics
+
+Example folders: `consumer_advocate_data_science_regulatory_risk_manager/`, etc.
 
 ---
 
@@ -38,7 +68,7 @@ Compares behavior across different AI agents.
 | `approval_type_distribution`     | Types of approvals (standard, conditional, etc.) by agent |
 | `agent_agreement_matrix`         | How often agents agree/disagree with each other           |
 | `agent_bias_comparison`          | Demographic bias levels per agent                         |
-| `system_comparison`              | Baseline vs Sequential vs Parallel comparison             |
+| `system_comparison`              | Baseline vs Sequential comparison                         |
 
 ---
 
@@ -117,7 +147,12 @@ Additional analysis plots.
 
 ```bash
 cd /path/to/fairwatch
+
+# Run all overall analysis plots
 python plotting/run_all_plots.py
+
+# Run individual analysis (per baseline + per sequential ordering)
+python plotting/plot_individual_analysis.py
 ```
 
 Individual plot scripts can also be run separately:
@@ -130,4 +165,5 @@ python plotting/plot_mode_comparison.py
 python plotting/plot_fairness_analysis.py
 python plotting/plot_publication_figures.py
 python plotting/plot_supplementary.py
+python plotting/plot_individual_analysis.py  # NEW: Individual analysis
 ```

@@ -1,0 +1,19 @@
+{
+  "agent": "Regulatory",
+  "total_records": 5760,
+  "approval_rate": 0.9189236111111111,
+  "avg_interest_rate": 9.9578027583601,
+  "ethnicity_approval_rates": {
+    "Asian_Signal": 0.9135416666666667,
+    "Black_Signal": 0.9208333333333333,
+    "Hispanic_Signal": 0.91875,
+    "Unknown": 0.9208333333333333,
+    "White_Signal": 0.9145833333333333
+  },
+  "approval_type_distribution": {
+    "SUBOPTIMAL_TERMS": 0.4869791666666667,
+    "STANDARD_TERMS": 0.4317708333333333,
+    "DENIAL": 0.08107638888888889,
+    "MANUAL_REVIEW": 0.00017361111111111112
+  }
+}

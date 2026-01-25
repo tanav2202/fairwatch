@@ -1,0 +1,18 @@
+{
+  "agent": "Risk Manager",
+  "total_records": 5760,
+  "approval_rate": 0.7381944444444445,
+  "avg_interest_rate": 10.02843367826905,
+  "ethnicity_approval_rates": {
+    "Asian_Signal": 0.721875,
+    "Black_Signal": 0.7895833333333333,
+    "Hispanic_Signal": 0.7333333333333333,
+    "Unknown": 0.7327380952380952,
+    "White_Signal": 0.7625
+  },
+  "approval_type_distribution": {
+    "SUBOPTIMAL_TERMS": 0.434375,
+    "STANDARD_TERMS": 0.3038194444444444,
+    "DENIAL": 0.26180555555555557
+  }
+}
