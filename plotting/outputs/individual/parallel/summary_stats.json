@@ -1,0 +1,18 @@
+{
+  "total_records": 28797,
+  "agents": [
+    "Risk Manager",
+    "Consumer Advocate",
+    "Regulatory",
+    "Data Science",
+    "Business Decision"
+  ],
+  "overall_approval_rate": 0.8361634892523526,
+  "approval_rate_by_agent": {
+    "Business Decision": 0.8191766545075561,
+    "Consumer Advocate": 0.7961805555555556,
+    "Data Science": 0.9331597222222222,
+    "Regulatory": 0.8980902777777777,
+    "Risk Manager": 0.7342013888888889
+  }
+}

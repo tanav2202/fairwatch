@@ -1,0 +1,40 @@
+{
+  "model_statistics": {
+    "Llama 70B": {
+      "model_size_billions": 70,
+      "mean_inter_agent_agreement": 0.9999517738539677,
+      "std_inter_agent_agreement": 7.217781633830678e-05,
+      "mean_error_correction_rate": 0.00010703577744662651,
+      "std_error_correction_rate": 0.000198487824556558,
+      "mean_full_consensus_rate": 0.999877022950792,
+      "num_orderings_analyzed": 24
+    },
+    "Qwen": {
+      "model_size_billions": 72,
+      "mean_inter_agent_agreement": 0.9998408363736391,
+      "std_inter_agent_agreement": 0.0003420641643810223,
+      "mean_error_correction_rate": 0.00039288863380902635,
+      "std_error_correction_rate": 0.000826648155580658,
+      "mean_full_consensus_rate": 0.9995225091209172,
+      "num_orderings_analyzed": 8
+    },
+    "Llama 3.2": {
+      "model_size_billions": 3,
+      "mean_inter_agent_agreement": 0.8975359570884464,
+      "std_inter_agent_agreement": 0.08386035266607594,
+      "mean_error_correction_rate": 0.19994620137368788,
+      "std_error_correction_rate": 0.16413560116630324,
+      "mean_full_consensus_rate": 0.7860356356917578,
+      "num_orderings_analyzed": 24
+    },
+    "Mistral Latest": {
+      "model_size_billions": 7,
+      "mean_inter_agent_agreement": 0.9821662808641974,
+      "std_inter_agent_agreement": 0.048112852098949443,
+      "mean_error_correction_rate": 0.06707687033195313,
+      "std_error_correction_rate": 0.19659852758897003,
+      "mean_full_consensus_rate": 0.954079861111111,
+      "num_orderings_analyzed": 24
+    }
+  }
+}

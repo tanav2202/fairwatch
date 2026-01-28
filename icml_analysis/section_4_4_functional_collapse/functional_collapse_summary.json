@@ -1,0 +1,820 @@
+{
+  "Llama 70B": {
+    "total_orderings": 24,
+    "collapsed_count": 24,
+    "collapsed_orderings": [
+      {
+        "ordering": "CA_DS_Reg_RM",
+        "max_ethnic_disparity": 0.046875,
+        "credit_score_correlation": 0.14155975776290253,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.778125,
+          "Black_Signal": 0.825,
+          "Hispanic_Signal": 0.8177083333333334,
+          "Asian_Signal": 0.7913194444444445
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7430555555555556,
+          "Q2": 0.7803819444444444,
+          "Q3": 0.8342013888888888,
+          "Q4": 0.8949652777777778
+        }
+      },
+      {
+        "ordering": "CA_DS_RM_Reg",
+        "max_ethnic_disparity": 0.046875,
+        "credit_score_correlation": 0.14155975776290253,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.778125,
+          "Black_Signal": 0.825,
+          "Hispanic_Signal": 0.8177083333333334,
+          "Asian_Signal": 0.7913194444444445
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7430555555555556,
+          "Q2": 0.7803819444444444,
+          "Q3": 0.8342013888888888,
+          "Q4": 0.8949652777777778
+        }
+      },
+      {
+        "ordering": "CA_Reg_DS_RM",
+        "max_ethnic_disparity": 0.046875,
+        "credit_score_correlation": 0.14155975776290253,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7913194444444445,
+          "Black_Signal": 0.825,
+          "White_Signal": 0.778125,
+          "Hispanic_Signal": 0.8177083333333334
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7430555555555556,
+          "Q2": 0.7803819444444444,
+          "Q3": 0.8342013888888888,
+          "Q4": 0.8949652777777778
+        }
+      },
+      {
+        "ordering": "CA_Reg_RM_DS",
+        "max_ethnic_disparity": 0.046875,
+        "credit_score_correlation": 0.14155975776290253,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7913194444444445,
+          "White_Signal": 0.778125,
+          "Hispanic_Signal": 0.8177083333333334,
+          "Black_Signal": 0.825
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7430555555555556,
+          "Q2": 0.7803819444444444,
+          "Q3": 0.8342013888888888,
+          "Q4": 0.8949652777777778
+        }
+      },
+      {
+        "ordering": "CA_RM_DS_Reg",
+        "max_ethnic_disparity": 0.046875,
+        "credit_score_correlation": 0.14155975776290253,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7913194444444445,
+          "White_Signal": 0.778125,
+          "Black_Signal": 0.825,
+          "Hispanic_Signal": 0.8177083333333334
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7430555555555556,
+          "Q2": 0.7803819444444444,
+          "Q3": 0.8342013888888888,
+          "Q4": 0.8949652777777778
+        }
+      },
+      {
+        "ordering": "CA_RM_Reg_DS",
+        "max_ethnic_disparity": 0.046875,
+        "credit_score_correlation": 0.14155975776290253,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7913194444444445,
+          "White_Signal": 0.778125,
+          "Black_Signal": 0.825,
+          "Hispanic_Signal": 0.8177083333333334
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7430555555555556,
+          "Q2": 0.7803819444444444,
+          "Q3": 0.8342013888888888,
+          "Q4": 0.8949652777777778
+        }
+      },
+      {
+        "ordering": "DS_CA_Reg_RM",
+        "max_ethnic_disparity": 0.01666666666666672,
+        "credit_score_correlation": 0.13682519953106537,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.921875,
+          "Black_Signal": 0.9354166666666667,
+          "Hispanic_Signal": 0.9385416666666667,
+          "Asian_Signal": 0.9294894060437652
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8971354166666666,
+          "Q2": 0.9192006950477846,
+          "Q3": 0.9626736111111112,
+          "Q4": 0.9774305555555556
+        }
+      },
+      {
+        "ordering": "DS_CA_RM_Reg",
+        "max_ethnic_disparity": 0.01215277777777779,
+        "credit_score_correlation": 0.1468346251299853,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.928125,
+          "Black_Signal": 0.9395833333333333,
+          "Hispanic_Signal": 0.9364583333333333,
+          "Asian_Signal": 0.9274305555555555
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8967013888888888,
+          "Q2": 0.9149305555555556,
+          "Q3": 0.9644097222222222,
+          "Q4": 0.9826388888888888
+        }
+      },
+      {
+        "ordering": "DS_Reg_CA_RM",
+        "max_ethnic_disparity": 0.01215277777777779,
+        "credit_score_correlation": 0.14707269526268363,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9291666666666667,
+          "Black_Signal": 0.940625,
+          "Hispanic_Signal": 0.9385416666666667,
+          "Asian_Signal": 0.9284722222222223
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8962673611111112,
+          "Q2": 0.921875,
+          "Q3": 0.9635416666666666,
+          "Q4": 0.9835069444444444
+        }
+      },
+      {
+        "ordering": "DS_Reg_RM_CA",
+        "max_ethnic_disparity": 0.04791666666666672,
+        "credit_score_correlation": 0.2746481186398778,
+        "ethnic_approval_rates": {
+          "Black_Signal": 0.7302083333333333,
+          "White_Signal": 0.7,
+          "Hispanic_Signal": 0.7479166666666667,
+          "Asian_Signal": 0.7038194444444444
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.5881076388888888,
+          "Q2": 0.7039930555555556,
+          "Q3": 0.8159722222222222,
+          "Q4": 0.8784722222222222
+        }
+      },
+      {
+        "ordering": "DS_RM_CA_Reg",
+        "max_ethnic_disparity": 0.012500000000000067,
+        "credit_score_correlation": 0.1340504909544365,
+        "ethnic_approval_rates": {
+          "Black_Signal": 0.9385416666666667,
+          "Hispanic_Signal": 0.9354166666666667,
+          "White_Signal": 0.9260416666666667,
+          "Asian_Signal": 0.9305555555555556
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8997395833333334,
+          "Q2": 0.9210069444444444,
+          "Q3": 0.9565972222222222,
+          "Q4": 0.9826388888888888
+        }
+      },
+      {
+        "ordering": "DS_RM_Reg_CA",
+        "max_ethnic_disparity": 0.015625,
+        "credit_score_correlation": 0.14805170636120246,
+        "ethnic_approval_rates": {
+          "Black_Signal": 0.915625,
+          "White_Signal": 0.9166666666666666,
+          "Asian_Signal": 0.9274305555555555,
+          "Hispanic_Signal": 0.93125
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8862847222222222,
+          "Q2": 0.9140625,
+          "Q3": 0.953125,
+          "Q4": 0.9817708333333334
+        }
+      },
+      {
+        "ordering": "Reg_CA_DS_RM",
+        "max_ethnic_disparity": 0.02083333333333337,
+        "credit_score_correlation": 0.16207264044110847,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.8927083333333333,
+          "Hispanic_Signal": 0.90625,
+          "White_Signal": 0.90625,
+          "Black_Signal": 0.8854166666666666
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8493923611111112,
+          "Q2": 0.8802083333333334,
+          "Q3": 0.9348958333333334,
+          "Q4": 0.9661458333333334
+        }
+      },
+      {
+        "ordering": "Reg_CA_RM_DS",
+        "max_ethnic_disparity": 0.02083333333333337,
+        "credit_score_correlation": 0.16207264044110847,
+        "ethnic_approval_rates": {
+          "Hispanic_Signal": 0.90625,
+          "Asian_Signal": 0.8927083333333333,
+          "White_Signal": 0.90625,
+          "Black_Signal": 0.8854166666666666
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8493923611111112,
+          "Q2": 0.8802083333333334,
+          "Q3": 0.9348958333333334,
+          "Q4": 0.9661458333333334
+        }
+      },
+      {
+        "ordering": "Reg_DS_CA_RM",
+        "max_ethnic_disparity": 0.02083333333333337,
+        "credit_score_correlation": 0.16207264044110847,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.8927083333333333,
+          "Hispanic_Signal": 0.90625,
+          "White_Signal": 0.90625,
+          "Black_Signal": 0.8854166666666666
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8493923611111112,
+          "Q2": 0.8802083333333334,
+          "Q3": 0.9348958333333334,
+          "Q4": 0.9661458333333334
+        }
+      },
+      {
+        "ordering": "Reg_DS_RM_CA",
+        "max_ethnic_disparity": 0.018750000000000044,
+        "credit_score_correlation": 0.16827773682521707,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.8954861111111111,
+          "Hispanic_Signal": 0.9135416666666667,
+          "Black_Signal": 0.8947916666666667,
+          "White_Signal": 0.9125
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8546006944444444,
+          "Q2": 0.8828125,
+          "Q3": 0.9409722222222222,
+          "Q4": 0.9730902777777778
+        }
+      },
+      {
+        "ordering": "Reg_RM_CA_DS",
+        "max_ethnic_disparity": 0.028125000000000067,
+        "credit_score_correlation": 0.16872943821565883,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9114583333333334,
+          "Asian_Signal": 0.8934027777777778,
+          "Black_Signal": 0.8833333333333333,
+          "Hispanic_Signal": 0.90625
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8480902777777778,
+          "Q2": 0.8784722222222222,
+          "Q3": 0.9375,
+          "Q4": 0.9722222222222222
+        }
+      },
+      {
+        "ordering": "Reg_RM_DS_CA",
+        "max_ethnic_disparity": 0.027083333333333348,
+        "credit_score_correlation": 0.1830004508195647,
+        "ethnic_approval_rates": {
+          "Hispanic_Signal": 0.8989583333333333,
+          "Asian_Signal": 0.8947916666666667,
+          "White_Signal": 0.9145833333333333,
+          "Black_Signal": 0.8875
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.84375,
+          "Q2": 0.8854166666666666,
+          "Q3": 0.9418402777777778,
+          "Q4": 0.9730902777777778
+        }
+      },
+      {
+        "ordering": "RM_CA_DS_Reg",
+        "max_ethnic_disparity": 0.018402777777777768,
+        "credit_score_correlation": 0.22148120905653537,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7253472222222223,
+          "White_Signal": 0.74375,
+          "Black_Signal": 0.7427083333333333,
+          "Hispanic_Signal": 0.7427083333333333
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6449652777777778,
+          "Q2": 0.6953125,
+          "Q3": 0.7951388888888888,
+          "Q4": 0.890625
+        }
+      },
+      {
+        "ordering": "RM_CA_Reg_DS",
+        "max_ethnic_disparity": 0.023611111111111027,
+        "credit_score_correlation": 0.22762778348524995,
+        "ethnic_approval_rates": {
+          "Black_Signal": 0.7375,
+          "Asian_Signal": 0.7211805555555556,
+          "White_Signal": 0.7447916666666666,
+          "Hispanic_Signal": 0.7291666666666666
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6323784722222222,
+          "Q2": 0.7005208333333334,
+          "Q3": 0.796875,
+          "Q4": 0.8836805555555556
+        }
+      },
+      {
+        "ordering": "RM_DS_CA_Reg",
+        "max_ethnic_disparity": 0.02673611111111107,
+        "credit_score_correlation": 0.21833348495386168,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.7489583333333333,
+          "Black_Signal": 0.7458333333333333,
+          "Asian_Signal": 0.7222222222222222,
+          "Hispanic_Signal": 0.7416666666666667
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6427951388888888,
+          "Q2": 0.7005208333333334,
+          "Q3": 0.8046875,
+          "Q4": 0.8784722222222222
+        }
+      },
+      {
+        "ordering": "RM_DS_Reg_CA",
+        "max_ethnic_disparity": 0.023958333333333415,
+        "credit_score_correlation": 0.22078541825537096,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7270833333333333,
+          "Hispanic_Signal": 0.7385416666666667,
+          "White_Signal": 0.74375,
+          "Black_Signal": 0.7510416666666667
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6423611111111112,
+          "Q2": 0.7083333333333334,
+          "Q3": 0.8072916666666666,
+          "Q4": 0.8784722222222222
+        }
+      },
+      {
+        "ordering": "RM_Reg_CA_DS",
+        "max_ethnic_disparity": 0.021874999999999978,
+        "credit_score_correlation": 0.21702910312300688,
+        "ethnic_approval_rates": {
+          "Black_Signal": 0.746875,
+          "White_Signal": 0.7489583333333333,
+          "Asian_Signal": 0.7270833333333333,
+          "Hispanic_Signal": 0.734375
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6440972222222222,
+          "Q2": 0.7135416666666666,
+          "Q3": 0.7960069444444444,
+          "Q4": 0.8784722222222222
+        }
+      },
+      {
+        "ordering": "RM_Reg_DS_CA",
+        "max_ethnic_disparity": 0.018750000000000044,
+        "credit_score_correlation": 0.23326513787877795,
+        "ethnic_approval_rates": {
+          "Hispanic_Signal": 0.7354166666666667,
+          "Black_Signal": 0.7479166666666667,
+          "Asian_Signal": 0.7291666666666666,
+          "White_Signal": 0.7427083333333333
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6380208333333334,
+          "Q2": 0.703125,
+          "Q3": 0.8029513888888888,
+          "Q4": 0.8958333333333334
+        }
+      }
+    ]
+  },
+  "Qwen": {
+    "total_orderings": 8,
+    "collapsed_count": 8,
+    "collapsed_orderings": [
+      {
+        "ordering": "CA_DS_RM_Reg",
+        "max_ethnic_disparity": 0.04719501044932073,
+        "credit_score_correlation": 0.1517960586567415,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7356721083709621,
+          "White_Signal": 0.721875,
+          "Hispanic_Signal": 0.7690700104493208,
+          "Black_Signal": 0.7614583333333333
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6783854166666666,
+          "Q2": 0.7151567944250871,
+          "Q3": 0.7934027777777778,
+          "Q4": 0.8506944444444444
+        }
+      },
+      {
+        "ordering": "CA_Reg_DS_RM",
+        "max_ethnic_disparity": 0.04615334378265412,
+        "credit_score_correlation": 0.14640953581528354,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.729419937478291,
+          "White_Signal": 0.7229166666666667,
+          "Hispanic_Signal": 0.7690700104493208,
+          "Black_Signal": 0.759375
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6762152777777778,
+          "Q2": 0.7212543554006968,
+          "Q3": 0.7786458333333334,
+          "Q4": 0.8472222222222222
+        }
+      },
+      {
+        "ordering": "DS_Reg_CA_RM",
+        "max_ethnic_disparity": 0.020513850295241443,
+        "credit_score_correlation": 0.14339556736637374,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.9201111497047586,
+          "White_Signal": 0.9229166666666667,
+          "Hispanic_Signal": 0.9278996865203761,
+          "Black_Signal": 0.940625
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8897569444444444,
+          "Q2": 0.9067944250871081,
+          "Q3": 0.9592013888888888,
+          "Q4": 0.9809027777777778
+        }
+      },
+      {
+        "ordering": "DS_Reg_RM_CA",
+        "max_ethnic_disparity": 0.021874999999999978,
+        "credit_score_correlation": 0.14356512099414603,
+        "ethnic_approval_rates": {
+          "Hispanic_Signal": 0.9322916666666666,
+          "Asian_Signal": 0.9260416666666667,
+          "White_Signal": 0.9229166666666667,
+          "Black_Signal": 0.9447916666666667
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8923611111111112,
+          "Q2": 0.9227430555555556,
+          "Q3": 0.9592013888888888,
+          "Q4": 0.9817708333333334
+        }
+      },
+      {
+        "ordering": "Reg_CA_RM_DS",
+        "max_ethnic_disparity": 0.035124681602408336,
+        "credit_score_correlation": 0.18576650888116147,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.8409169850642584,
+          "White_Signal": 0.8760416666666667,
+          "Hispanic_Signal": 0.8589341692789969,
+          "Black_Signal": 0.846875
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7860243055555556,
+          "Q2": 0.8327526132404182,
+          "Q3": 0.9088541666666666,
+          "Q4": 0.9401041666666666
+        }
+      },
+      {
+        "ordering": "Reg_DS_RM_CA",
+        "max_ethnic_disparity": 0.03327833946726455,
+        "credit_score_correlation": 0.18084531623785263,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.8455095393206142,
+          "White_Signal": 0.8693467336683417,
+          "Hispanic_Signal": 0.8787878787878788,
+          "Black_Signal": 0.8463648834019204
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.7948717948717948,
+          "Q2": 0.7960140679953107,
+          "Q3": 0.940347071583514,
+          "Q4": 0.9335443037974683
+        }
+      },
+      {
+        "ordering": "RM_CA_Reg_DS",
+        "max_ethnic_disparity": 0.03156827282780983,
+        "credit_score_correlation": 0.2395404689937345,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7040639110802361,
+          "White_Signal": 0.73125,
+          "Hispanic_Signal": 0.735632183908046,
+          "Black_Signal": 0.7333333333333333
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.6128472222222222,
+          "Q2": 0.6968641114982579,
+          "Q3": 0.7838541666666666,
+          "Q4": 0.8871527777777778
+        }
+      },
+      {
+        "ordering": "RM_DS_Reg_CA",
+        "max_ethnic_disparity": 0.04385384103276602,
+        "credit_score_correlation": 0.2383354370596289,
+        "ethnic_approval_rates": {
+          "Asian_Signal": 0.7009378256339006,
+          "White_Signal": 0.721875,
+          "Hispanic_Signal": 0.7210031347962382,
+          "Black_Signal": 0.7447916666666666
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.609375,
+          "Q2": 0.6916376306620209,
+          "Q3": 0.7881944444444444,
+          "Q4": 0.8767361111111112
+        }
+      }
+    ]
+  },
+  "Llama 3.2": {
+    "total_orderings": 24,
+    "collapsed_count": 16,
+    "collapsed_orderings": [
+      {
+        "ordering": "CA_DS_RM_Reg",
+        "max_ethnic_disparity": 0.04745838588672613,
+        "credit_score_correlation": 0.10877348456520983,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.872946330777656,
+          "Black_Signal": 0.8254879448909299,
+          "Hispanic_Signal": 0.8369098712446352,
+          "Asian_Signal": 0.8634361233480177
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8065923412506059,
+          "Q2": 0.8917944093778178,
+          "Q3": 0.8644818423383526,
+          "Q4": 0.8946444249341527
+        }
+      },
+      {
+        "ordering": "CA_Reg_DS_RM",
+        "max_ethnic_disparity": 0.04504522479382811,
+        "credit_score_correlation": 0.10210843634468356,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.8934517203107658,
+          "Black_Signal": 0.8488095238095238,
+          "Hispanic_Signal": 0.8938547486033519,
+          "Asian_Signal": 0.8639940052454103
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8301298701298702,
+          "Q2": 0.875,
+          "Q3": 0.9092511013215859,
+          "Q4": 0.9011473962930273
+        }
+      },
+      {
+        "ordering": "CA_Reg_RM_DS",
+        "max_ethnic_disparity": 0.01848478249246599,
+        "credit_score_correlation": 0.076286861807719,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9758771929824561,
+          "Black_Signal": 0.9648300117233294,
+          "Hispanic_Signal": 0.9833147942157954,
+          "Asian_Signal": 0.9658742331288344
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9548521017125065,
+          "Q2": 0.9755434782608695,
+          "Q3": 0.9785905441570026,
+          "Q4": 0.9839285714285714
+        }
+      },
+      {
+        "ordering": "CA_RM_Reg_DS",
+        "max_ethnic_disparity": 0.013441597244191361,
+        "credit_score_correlation": 0.06620738339740868,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9797752808988764,
+          "Black_Signal": 0.982373678025852,
+          "Hispanic_Signal": 0.9862385321100917,
+          "Asian_Signal": 0.9727969348659004
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9674666666666667,
+          "Q2": 0.9779411764705882,
+          "Q3": 0.9866785079928952,
+          "Q4": 0.9858906525573192
+        }
+      },
+      {
+        "ordering": "DS_CA_RM_Reg",
+        "max_ethnic_disparity": 0.03568754202579627,
+        "credit_score_correlation": 0.04507053796430142,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9857456140350878,
+          "Black_Signal": 0.9500580720092915,
+          "Hispanic_Signal": 0.9722222222222222,
+          "Asian_Signal": 0.9746268656716418
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9653979238754326,
+          "Q2": 0.9699453551912568,
+          "Q3": 0.9774977497749775,
+          "Q4": 0.9812667261373773
+        }
+      },
+      {
+        "ordering": "DS_Reg_CA_RM",
+        "max_ethnic_disparity": 0.023575059728035308,
+        "credit_score_correlation": 0.07253181354903232,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9710610932475884,
+          "Black_Signal": 0.9474860335195531,
+          "Hispanic_Signal": 0.9640522875816994,
+          "Asian_Signal": 0.9600145401672119
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.942870859337494,
+          "Q2": 0.976,
+          "Q3": 0.9650655021834061,
+          "Q4": 0.9729020979020979
+        }
+      },
+      {
+        "ordering": "DS_Reg_RM_CA",
+        "max_ethnic_disparity": 0.006429451745555315,
+        "credit_score_correlation": 0.033031655994228706,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9924406047516199,
+          "Black_Signal": 0.9988700564971752,
+          "Hispanic_Signal": 0.9977900552486187,
+          "Asian_Signal": 0.9974207811348563
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9941291585127201,
+          "Q2": 0.9991166077738516,
+          "Q3": 1.0,
+          "Q4": 0.9964695498676082
+        }
+      },
+      {
+        "ordering": "DS_RM_CA_Reg",
+        "max_ethnic_disparity": 0.028413011213310968,
+        "credit_score_correlation": 0.03232700843218033,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.982646420824295,
+          "Black_Signal": 0.954233409610984,
+          "Hispanic_Signal": 0.9813391877058177,
+          "Asian_Signal": 0.9755736491487786
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9680275454992622,
+          "Q2": 0.9829901521933752,
+          "Q3": 0.9687778768956289,
+          "Q4": 0.9824253075571178
+        }
+      },
+      {
+        "ordering": "DS_RM_Reg_CA",
+        "max_ethnic_disparity": 0.00589805909023533,
+        "credit_score_correlation": 0.024270141225020216,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9977949283351709,
+          "Black_Signal": 0.9944444444444445,
+          "Hispanic_Signal": 0.9933184855233853,
+          "Asian_Signal": 0.9918968692449356
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9897159647404505,
+          "Q2": 0.9973021582733813,
+          "Q3": 0.995571302037201,
+          "Q4": 0.9947229551451188
+        }
+      },
+      {
+        "ordering": "Reg_DS_RM_CA",
+        "max_ethnic_disparity": 0.02166110504191565,
+        "credit_score_correlation": 0.05214057053291878,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9505907626208379,
+          "Black_Signal": 0.9605963791267306,
+          "Hispanic_Signal": 0.9722518676627535,
+          "Asian_Signal": 0.9507142857142857
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9435850773430391,
+          "Q2": 0.9586994727592267,
+          "Q3": 0.9618456078083407,
+          "Q4": 0.9711538461538461
+        }
+      },
+      {
+        "ordering": "Reg_RM_CA_DS",
+        "max_ethnic_disparity": 0.00433054107416897,
+        "credit_score_correlation": 0.0312866224060301,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9935483870967742,
+          "Black_Signal": 0.9902386117136659,
+          "Hispanic_Signal": 0.9945295404814004,
+          "Asian_Signal": 0.9945691527878349
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9906890130353817,
+          "Q2": 0.9937943262411347,
+          "Q3": 0.9955436720142602,
+          "Q4": 0.9973451327433628
+        }
+      },
+      {
+        "ordering": "Reg_RM_DS_CA",
+        "max_ethnic_disparity": 0.004568189925092114,
+        "credit_score_correlation": 0.03774308704140716,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9576116681859617,
+          "Black_Signal": 0.9530434782608695
+        },
+        "quartile_approval_rates": {}
+      },
+      {
+        "ordering": "RM_CA_DS_Reg",
+        "max_ethnic_disparity": 0.013976668976668938,
+        "credit_score_correlation": 0.1529982997590705,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9016216216216216,
+          "Black_Signal": 0.9122055674518201,
+          "Hispanic_Signal": 0.9155982905982906,
+          "Asian_Signal": 0.9147727272727273
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.8638412984670875,
+          "Q2": 0.9292661361626879,
+          "Q3": 0.9386666666666666,
+          "Q4": 0.9639401934916447
+        }
+      },
+      {
+        "ordering": "RM_DS_CA_Reg",
+        "max_ethnic_disparity": 0.03082872928176794,
+        "credit_score_correlation": 0.10055509910029352,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.8788950276243094,
+          "Black_Signal": 0.8480662983425414
+        },
+        "quartile_approval_rates": {}
+      },
+      {
+        "ordering": "RM_DS_Reg_CA",
+        "max_ethnic_disparity": 0.011568246620829004,
+        "credit_score_correlation": 0.05435365234327438,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9488031914893617,
+          "Black_Signal": 0.9372349448685326
+        },
+        "quartile_approval_rates": {}
+      },
+      {
+        "ordering": "RM_Reg_DS_CA",
+        "max_ethnic_disparity": 0.012820512820512775,
+        "credit_score_correlation": 0.05195728476913576,
+        "ethnic_approval_rates": {
+          "White_Signal": 0.9669156883671292,
+          "Black_Signal": 0.9700854700854701,
+          "Hispanic_Signal": 0.9572649572649573,
+          "Asian_Signal": 0.9594738713117668
+        },
+        "quartile_approval_rates": {
+          "Q1": 0.9531531531531532,
+          "Q2": 0.9564831261101243,
+          "Q3": 0.9726872246696036,
+          "Q4": 0.9745836985100789
+        }
+      }
+    ]
+  },
+  "Mistral Latest": {
+    "total_orderings": 10,
+    "collapsed_count": 0,
+    "collapsed_orderings": []
+  }
+}

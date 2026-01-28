@@ -1,0 +1,46 @@
+{
+  "Llama 70B (70B)": {
+    "total_chains": 138240,
+    "agreement": 138223,
+    "agreement_rate": 0.999877025462963,
+    "overturn_rate": 0.00012297453703703702,
+    "confusion_matrix": [
+      [
+        114880,
+        10
+      ],
+      [
+        7,
+        23343
+      ]
+    ],
+    "position_agreement": {
+      "1st_to_2nd": 0.9999493634259259,
+      "2nd_to_3rd": 0.9999638310185185,
+      "3rd_to_4th": 0.9999493634259259,
+      "1st_to_final": 0.999877025462963
+    }
+  },
+  "Qwen (72B)": {
+    "total_chains": 44724,
+    "agreement": 44702,
+    "agreement_rate": 0.9995080940881853,
+    "overturn_rate": 0.0004919059118146857,
+    "confusion_matrix": [
+      [
+        36110,
+        22
+      ],
+      [
+        0,
+        8592
+      ]
+    ],
+    "position_agreement": {
+      "1st_to_2nd": 1.0,
+      "2nd_to_3rd": 0.9999105625614882,
+      "3rd_to_4th": 0.9995975315266971,
+      "1st_to_final": 0.9995080940881853
+    }
+  }
+}

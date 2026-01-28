@@ -1,0 +1,22 @@
+{
+  "total_records": 178896,
+  "total_chains": 44724,
+  "num_orderings": 8,
+  "overall_approval_rate": 0.8073964761649226,
+  "approval_rate_by_ordering": {
+    "Consumer_Advocate_Data_Science_Risk_Manager_Regulatory": 0.7427083333333333,
+    "Consumer_Advocate_Regulatory_Data_Science_Risk_Manager": 0.7394097222222222,
+    "Data_Science_Regulatory_Consumer_Advocate_Risk_Manager": 0.9239583333333333,
+    "Data_Science_Regulatory_Risk_Manager_Consumer_Advocate": 0.9265625,
+    "Regulatory_Consumer_Advocate_Risk_Manager_Data_Science": 0.8501736111111111,
+    "Regulatory_Data_Science_Risk_Manager_Consumer_Advocate": 0.8546775658492279,
+    "Risk_Manager_Consumer_Advocate_Regulatory_Data_Science": 0.7182291666666667,
+    "Risk_Manager_Data_Science_Regulatory_Consumer_Advocate": 0.7145833333333333
+  },
+  "approval_rate_by_ethnicity": {
+    "Asian_Signal": 0.7985024436174506,
+    "Black_Signal": 0.8211840515505437,
+    "Hispanic_Signal": 0.8218901453957996,
+    "White_Signal": 0.8088078765300691
+  }
+}

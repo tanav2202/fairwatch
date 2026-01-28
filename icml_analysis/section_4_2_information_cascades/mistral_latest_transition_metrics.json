@@ -1,0 +1,177 @@
+{
+  "model": "Mistral Latest",
+  "total_orderings": 10,
+  "average_agreement_rate": 0.9069444444444444,
+  "orderings": [
+    {
+      "ordering": "CA_DS_Reg_RM",
+      "total_chains": 5760,
+      "agreement_rate": 0.8036458333333333,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 1131,
+      "confusion_matrix": [
+        [
+          864,
+          0
+        ],
+        [
+          1131,
+          3765
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_CA_Reg_RM",
+      "total_chains": 5760,
+      "agreement_rate": 0.9954861111111111,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 26,
+      "confusion_matrix": [
+        [
+          1758,
+          0
+        ],
+        [
+          26,
+          3976
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5760,
+      "agreement_rate": 0.9527777777777777,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 272,
+      "confusion_matrix": [
+        [
+          1704,
+          0
+        ],
+        [
+          272,
+          3784
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_RM_DS_CA",
+      "total_chains": 5760,
+      "agreement_rate": 0.33194444444444443,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 3848,
+      "confusion_matrix": [
+        [
+          737,
+          0
+        ],
+        [
+          3848,
+          1175
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_CA_DS_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 0.9980902777777778,
+      "approve_to_deny_flip": 11,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4297,
+          11
+        ],
+        [
+          0,
+          1452
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5760,
+      "agreement_rate": 0.9975694444444444,
+      "approve_to_deny_flip": 2,
+      "deny_to_approve_flip": 12,
+      "confusion_matrix": [
+        [
+          5275,
+          2
+        ],
+        [
+          12,
+          471
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_DS_CA_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 0.9921875,
+      "approve_to_deny_flip": 45,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5235,
+          45
+        ],
+        [
+          0,
+          480
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5261,
+          0
+        ],
+        [
+          0,
+          499
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_Reg_CA_DS",
+      "total_chains": 5760,
+      "agreement_rate": 0.9980902777777778,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 11,
+      "confusion_matrix": [
+        [
+          5239,
+          0
+        ],
+        [
+          11,
+          510
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_Reg_DS_CA",
+      "total_chains": 5760,
+      "agreement_rate": 0.9996527777777777,
+      "approve_to_deny_flip": 1,
+      "deny_to_approve_flip": 1,
+      "confusion_matrix": [
+        [
+          5253,
+          1
+        ],
+        [
+          1,
+          505
+        ]
+      ]
+    }
+  ]
+}

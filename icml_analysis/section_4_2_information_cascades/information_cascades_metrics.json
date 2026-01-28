@@ -1,0 +1,62 @@
+{
+  "70B": {
+    "confusion_matrix": {
+      "approve": {
+        "approve": 0.7761398134149311,
+        "deny": 0.05490491105983116
+      },
+      "deny": {
+        "approve": 0.055007691992370704,
+        "deny": 0.11394758353286699
+      }
+    },
+    "first_final_agreement": 0.8900873969477981,
+    "flip_approve_to_deny": 0.055007691992370704,
+    "flip_deny_to_approve": 0.05490491105983116,
+    "overturn_rate": 0.10991260305220187,
+    "position_agreement": [
+      {
+        "transition": "1\u21922",
+        "agreement_rate": 0.8900656954019247
+      },
+      {
+        "transition": "2\u21923",
+        "agreement_rate": 0.8900782455632716
+      },
+      {
+        "transition": "3\u21924",
+        "agreement_rate": 0.8901029610339506
+      }
+    ]
+  },
+  "Qwen": {
+    "confusion_matrix": {
+      "approve": {
+        "approve": 0.7531352282515074,
+        "deny": 0.054734424346827446
+      },
+      "deny": {
+        "approve": 0.055222509331036465,
+        "deny": 0.13690783807062876
+      }
+    },
+    "first_final_agreement": 0.8900430663221361,
+    "flip_approve_to_deny": 0.055222509331036465,
+    "flip_deny_to_approve": 0.054734424346827446,
+    "overturn_rate": 0.10995693367786391,
+    "position_agreement": [
+      {
+        "transition": "1\u21922",
+        "agreement_rate": 0.8898822853861613
+      },
+      {
+        "transition": "2\u21923",
+        "agreement_rate": 0.8898995119150158
+      },
+      {
+        "transition": "3\u21924",
+        "agreement_rate": 0.8900832615561298
+      }
+    ]
+  }
+}

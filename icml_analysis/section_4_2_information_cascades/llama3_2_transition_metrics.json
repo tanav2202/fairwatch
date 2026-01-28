@@ -1,0 +1,415 @@
+{
+  "model": "Llama 3.2",
+  "total_orderings": 24,
+  "average_agreement_rate": 0.8332203327320492,
+  "orderings": [
+    {
+      "ordering": "CA_DS_Reg_RM",
+      "total_chains": 5700,
+      "agreement_rate": 0.6494736842105263,
+      "approve_to_deny_flip": 1623,
+      "deny_to_approve_flip": 375,
+      "confusion_matrix": [
+        [
+          2991,
+          1623
+        ],
+        [
+          375,
+          711
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_DS_RM_Reg",
+      "total_chains": 5735,
+      "agreement_rate": 0.8545771578029643,
+      "approve_to_deny_flip": 806,
+      "deny_to_approve_flip": 28,
+      "confusion_matrix": [
+        [
+          4620,
+          806
+        ],
+        [
+          28,
+          281
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_Reg_DS_RM",
+      "total_chains": 5740,
+      "agreement_rate": 0.8651567944250871,
+      "approve_to_deny_flip": 729,
+      "deny_to_approve_flip": 45,
+      "confusion_matrix": [
+        [
+          4579,
+          729
+        ],
+        [
+          45,
+          387
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_Reg_RM_DS",
+      "total_chains": 5758,
+      "agreement_rate": 0.9419937478291073,
+      "approve_to_deny_flip": 300,
+      "deny_to_approve_flip": 34,
+      "confusion_matrix": [
+        [
+          5082,
+          300
+        ],
+        [
+          34,
+          342
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_RM_DS_Reg",
+      "total_chains": 5730,
+      "agreement_rate": 0.7743455497382199,
+      "approve_to_deny_flip": 1268,
+      "deny_to_approve_flip": 25,
+      "confusion_matrix": [
+        [
+          4136,
+          1268
+        ],
+        [
+          25,
+          301
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_RM_Reg_DS",
+      "total_chains": 5757,
+      "agreement_rate": 0.9482369289560535,
+      "approve_to_deny_flip": 271,
+      "deny_to_approve_flip": 27,
+      "confusion_matrix": [
+        [
+          5080,
+          271
+        ],
+        [
+          27,
+          379
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_CA_Reg_RM",
+      "total_chains": 5681,
+      "agreement_rate": 0.6138003872557648,
+      "approve_to_deny_flip": 1750,
+      "deny_to_approve_flip": 444,
+      "confusion_matrix": [
+        [
+          3006,
+          1750
+        ],
+        [
+          444,
+          481
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_CA_RM_Reg",
+      "total_chains": 5741,
+      "agreement_rate": 0.9550600940602683,
+      "approve_to_deny_flip": 257,
+      "deny_to_approve_flip": 1,
+      "confusion_matrix": [
+        [
+          5203,
+          257
+        ],
+        [
+          1,
+          280
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_Reg_CA_RM",
+      "total_chains": 5760,
+      "agreement_rate": 0.9621527777777777,
+      "approve_to_deny_flip": 217,
+      "deny_to_approve_flip": 1,
+      "confusion_matrix": [
+        [
+          5279,
+          217
+        ],
+        [
+          1,
+          263
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5727,
+      "agreement_rate": 0.9942378208486118,
+      "approve_to_deny_flip": 31,
+      "deny_to_approve_flip": 2,
+      "confusion_matrix": [
+        [
+          5411,
+          31
+        ],
+        [
+          2,
+          283
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_RM_CA_Reg",
+      "total_chains": 5749,
+      "agreement_rate": 0.9643416246303705,
+      "approve_to_deny_flip": 195,
+      "deny_to_approve_flip": 10,
+      "confusion_matrix": [
+        [
+          5260,
+          195
+        ],
+        [
+          10,
+          284
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_RM_Reg_CA",
+      "total_chains": 5739,
+      "agreement_rate": 0.988673985014811,
+      "approve_to_deny_flip": 63,
+      "deny_to_approve_flip": 2,
+      "confusion_matrix": [
+        [
+          5383,
+          63
+        ],
+        [
+          2,
+          291
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_CA_DS_RM",
+      "total_chains": 5740,
+      "agreement_rate": 0.9470383275261324,
+      "approve_to_deny_flip": 118,
+      "deny_to_approve_flip": 186,
+      "confusion_matrix": [
+        [
+          2063,
+          118
+        ],
+        [
+          186,
+          3373
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_CA_RM_DS",
+      "total_chains": 5749,
+      "agreement_rate": 0.9622543050965385,
+      "approve_to_deny_flip": 151,
+      "deny_to_approve_flip": 66,
+      "confusion_matrix": [
+        [
+          2049,
+          151
+        ],
+        [
+          66,
+          3483
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_DS_CA_RM",
+      "total_chains": 5754,
+      "agreement_rate": 0.9190128606187,
+      "approve_to_deny_flip": 296,
+      "deny_to_approve_flip": 170,
+      "confusion_matrix": [
+        [
+          1922,
+          296
+        ],
+        [
+          170,
+          3366
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_DS_RM_CA",
+      "total_chains": 5759,
+      "agreement_rate": 0.7657579440875152,
+      "approve_to_deny_flip": 149,
+      "deny_to_approve_flip": 1200,
+      "confusion_matrix": [
+        [
+          4160,
+          149
+        ],
+        [
+          1200,
+          250
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_RM_CA_DS",
+      "total_chains": 5760,
+      "agreement_rate": 0.7814236111111111,
+      "approve_to_deny_flip": 30,
+      "deny_to_approve_flip": 1229,
+      "confusion_matrix": [
+        [
+          4264,
+          30
+        ],
+        [
+          1229,
+          237
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_RM_DS_CA",
+      "total_chains": 5702,
+      "agreement_rate": 0.7055419151175026,
+      "approve_to_deny_flip": 160,
+      "deny_to_approve_flip": 1519,
+      "confusion_matrix": [
+        [
+          3779,
+          160
+        ],
+        [
+          1519,
+          244
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_CA_DS_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 0.6315972222222223,
+      "approve_to_deny_flip": 335,
+      "deny_to_approve_flip": 1787,
+      "confusion_matrix": [
+        [
+          3332,
+          335
+        ],
+        [
+          1787,
+          306
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5760,
+      "agreement_rate": 0.9984375,
+      "approve_to_deny_flip": 6,
+      "deny_to_approve_flip": 3,
+      "confusion_matrix": [
+        [
+          5369,
+          6
+        ],
+        [
+          3,
+          382
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_DS_CA_Reg",
+      "total_chains": 5711,
+      "agreement_rate": 0.586587287690422,
+      "approve_to_deny_flip": 288,
+      "deny_to_approve_flip": 2073,
+      "confusion_matrix": [
+        [
+          2825,
+          288
+        ],
+        [
+          2073,
+          525
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5717,
+      "agreement_rate": 0.5714535595592094,
+      "approve_to_deny_flip": 129,
+      "deny_to_approve_flip": 2321,
+      "confusion_matrix": [
+        [
+          3065,
+          129
+        ],
+        [
+          2321,
+          202
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_Reg_CA_DS",
+      "total_chains": 5760,
+      "agreement_rate": 0.9993055555555556,
+      "approve_to_deny_flip": 2,
+      "deny_to_approve_flip": 2,
+      "confusion_matrix": [
+        [
+          5387,
+          2
+        ],
+        [
+          2,
+          369
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_Reg_DS_CA",
+      "total_chains": 5705,
+      "agreement_rate": 0.6168273444347064,
+      "approve_to_deny_flip": 140,
+      "deny_to_approve_flip": 2046,
+      "confusion_matrix": [
+        [
+          3363,
+          140
+        ],
+        [
+          2046,
+          156
+        ]
+      ]
+    }
+  ]
+}

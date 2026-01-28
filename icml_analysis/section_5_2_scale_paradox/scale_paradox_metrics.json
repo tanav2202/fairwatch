@@ -1,0 +1,1610 @@
+{
+  "Llama 70B": [
+    {
+      "ordering": "CA_DS_Reg_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5074652777777777,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2923,
+      "first_agent_errors": 2923
+    },
+    {
+      "ordering": "CA_DS_RM_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5074652777777777,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2923,
+      "first_agent_errors": 2923
+    },
+    {
+      "ordering": "CA_Reg_DS_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9999421296296296,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 0.9998263888888889
+      },
+      "full_consensus_rate": 0.9998263888888889,
+      "first_agent_error_rate": 0.5074652777777777,
+      "error_correction_rate": 0.00034211426616489907,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.00034211426616489907
+      },
+      "errors_never_corrected": 2922,
+      "first_agent_errors": 2923
+    },
+    {
+      "ordering": "CA_Reg_RM_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5074652777777777,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2923,
+      "first_agent_errors": 2923
+    },
+    {
+      "ordering": "CA_RM_DS_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9998842592592592,
+      "agreement_by_position": {
+        "position_1": 0.9998263888888889,
+        "position_2": 0.9998263888888889,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 0.9998263888888889,
+      "first_agent_error_rate": 0.5074652777777777,
+      "error_correction_rate": 0.00034211426616489907,
+      "correction_by_position": {
+        "position_1": 0.00034211426616489907,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2922,
+      "first_agent_errors": 2923
+    },
+    {
+      "ordering": "CA_RM_Reg_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5074652777777777,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2923,
+      "first_agent_errors": 2923
+    },
+    {
+      "ordering": "DS_CA_Reg_RM",
+      "total_chains": 5759,
+      "inter_agent_agreement": 0.9998842391618915,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 0.9996527174856746
+      },
+      "full_consensus_rate": 0.9996527174856746,
+      "first_agent_error_rate": 0.5546101753776698,
+      "error_correction_rate": 0.00031308703819661864,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.00031308703819661864
+      },
+      "errors_never_corrected": 3193,
+      "first_agent_errors": 3194
+    },
+    {
+      "ordering": "DS_CA_RM_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9997685185185184,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9993055555555556,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 0.9993055555555556,
+      "first_agent_error_rate": 0.5522569444444444,
+      "error_correction_rate": 0.0006287331027978623,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0006287331027978623,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3179,
+      "first_agent_errors": 3181
+    },
+    {
+      "ordering": "DS_Reg_CA_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9998842592592592,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 0.9996527777777777
+      },
+      "full_consensus_rate": 0.9996527777777777,
+      "first_agent_error_rate": 0.5534722222222223,
+      "error_correction_rate": 0.0006273525721455458,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0006273525721455458
+      },
+      "errors_never_corrected": 3186,
+      "first_agent_errors": 3188
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4371527777777778,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2518,
+      "first_agent_errors": 2518
+    },
+    {
+      "ordering": "DS_RM_CA_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.55625,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3204,
+      "first_agent_errors": 3204
+    },
+    {
+      "ordering": "DS_RM_Reg_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9998842592592592,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 0.9996527777777777
+      },
+      "full_consensus_rate": 0.9996527777777777,
+      "first_agent_error_rate": 0.5503472222222222,
+      "error_correction_rate": 0.0003154574132492114,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0003154574132492114
+      },
+      "errors_never_corrected": 3169,
+      "first_agent_errors": 3170
+    },
+    {
+      "ordering": "Reg_CA_DS_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5355902777777778,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3085,
+      "first_agent_errors": 3085
+    },
+    {
+      "ordering": "Reg_CA_RM_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5355902777777778,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3085,
+      "first_agent_errors": 3085
+    },
+    {
+      "ordering": "Reg_DS_CA_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5355902777777778,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3085,
+      "first_agent_errors": 3085
+    },
+    {
+      "ordering": "Reg_DS_RM_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5355902777777778,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3085,
+      "first_agent_errors": 3085
+    },
+    {
+      "ordering": "Reg_RM_CA_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5329861111111112,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3070,
+      "first_agent_errors": 3070
+    },
+    {
+      "ordering": "Reg_RM_DS_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5315972222222223,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3062,
+      "first_agent_errors": 3062
+    },
+    {
+      "ordering": "RM_CA_DS_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.45989583333333334,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2649,
+      "first_agent_errors": 2649
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.45694444444444443,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2632,
+      "first_agent_errors": 2632
+    },
+    {
+      "ordering": "RM_DS_CA_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9999421296296296,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9998263888888889,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 0.9998263888888889,
+      "first_agent_error_rate": 0.4605902777777778,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2653,
+      "first_agent_errors": 2653
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.46145833333333336,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2658,
+      "first_agent_errors": 2658
+    },
+    {
+      "ordering": "RM_Reg_CA_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9997685185185184,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9996527777777777,
+        "position_3": 0.9996527777777777
+      },
+      "full_consensus_rate": 0.9996527777777777,
+      "first_agent_error_rate": 0.4654513888888889,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2681,
+      "first_agent_errors": 2681
+    },
+    {
+      "ordering": "RM_Reg_DS_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9998842592592592,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 0.9996527777777777
+      },
+      "full_consensus_rate": 0.9996527777777777,
+      "first_agent_error_rate": 0.4560763888888889,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2627,
+      "first_agent_errors": 2627
+    }
+  ],
+  "Qwen": [
+    {
+      "ordering": "CA_DS_RM_Reg",
+      "total_chains": 5756,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.485406532314107,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2794,
+      "first_agent_errors": 2794
+    },
+    {
+      "ordering": "CA_Reg_DS_RM",
+      "total_chains": 5756,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.48940236275191107,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2817,
+      "first_agent_errors": 2817
+    },
+    {
+      "ordering": "DS_Reg_CA_RM",
+      "total_chains": 5756,
+      "inter_agent_agreement": 0.9997683576557795,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9993050729673384,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 0.9993050729673384,
+      "first_agent_error_rate": 0.5489923558026407,
+      "error_correction_rate": 0.0006329113924050633,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0006329113924050633,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3158,
+      "first_agent_errors": 3160
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9989583333333334,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 0.996875
+      },
+      "full_consensus_rate": 0.996875,
+      "first_agent_error_rate": 0.5532986111111111,
+      "error_correction_rate": 0.0025101976780671476,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0025101976780671476
+      },
+      "errors_never_corrected": 3179,
+      "first_agent_errors": 3187
+    },
+    {
+      "ordering": "Reg_CA_RM_DS",
+      "total_chains": 5756,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.5109451007644198,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2941,
+      "first_agent_errors": 2941
+    },
+    {
+      "ordering": "Reg_DS_RM_CA",
+      "total_chains": 4400,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.48409090909090907,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2130,
+      "first_agent_errors": 2130
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5756,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4501389854065323,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2591,
+      "first_agent_errors": 2591
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5756,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.44892286309937457,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2584,
+      "first_agent_errors": 2584
+    }
+  ],
+  "Llama 3.2": [
+    {
+      "ordering": "CA_DS_Reg_RM",
+      "total_chains": 4418,
+      "inter_agent_agreement": 0.8436698355213522,
+      "agreement_by_position": {
+        "position_1": 0.965142598460842,
+        "position_2": 0.8476686283386148,
+        "position_3": 0.7181982797645994
+      },
+      "full_consensus_rate": 0.6047985513807153,
+      "first_agent_error_rate": 0.5142598460842009,
+      "error_correction_rate": 0.5501760563380281,
+      "correction_by_position": {
+        "position_1": 0.035211267605633804,
+        "position_2": 0.2125880281690141,
+        "position_3": 0.3023767605633803
+      },
+      "errors_never_corrected": 1022,
+      "first_agent_errors": 2272
+    },
+    {
+      "ordering": "CA_DS_RM_Reg",
+      "total_chains": 5346,
+      "inter_agent_agreement": 0.95149021074947,
+      "agreement_by_position": {
+        "position_1": 0.9977553310886644,
+        "position_2": 0.9687616909839132,
+        "position_3": 0.8879536101758324
+      },
+      "full_consensus_rate": 0.8600823045267489,
+      "first_agent_error_rate": 0.5774410774410774,
+      "error_correction_rate": 0.15387107223841917,
+      "correction_by_position": {
+        "position_1": 0.0022675736961451248,
+        "position_2": 0.038872691933916424,
+        "position_3": 0.11273080660835763
+      },
+      "errors_never_corrected": 2612,
+      "first_agent_errors": 3087
+    },
+    {
+      "ordering": "CA_Reg_DS_RM",
+      "total_chains": 5218,
+      "inter_agent_agreement": 0.8921681359396959,
+      "agreement_by_position": {
+        "position_1": 0.9001533154465312,
+        "position_2": 0.9011115369873515,
+        "position_3": 0.875239555385205
+      },
+      "full_consensus_rate": 0.8133384438482177,
+      "first_agent_error_rate": 0.5691835952472212,
+      "error_correction_rate": 0.21346801346801347,
+      "correction_by_position": {
+        "position_1": 0.10471380471380472,
+        "position_2": 0.00101010101010101,
+        "position_3": 0.10774410774410774
+      },
+      "errors_never_corrected": 2336,
+      "first_agent_errors": 2970
+    },
+    {
+      "ordering": "CA_Reg_RM_DS",
+      "total_chains": 5205,
+      "inter_agent_agreement": 0.9102785782901056,
+      "agreement_by_position": {
+        "position_1": 0.9118155619596542,
+        "position_2": 0.8920268972142171,
+        "position_3": 0.9269932756964457
+      },
+      "full_consensus_rate": 0.8520653218059558,
+      "first_agent_error_rate": 0.5719500480307397,
+      "error_correction_rate": 0.16963385959019148,
+      "correction_by_position": {
+        "position_1": 0.094054417198522,
+        "position_2": 0.07524353375881761,
+        "position_3": 0.0003359086328518643
+      },
+      "errors_never_corrected": 2472,
+      "first_agent_errors": 2977
+    },
+    {
+      "ordering": "CA_RM_DS_Reg",
+      "total_chains": 5209,
+      "inter_agent_agreement": 0.8926217444167147,
+      "agreement_by_position": {
+        "position_1": 0.9360721827606067,
+        "position_2": 0.9391437895949318,
+        "position_3": 0.8026492608946055
+      },
+      "full_consensus_rate": 0.773468995968516,
+      "first_agent_error_rate": 0.5713188711844884,
+      "error_correction_rate": 0.2654569892473118,
+      "correction_by_position": {
+        "position_1": 0.08770161290322581,
+        "position_2": 0.00739247311827957,
+        "position_3": 0.17036290322580644
+      },
+      "errors_never_corrected": 2186,
+      "first_agent_errors": 2976
+    },
+    {
+      "ordering": "CA_RM_Reg_DS",
+      "total_chains": 5045,
+      "inter_agent_agreement": 0.9043937892302609,
+      "agreement_by_position": {
+        "position_1": 0.9399405351833499,
+        "position_2": 0.8977205153617444,
+        "position_3": 0.8755203171456888
+      },
+      "full_consensus_rate": 0.8477700693756194,
+      "first_agent_error_rate": 0.5639246778989098,
+      "error_correction_rate": 0.17609841827768014,
+      "correction_by_position": {
+        "position_1": 0.07592267135325131,
+        "position_2": 0.09666080843585237,
+        "position_3": 0.0035149384885764497
+      },
+      "errors_never_corrected": 2344,
+      "first_agent_errors": 2845
+    },
+    {
+      "ordering": "DS_CA_Reg_RM",
+      "total_chains": 4328,
+      "inter_agent_agreement": 0.8331022797288972,
+      "agreement_by_position": {
+        "position_1": 0.9533271719038817,
+        "position_2": 0.8364140480591498,
+        "position_3": 0.7095656192236599
+      },
+      "full_consensus_rate": 0.5891866913123844,
+      "first_agent_error_rate": 0.5055452865064695,
+      "error_correction_rate": 0.5685557586837294,
+      "correction_by_position": {
+        "position_1": 0.051188299817184646,
+        "position_2": 0.21389396709323583,
+        "position_3": 0.30347349177330896
+      },
+      "errors_never_corrected": 944,
+      "first_agent_errors": 2188
+    },
+    {
+      "ordering": "DS_CA_RM_Reg",
+      "total_chains": 5350,
+      "inter_agent_agreement": 0.9904672897196263,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9953271028037384,
+        "position_3": 0.9760747663551402
+      },
+      "full_consensus_rate": 0.9721495327102804,
+      "first_agent_error_rate": 0.5824299065420561,
+      "error_correction_rate": 0.03305519897304236,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.007381258023106547,
+        "position_3": 0.025673940949935817
+      },
+      "errors_never_corrected": 3013,
+      "first_agent_errors": 3116
+    },
+    {
+      "ordering": "DS_Reg_CA_RM",
+      "total_chains": 5482,
+      "inter_agent_agreement": 0.9820625076006323,
+      "agreement_by_position": {
+        "position_1": 0.9998175848230573,
+        "position_2": 0.9923385625684057,
+        "position_3": 0.9540313754104341
+      },
+      "full_consensus_rate": 0.953484129879606,
+      "first_agent_error_rate": 0.5829989055089383,
+      "error_correction_rate": 0.05506883604505632,
+      "correction_by_position": {
+        "position_1": 0.00031289111389236547,
+        "position_2": 0.01032540675844806,
+        "position_3": 0.044430538172715896
+      },
+      "errors_never_corrected": 3020,
+      "first_agent_errors": 3196
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5426,
+      "inter_agent_agreement": 0.99533112175943,
+      "agreement_by_position": {
+        "position_1": 0.9998157021747144,
+        "position_2": 0.9933652782897162,
+        "position_3": 0.9928123848138592
+      },
+      "full_consensus_rate": 0.9917065978621452,
+      "first_agent_error_rate": 0.584408403980833,
+      "error_correction_rate": 0.011668243456322927,
+      "correction_by_position": {
+        "position_1": 0.000315357931251971,
+        "position_2": 0.00914538000630716,
+        "position_3": 0.002207505518763797
+      },
+      "errors_never_corrected": 3134,
+      "first_agent_errors": 3171
+    },
+    {
+      "ordering": "DS_RM_CA_Reg",
+      "total_chains": 5355,
+      "inter_agent_agreement": 0.9840024898848428,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9859943977591037,
+        "position_3": 0.9660130718954248
+      },
+      "full_consensus_rate": 0.9639589169000934,
+      "first_agent_error_rate": 0.5818860877684408,
+      "error_correction_rate": 0.03626444159178434,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.012836970474967908,
+        "position_3": 0.02342747111681643
+      },
+      "errors_never_corrected": 3003,
+      "first_agent_errors": 3116
+    },
+    {
+      "ordering": "DS_RM_Reg_CA",
+      "total_chains": 5356,
+      "inter_agent_agreement": 0.9724296738859847,
+      "agreement_by_position": {
+        "position_1": 0.9994398805078417,
+        "position_2": 0.9592979835698282,
+        "position_3": 0.9585511575802838
+      },
+      "full_consensus_rate": 0.9561239731142643,
+      "first_agent_error_rate": 0.580470500373413,
+      "error_correction_rate": 0.04470890961724027,
+      "correction_by_position": {
+        "position_1": 0.000643293663557414,
+        "position_2": 0.04117079446767449,
+        "position_3": 0.002894821486008363
+      },
+      "errors_never_corrected": 2970,
+      "first_agent_errors": 3109
+    },
+    {
+      "ordering": "Reg_CA_DS_RM",
+      "total_chains": 2202,
+      "inter_agent_agreement": 0.9785043899485316,
+      "agreement_by_position": {
+        "position_1": 0.9931880108991825,
+        "position_2": 0.9931880108991825,
+        "position_3": 0.9491371480472298
+      },
+      "full_consensus_rate": 0.9418710263396912,
+      "first_agent_error_rate": 0.4232515894641235,
+      "error_correction_rate": 0.05686695278969957,
+      "correction_by_position": {
+        "position_1": 0.00536480686695279,
+        "position_2": 0.003218884120171674,
+        "position_3": 0.048283261802575105
+      },
+      "errors_never_corrected": 879,
+      "first_agent_errors": 932
+    },
+    {
+      "ordering": "Reg_CA_RM_DS",
+      "total_chains": 2134,
+      "inter_agent_agreement": 0.9601686972820994,
+      "agreement_by_position": {
+        "position_1": 0.9967197750702905,
+        "position_2": 0.9250234301780693,
+        "position_3": 0.9587628865979382
+      },
+      "full_consensus_rate": 0.9245548266166823,
+      "first_agent_error_rate": 0.41424554826616683,
+      "error_correction_rate": 0.083710407239819,
+      "correction_by_position": {
+        "position_1": 0.005656108597285068,
+        "position_2": 0.07805429864253394,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 810,
+      "first_agent_errors": 884
+    },
+    {
+      "ordering": "Reg_DS_CA_RM",
+      "total_chains": 2230,
+      "inter_agent_agreement": 0.9518684603886398,
+      "agreement_by_position": {
+        "position_1": 0.9896860986547085,
+        "position_2": 0.9977578475336323,
+        "position_3": 0.8681614349775785
+      },
+      "full_consensus_rate": 0.8632286995515696,
+      "first_agent_error_rate": 0.4219730941704036,
+      "error_correction_rate": 0.14027630180658873,
+      "correction_by_position": {
+        "position_1": 0.009564293304994687,
+        "position_2": 0.0010626992561105207,
+        "position_3": 0.12964930924548354
+      },
+      "errors_never_corrected": 809,
+      "first_agent_errors": 941
+    },
+    {
+      "ordering": "Reg_DS_RM_CA",
+      "total_chains": 4569,
+      "inter_agent_agreement": 0.8204567009557161,
+      "agreement_by_position": {
+        "position_1": 0.9244911359159553,
+        "position_2": 0.7636244254760342,
+        "position_3": 0.7732545414751587
+      },
+      "full_consensus_rate": 0.6997154738454804,
+      "first_agent_error_rate": 0.5248413219522872,
+      "error_correction_rate": 0.3327773144286906,
+      "correction_by_position": {
+        "position_1": 0.0475396163469558,
+        "position_2": 0.2731442869057548,
+        "position_3": 0.012093411175979984
+      },
+      "errors_never_corrected": 1600,
+      "first_agent_errors": 2398
+    },
+    {
+      "ordering": "Reg_RM_CA_DS",
+      "total_chains": 4525,
+      "inter_agent_agreement": 0.7866666666666667,
+      "agreement_by_position": {
+        "position_1": 0.6773480662983425,
+        "position_2": 0.7193370165745856,
+        "position_3": 0.9633149171270718
+      },
+      "full_consensus_rate": 0.6521546961325967,
+      "first_agent_error_rate": 0.5129281767955801,
+      "error_correction_rate": 0.4131839724256786,
+      "correction_by_position": {
+        "position_1": 0.3946574752261956,
+        "position_2": 0.016372253339077984,
+        "position_3": 0.002154243860404998
+      },
+      "errors_never_corrected": 1362,
+      "first_agent_errors": 2321
+    },
+    {
+      "ordering": "Reg_RM_DS_CA",
+      "total_chains": 4287,
+      "inter_agent_agreement": 0.7344685483243915,
+      "agreement_by_position": {
+        "position_1": 0.5976207137858642,
+        "position_2": 0.6498717051551202,
+        "position_3": 0.9559132260321903
+      },
+      "full_consensus_rate": 0.56333100069979,
+      "first_agent_error_rate": 0.8035922556566364,
+      "error_correction_rate": 0.39622641509433965,
+      "correction_by_position": {
+        "position_1": 0.3776487663280116,
+        "position_2": 0.0046444121915820025,
+        "position_3": 0.01393323657474601
+      },
+      "errors_never_corrected": 2080,
+      "first_agent_errors": 3445
+    },
+    {
+      "ordering": "RM_CA_DS_Reg",
+      "total_chains": 5543,
+      "inter_agent_agreement": 0.8280113055505444,
+      "agreement_by_position": {
+        "position_1": 0.6359372181129352,
+        "position_2": 0.9383005592639365,
+        "position_3": 0.909796139274761
+      },
+      "full_consensus_rate": 0.5699079920620602,
+      "first_agent_error_rate": 0.3703770521378315,
+      "error_correction_rate": 0.3088163662932294,
+      "correction_by_position": {
+        "position_1": 0.22260107160253287,
+        "position_2": 0.01802240623477837,
+        "position_3": 0.06819288845591817
+      },
+      "errors_never_corrected": 1419,
+      "first_agent_errors": 2053
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5621,
+      "inter_agent_agreement": 0.9828025855423116,
+      "agreement_by_position": {
+        "position_1": 0.9930617327877602,
+        "position_2": 0.9743817826009606,
+        "position_3": 0.9809642412382138
+      },
+      "full_consensus_rate": 0.9743817826009606,
+      "first_agent_error_rate": 0.5408290339797189,
+      "error_correction_rate": 0.021710526315789475,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.021710526315789475,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2974,
+      "first_agent_errors": 3040
+    },
+    {
+      "ordering": "RM_DS_CA_Reg",
+      "total_chains": 5533,
+      "inter_agent_agreement": 0.775588890897042,
+      "agreement_by_position": {
+        "position_1": 0.5503343574914151,
+        "position_2": 0.9228266763058015,
+        "position_3": 0.8536056388939093
+      },
+      "full_consensus_rate": 0.47912524850894633,
+      "first_agent_error_rate": 0.5351527200433761,
+      "error_correction_rate": 0.2161431948665991,
+      "correction_by_position": {
+        "position_1": 0.11009793988517393,
+        "position_2": 0.04491725768321513,
+        "position_3": 0.061127997298210064
+      },
+      "errors_never_corrected": 2321,
+      "first_agent_errors": 2961
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5230,
+      "inter_agent_agreement": 0.7608667941363926,
+      "agreement_by_position": {
+        "position_1": 0.5910133843212237,
+        "position_2": 0.8453154875717017,
+        "position_3": 0.8462715105162524
+      },
+      "full_consensus_rate": 0.502868068833652,
+      "first_agent_error_rate": 0.5416826003824092,
+      "error_correction_rate": 0.20367102012001412,
+      "correction_by_position": {
+        "position_1": 0.07624426403106248,
+        "position_2": 0.10554182845040593,
+        "position_3": 0.02188492763854571
+      },
+      "errors_never_corrected": 2256,
+      "first_agent_errors": 2833
+    },
+    {
+      "ordering": "RM_Reg_CA_DS",
+      "total_chains": 5674,
+      "inter_agent_agreement": 0.9944777346962755,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9915403595347198,
+        "position_3": 0.9918928445541064
+      },
+      "full_consensus_rate": 0.9915403595347198,
+      "first_agent_error_rate": 0.5428269298554811,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 3080,
+      "first_agent_errors": 3080
+    },
+    {
+      "ordering": "RM_Reg_DS_CA",
+      "total_chains": 4700,
+      "inter_agent_agreement": 0.8149645390070921,
+      "agreement_by_position": {
+        "position_1": 0.5959574468085106,
+        "position_2": 0.8872340425531915,
+        "position_3": 0.9617021276595744
+      },
+      "full_consensus_rate": 0.5240425531914894,
+      "first_agent_error_rate": 0.26404255319148934,
+      "error_correction_rate": 0.34730056406124094,
+      "correction_by_position": {
+        "position_1": 0.314262691377921,
+        "position_2": 0.016116035455278,
+        "position_3": 0.016921837228041903
+      },
+      "errors_never_corrected": 810,
+      "first_agent_errors": 1241
+    }
+  ],
+  "Mistral Latest": [
+    {
+      "ordering": "CA_DS_Reg_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9299189814814816,
+      "agreement_by_position": {
+        "position_1": 0.8239583333333333,
+        "position_2": 0.9940972222222222,
+        "position_3": 0.9717013888888889
+      },
+      "full_consensus_rate": 0.8012152777777778,
+      "first_agent_error_rate": 0.25,
+      "error_correction_rate": 0.5131944444444444,
+      "correction_by_position": {
+        "position_1": 0.4979166666666667,
+        "position_2": 0.0,
+        "position_3": 0.015277777777777777
+      },
+      "errors_never_corrected": 701,
+      "first_agent_errors": 1440
+    },
+    {
+      "ordering": "CA_DS_RM_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "CA_Reg_DS_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "CA_Reg_RM_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "CA_RM_DS_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "CA_RM_Reg_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "DS_CA_Reg_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.996412037037037,
+      "agreement_by_position": {
+        "position_1": 0.996875,
+        "position_2": 0.996875,
+        "position_3": 0.9954861111111111
+      },
+      "full_consensus_rate": 0.9923611111111111,
+      "first_agent_error_rate": 0.17673611111111112,
+      "error_correction_rate": 0.0068762278978389,
+      "correction_by_position": {
+        "position_1": 0.0068762278978389,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 1011,
+      "first_agent_errors": 1018
+    },
+    {
+      "ordering": "DS_CA_RM_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "DS_Reg_CA_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9840277777777778,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9770833333333333,
+        "position_3": 0.975
+      },
+      "full_consensus_rate": 0.9524305555555556,
+      "first_agent_error_rate": 0.175,
+      "error_correction_rate": 0.07341269841269842,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.018849206349206348,
+        "position_3": 0.054563492063492064
+      },
+      "errors_never_corrected": 934,
+      "first_agent_errors": 1008
+    },
+    {
+      "ordering": "DS_RM_CA_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "DS_RM_Reg_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "Reg_CA_DS_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "Reg_CA_RM_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "Reg_DS_CA_RM",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "Reg_DS_RM_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "Reg_RM_CA_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 1.0,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 1.0,
+        "position_3": 1.0
+      },
+      "full_consensus_rate": 1.0,
+      "first_agent_error_rate": 0.4,
+      "error_correction_rate": 0.0,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2304,
+      "first_agent_errors": 2304
+    },
+    {
+      "ordering": "Reg_RM_DS_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.7766203703703703,
+      "agreement_by_position": {
+        "position_1": 0.6503472222222222,
+        "position_2": 0.6946180555555556,
+        "position_3": 0.9848958333333333
+      },
+      "full_consensus_rate": 0.3315972222222222,
+      "first_agent_error_rate": 0.27899305555555554,
+      "error_correction_rate": 0.8643434971997511,
+      "correction_by_position": {
+        "position_1": 0.6048537647790915,
+        "position_2": 0.24082140634723087,
+        "position_3": 0.018668326073428748
+      },
+      "errors_never_corrected": 218,
+      "first_agent_errors": 1607
+    },
+    {
+      "ordering": "RM_CA_DS_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9806134259259259,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9713541666666666,
+        "position_3": 0.9704861111111112
+      },
+      "full_consensus_rate": 0.9699652777777777,
+      "first_agent_error_rate": 0.5350694444444445,
+      "error_correction_rate": 0.0016223231667748216,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.0,
+        "position_3": 0.0016223231667748216
+      },
+      "errors_never_corrected": 3077,
+      "first_agent_errors": 3082
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9121527777777777,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.8694444444444445,
+        "position_3": 0.8670138888888889
+      },
+      "full_consensus_rate": 0.8670138888888889,
+      "first_agent_error_rate": 0.5161458333333333,
+      "error_correction_rate": 0.14026236125126135,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.13992600067272115,
+        "position_3": 0.0003363605785401951
+      },
+      "errors_never_corrected": 2556,
+      "first_agent_errors": 2973
+    },
+    {
+      "ordering": "RM_DS_CA_Reg",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9971643518518518,
+      "agreement_by_position": {
+        "position_1": 0.9996527777777777,
+        "position_2": 0.9996527777777777,
+        "position_3": 0.9921875
+      },
+      "full_consensus_rate": 0.9918402777777777,
+      "first_agent_error_rate": 0.5166666666666667,
+      "error_correction_rate": 0.0030241935483870967,
+      "correction_by_position": {
+        "position_1": 0.0006720430107526882,
+        "position_2": 0.0,
+        "position_3": 0.0023521505376344087
+      },
+      "errors_never_corrected": 2967,
+      "first_agent_errors": 2976
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9971064814814815,
+      "agreement_by_position": {
+        "position_1": 0.9998263888888889,
+        "position_2": 0.9956597222222222,
+        "position_3": 0.9958333333333333
+      },
+      "full_consensus_rate": 0.9956597222222222,
+      "first_agent_error_rate": 0.5133680555555555,
+      "error_correction_rate": 0.0047345282380791345,
+      "correction_by_position": {
+        "position_1": 0.00033818058843422386,
+        "position_2": 0.00439634764964491,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2943,
+      "first_agent_errors": 2957
+    },
+    {
+      "ordering": "RM_Reg_CA_DS",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9987847222222221,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9991319444444444,
+        "position_3": 0.9972222222222222
+      },
+      "full_consensus_rate": 0.9972222222222222,
+      "first_agent_error_rate": 0.5095486111111112,
+      "error_correction_rate": 0.00034071550255536625,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.00034071550255536625,
+        "position_3": 0.0
+      },
+      "errors_never_corrected": 2934,
+      "first_agent_errors": 2935
+    },
+    {
+      "ordering": "RM_Reg_DS_CA",
+      "total_chains": 5760,
+      "inter_agent_agreement": 0.9991898148148147,
+      "agreement_by_position": {
+        "position_1": 1.0,
+        "position_2": 0.9989583333333333,
+        "position_3": 0.9986111111111111
+      },
+      "full_consensus_rate": 0.9986111111111111,
+      "first_agent_error_rate": 0.5121527777777778,
+      "error_correction_rate": 0.002033898305084746,
+      "correction_by_position": {
+        "position_1": 0.0,
+        "position_2": 0.001694915254237288,
+        "position_3": 0.00033898305084745765
+      },
+      "errors_never_corrected": 2944,
+      "first_agent_errors": 2950
+    }
+  ]
+}

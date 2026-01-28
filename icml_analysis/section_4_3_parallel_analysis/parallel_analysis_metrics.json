@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "name": "Llama 70B",
+      "parallel_approval_rate": 0.8404079861111111,
+      "sequential_mean_approval_rate": 0.8311033899543125,
+      "sequential_std": 0.07944845341591145,
+      "sequential_variance": 0.006312056750180251,
+      "sequential_range": {
+        "min": 0.7149305555555555,
+        "max": 0.9322048611111111
+      },
+      "num_sequential_orderings": 24
+    },
+    {
+      "name": "Llama 3.2",
+      "parallel_approval_rate": 0.9820625401584921,
+      "sequential_mean_approval_rate": 0.9255769651295104,
+      "sequential_std": 0.0510603363955551,
+      "sequential_variance": 0.0026071579528272487,
+      "sequential_range": {
+        "min": 0.8361809946634379,
+        "max": 0.9969919329109885
+      },
+      "num_sequential_orderings": 24
+    },
+    {
+      "name": "Mistral Latest",
+      "parallel_approval_rate": 0.7323628219484882,
+      "sequential_mean_approval_rate": 0.28020471643518513,
+      "sequential_std": 0.3733499392588658,
+      "sequential_variance": 0.13939017714459878,
+      "sequential_range": {
+        "min": 0.0,
+        "max": 0.9146267361111111
+      },
+      "num_sequential_orderings": 24
+    }
+  ]
+}

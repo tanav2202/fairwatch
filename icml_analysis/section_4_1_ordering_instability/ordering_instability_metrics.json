@@ -1,0 +1,54 @@
+{
+  "70B": {
+    "num_orderings": 24,
+    "min_approval": 0.7149305555555555,
+    "max_approval": 0.9319444444444445,
+    "range": 0.21701388888888895,
+    "mean_approval": 0.8310402199074073,
+    "std_approval": 0.08111054271055966,
+    "ordering_rates": {
+      "Consumer_Advocate_Data_Science_Regulatory_Risk_Manager": 0.7991319444444445,
+      "Consumer_Advocate_Data_Science_Risk_Manager_Regulatory": 0.7991319444444445,
+      "Consumer_Advocate_Regulatory_Data_Science_Risk_Manager": 0.7989583333333333,
+      "Consumer_Advocate_Regulatory_Risk_Manager_Data_Science": 0.7991319444444445,
+      "Consumer_Advocate_Risk_Manager_Data_Science_Regulatory": 0.7991319444444445,
+      "Consumer_Advocate_Risk_Manager_Regulatory_Data_Science": 0.7991319444444445,
+      "Data_Science_Consumer_Advocate_Regulatory_Risk_Manager": 0.9302083333333333,
+      "Data_Science_Consumer_Advocate_Risk_Manager_Regulatory": 0.9303819444444444,
+      "Data_Science_Regulatory_Consumer_Advocate_Risk_Manager": 0.9319444444444445,
+      "Data_Science_Regulatory_Risk_Manager_Consumer_Advocate": 0.7149305555555555,
+      "Data_Science_Risk_Manager_Consumer_Advocate_Regulatory": 0.9319444444444445,
+      "Data_Science_Risk_Manager_Regulatory_Consumer_Advocate": 0.9239583333333333,
+      "Regulatory_Consumer_Advocate_Data_Science_Risk_Manager": 0.8960069444444444,
+      "Regulatory_Consumer_Advocate_Risk_Manager_Data_Science": 0.8960069444444444,
+      "Regulatory_Data_Science_Consumer_Advocate_Risk_Manager": 0.8960069444444444,
+      "Regulatory_Data_Science_Risk_Manager_Consumer_Advocate": 0.9012152777777778,
+      "Regulatory_Risk_Manager_Consumer_Advocate_Data_Science": 0.896875,
+      "Regulatory_Risk_Manager_Data_Science_Consumer_Advocate": 0.8975694444444444,
+      "Risk_Manager_Consumer_Advocate_Data_Science_Regulatory": 0.7342013888888889,
+      "Risk_Manager_Consumer_Advocate_Regulatory_Data_Science": 0.7291666666666666,
+      "Risk_Manager_Data_Science_Consumer_Advocate_Regulatory": 0.7336805555555556,
+      "Risk_Manager_Data_Science_Regulatory_Consumer_Advocate": 0.7357638888888889,
+      "Risk_Manager_Regulatory_Consumer_Advocate_Data_Science": 0.7352430555555556,
+      "Risk_Manager_Regulatory_Data_Science_Consumer_Advocate": 0.7352430555555556
+    }
+  },
+  "Qwen": {
+    "num_orderings": 8,
+    "min_approval": 0.7145833333333333,
+    "max_approval": 0.9265625,
+    "range": 0.2119791666666666,
+    "mean_approval": 0.8087878207311535,
+    "std_approval": 0.0904030252983314,
+    "ordering_rates": {
+      "Consumer_Advocate_Data_Science_Risk_Manager_Regulatory": 0.7427083333333333,
+      "Consumer_Advocate_Regulatory_Data_Science_Risk_Manager": 0.7394097222222222,
+      "Data_Science_Regulatory_Consumer_Advocate_Risk_Manager": 0.9239583333333333,
+      "Data_Science_Regulatory_Risk_Manager_Consumer_Advocate": 0.9265625,
+      "Regulatory_Consumer_Advocate_Risk_Manager_Data_Science": 0.8501736111111111,
+      "Regulatory_Data_Science_Risk_Manager_Consumer_Advocate": 0.8546775658492279,
+      "Risk_Manager_Consumer_Advocate_Regulatory_Data_Science": 0.7182291666666667,
+      "Risk_Manager_Data_Science_Regulatory_Consumer_Advocate": 0.7145833333333333
+    }
+  }
+}

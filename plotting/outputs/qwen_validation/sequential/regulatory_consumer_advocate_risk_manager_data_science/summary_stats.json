@@ -1,0 +1,21 @@
+{
+  "ordering": "Regulatory_Consumer_Advocate_Risk_Manager_Data_Science",
+  "agents_display": "Regulatory \u2192 Consumer \u2192 Advocate \u2192 Risk \u2192 Manager \u2192 Data \u2192 Science",
+  "total_chains": 5760,
+  "total_records": 23040,
+  "final_approval_rate": 0.8501736111111111,
+  "avg_final_interest_rate": 8.957402491321217,
+  "approval_rate_by_position": {
+    "1": 0.8501736111111111,
+    "2": 0.8501736111111111,
+    "3": 0.8501736111111111,
+    "4": 0.8501736111111111
+  },
+  "final_ethnicity_approval_rates": {
+    "Asian_Signal": 0.8409169850642584,
+    "Black_Signal": 0.846875,
+    "Hispanic_Signal": 0.8589341692789969,
+    "White_Signal": 0.8760416666666667
+  },
+  "chain_agreement_rate": 1.0
+}

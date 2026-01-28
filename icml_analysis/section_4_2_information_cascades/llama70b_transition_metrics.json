@@ -1,0 +1,415 @@
+{
+  "model": "Llama 70B",
+  "total_orderings": 24,
+  "average_agreement_rate": 0.9998987268518519,
+  "orderings": [
+    {
+      "ordering": "CA_DS_Reg_RM",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4603,
+          0
+        ],
+        [
+          0,
+          1157
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_DS_RM_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4603,
+          0
+        ],
+        [
+          0,
+          1157
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_Reg_DS_RM",
+      "total_chains": 5760,
+      "agreement_rate": 0.9998263888888889,
+      "approve_to_deny_flip": 1,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4602,
+          1
+        ],
+        [
+          0,
+          1157
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_Reg_RM_DS",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4603,
+          0
+        ],
+        [
+          0,
+          1157
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_RM_DS_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4603,
+          0
+        ],
+        [
+          0,
+          1157
+        ]
+      ]
+    },
+    {
+      "ordering": "CA_RM_Reg_DS",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4603,
+          0
+        ],
+        [
+          0,
+          1157
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_CA_Reg_RM",
+      "total_chains": 5760,
+      "agreement_rate": 0.9996527777777777,
+      "approve_to_deny_flip": 2,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5358,
+          2
+        ],
+        [
+          0,
+          400
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_CA_RM_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 0.9993055555555556,
+      "approve_to_deny_flip": 4,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5359,
+          4
+        ],
+        [
+          0,
+          397
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_Reg_CA_RM",
+      "total_chains": 5760,
+      "agreement_rate": 0.9996527777777777,
+      "approve_to_deny_flip": 2,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5368,
+          2
+        ],
+        [
+          0,
+          390
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_Reg_RM_CA",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4118,
+          0
+        ],
+        [
+          0,
+          1642
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_RM_CA_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5368,
+          0
+        ],
+        [
+          0,
+          392
+        ]
+      ]
+    },
+    {
+      "ordering": "DS_RM_Reg_CA",
+      "total_chains": 5760,
+      "agreement_rate": 0.9996527777777777,
+      "approve_to_deny_flip": 2,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5322,
+          2
+        ],
+        [
+          0,
+          436
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_CA_DS_RM",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5161,
+          0
+        ],
+        [
+          0,
+          599
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_CA_RM_DS",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5161,
+          0
+        ],
+        [
+          0,
+          599
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_DS_CA_RM",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5161,
+          0
+        ],
+        [
+          0,
+          599
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_DS_RM_CA",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5191,
+          0
+        ],
+        [
+          0,
+          569
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_RM_CA_DS",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5166,
+          0
+        ],
+        [
+          0,
+          594
+        ]
+      ]
+    },
+    {
+      "ordering": "Reg_RM_DS_CA",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          5170,
+          0
+        ],
+        [
+          0,
+          590
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_CA_DS_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4229,
+          0
+        ],
+        [
+          0,
+          1531
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_CA_Reg_DS",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4200,
+          0
+        ],
+        [
+          0,
+          1560
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_DS_CA_Reg",
+      "total_chains": 5760,
+      "agreement_rate": 0.9998263888888889,
+      "approve_to_deny_flip": 1,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4226,
+          1
+        ],
+        [
+          0,
+          1533
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_DS_Reg_CA",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4238,
+          0
+        ],
+        [
+          0,
+          1522
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_Reg_CA_DS",
+      "total_chains": 5760,
+      "agreement_rate": 1.0,
+      "approve_to_deny_flip": 0,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4235,
+          0
+        ],
+        [
+          0,
+          1525
+        ]
+      ]
+    },
+    {
+      "ordering": "RM_Reg_DS_CA",
+      "total_chains": 5760,
+      "agreement_rate": 0.9996527777777777,
+      "approve_to_deny_flip": 2,
+      "deny_to_approve_flip": 0,
+      "confusion_matrix": [
+        [
+          4235,
+          2
+        ],
+        [
+          0,
+          1523
+        ]
+      ]
+    }
+  ]
+}
